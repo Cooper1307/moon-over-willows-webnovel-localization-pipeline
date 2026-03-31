@@ -201,3 +201,10 @@
 [来自 第30章]    - "冤家路窄" (Enemies are bound to meet on a narrow road)
 [来自 第30章] 2. **文化概念**："阳春白雪" 与 "下里巴人" 的对比，建议在翻译时添加 [TN] 解释这两个词分别代表高雅艺术与通俗艺术的文化内涵。
 [来自 第30章] 3. **历史典故错位**：千里寻心里吐槽鼓词把蔡邕写成了“宋代的陈世美”。这里涉及双重历史人物的借用，翻译时需保留这层吐槽的幽默感。
+[来自 第31章] 1. **文化典故与诗词**：
+[来自 第31章]    - "精诚所至金石为开" (Absolute sincerity can crack even metal and stone / With absolute sincerity, even the hardest heart can be moved)
+[来自 第31章]    - "伐木丁丁，鸟鸣嘤嘤。出自幽谷，迁于乔木" (From the Book of Odes: "Chop, chop go the axes, / Tweet, tweet cry the birds. / From the dark valleys they come, / To settle on the tall trees.") - 解释了乔梦容改姓的原因。
+[来自 第31章] 2. **俗语与现代口语化表达**：
+[来自 第31章]    - "不是他的菜" (Not his type) - 申简辰内心的现代吐槽。
+[来自 第31章]    - "口粗" (Not picky about food / Having a coarse palate)
+[来自 第31章]    - "蜻蜓点水" (Like a dragonfly skimming the water / A fleeting touch)
