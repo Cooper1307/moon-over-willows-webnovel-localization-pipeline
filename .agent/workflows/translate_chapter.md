@@ -47,7 +47,7 @@ description: 单章翻译全流程，从原文到终稿的完整工作流
 
 ### 7. 更新项目日志
 // turbo
-- `cmd /c "echo %date% %time% - 成功完成单章翻译：第X章 >> project_log.md"`
+- `"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 成功完成单章翻译：第X章" | Out-File -FilePath project_log.md -Append -Encoding UTF8`
 
 ## 输出文件命名规范
 

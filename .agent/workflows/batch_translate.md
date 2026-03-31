@@ -45,7 +45,7 @@ L2润色 第1-2章   →  同时进行
 
 ### 5. 记录日志
 // turbo
-- `cmd /c "echo %date% %time% - 批量翻译执行完毕，进度已更新 >> project_log.md"`
+- `"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 批量翻译执行完毕，进度已更新" | Out-File -FilePath project_log.md -Append -Encoding UTF8`
 
 ## 进度跟踪
 

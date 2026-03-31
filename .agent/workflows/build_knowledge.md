@@ -27,5 +27,5 @@ Get-ChildItem -Path .agent\knowledge -File | Format-List Name,Length
 同步更新到总项目记事本：
 // turbo
 ```powershell
-cmd /c "echo %date% %time:~0,8% - 成功执行 [知识库切片解构与重组] 工作流，词条和人设已被智能去重和分流更新。 >> project_log.md"
+"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 成功执行 [知识库切片解构与重组] 工作流，词条和人设已被智能去重和分流更新。" | Out-File -FilePath project_log.md -Append -Encoding UTF8
 ```
