@@ -159,3 +159,45 @@
 [来自 第25章]    - "青云直上" (Rapidly rising in one's career / Skyrocketing to success)
 [来自 第25章]    - "郁郁而终" (Die of a broken heart / Die in depression)
 [来自 第25章]    - "有其主必有其仆" (Like master, like servant)
+[来自 第26章] 1. **宗教用语**：
+[来自 第26章]    - "剃度出家" (To shave one's head and become a nun/monk)
+[来自 第26章]    - "指点迷津" (To point out the way / To offer spiritual guidance)
+[来自 第26章]    - "阿弥陀佛" (Amitabha)
+[来自 第26章]    - "结缘/有缘" (Having a karmic connection / Predestined affinity)
+[来自 第26章] 2. **点茶动作**："击拂"（Whisking/Beating the tea with a bamboo whisk）和 "七次注汤"（Adding water in seven stages）。
+[来自 第26章] 3. **俗语与成语**：
+[来自 第26章]    - "一诺千金" (A promise as heavy as a thousand gold pieces / To keep one's word)
+[来自 第26章]    - "文思如泉涌" (Ideas flowing like a fountain / An outpouring of literary inspiration)
+[来自 第26章]    - "出其不意" (To take someone by surprise)
+[来自 第27章] 1. **古典哲学名言**："福祸无门，惟人自召" (Disaster and fortune do not come through gates, but are invited by people themselves / Fortune and misfortune have no doors; men invite them upon themselves)。
+[来自 第27章] 2. **佛道术语**：
+[来自 第27章]    - "明心见性" (To understand the mind and see one's true nature)
+[来自 第27章]    - "神识" (Consciousness / Soul / Spiritual essence)
+[来自 第27章]    - "命格" (Destiny / Astrological chart)
+[来自 第27章]    - "正思正念" (Right thinking and right mindfulness)
+[来自 第27章]    - "天机不可泄露" (The secrets of heaven must not be revealed)
+[来自 第27章]    - "醍醐灌顶" (To be enlightened as if anointed with pure nectar / A sudden realization)
+[来自 第27章] 3. **俗语与成语**：
+[来自 第27章]    - "嫁鸡随鸡，嫁狗随狗" (Marry a rooster, follow a rooster; marry a dog, follow a dog / A woman must follow her husband, no matter what he is)
+[来自 第27章]    - "瞎猫撞上死耗子" (A blind cat finding a dead mouse / Blind luck)
+[来自 第28章] 1. **文化梗与诗词**：
+[来自 第28章]    - "软炊香甑桃花饭,浅酌清尊竹叶醅" (Softly steamed in a fragrant pot is the peach blossom rice, / Sipping clear bamboo-leaf wine from a delicate goblet.) - 陆游的诗句。
+[来自 第28章]    - "在名字外加一个方框" (Adding a black border around a name) - 现代出版物中表示人已去世的排版习惯。
+[来自 第28章] 2. **俗语与成语**：
+[来自 第28章]    - "孤陋寡闻" (Ignorant and ill-informed)
+[来自 第28章]    - "炸毛" (To bristle with anger / To fly into a rage)
+[来自 第28章]    - "约法三章" (A three-point pact / Basic rules)
+[来自 第29章] 1. **环境与氛围描写**：
+[来自 第29章]    - "清风袭来，竹香沁人心脾" (A gentle breeze swept by, and the refreshing scent of bamboo seeped into the heart/soul.)
+[来自 第29章]    - "格格不入" (Out of place / Incongruous)
+[来自 第29章]    - "众目睽睽" (In the public eye / Under the watchful eyes of the crowd)
+[来自 第29章] 2. **封建阶级称谓**："东家" (Landlord / Master / Owner) - 在此处指代竹林的所有者，村民们对其非常恭敬。
+[来自 第29章] 3. **对话中的讽刺与交锋**：千里寻怂恿林觉的大哥二哥给林觉纳春金巧为妾，充满了现代人对封建礼教的嘲弄和反击。
+[来自 第30章] 1. **成语与俗语**：
+[来自 第30章]    - "小巫见大巫" (Pales in comparison / Dwarfed by comparison)
+[来自 第30章]    - "如花似玉" (As beautiful as flowers and jade)
+[来自 第30章]    - "光天化日" (In broad daylight)
+[来自 第30章]    - "老鼠屎搅坏一锅汤" (A piece of rat feces spoils the whole pot of soup / One bad apple spoils the barrel)
+[来自 第30章]    - "冤家路窄" (Enemies are bound to meet on a narrow road)
+[来自 第30章] 2. **文化概念**："阳春白雪" 与 "下里巴人" 的对比，建议在翻译时添加 [TN] 解释这两个词分别代表高雅艺术与通俗艺术的文化内涵。
+[来自 第30章] 3. **历史典故错位**：千里寻心里吐槽鼓词把蔡邕写成了“宋代的陈世美”。这里涉及双重历史人物的借用，翻译时需保留这层吐槽的幽默感。
