@@ -24,29 +24,24 @@ git add .
 ```
 
 ### 2. 提交变更并自动处理提交信息
-如果未提供提交说明（即执行了不带参数的命令），则默认使用时间戳记录。
+由 AI 在执行时将下方占位符 `{COMMIT_MSG}` 替换为用户提供的提交信息，或自动生成带时间戳的默认信息。
 // turbo
 ```powershell
-$commitMsg = $args[0]
-if ([string]::IsNullOrWhiteSpace($commitMsg)) {
-    $commitMsg = "Auto commit: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
-}
-git commit -m "$commitMsg"
+git commit -m "{COMMIT_MSG}"
 ```
 
 ### 3. 拉取远端更新
 使用 rebase 模式拉取远端修改，避免无用的 merge 节点，保持提交历史干净。
 // turbo
 ```powershell
-git pull origin main --rebase
+git pull origin master --rebase
 ```
-*(注：如果默认主分支为 master，命令将拉取失败，提示用户确认分支名。)*
 
 ### 4. 推送到远程
 将本地合并完毕的版本推送到远程 GitHub 仓库。
 // turbo
 ```powershell
-git push origin main
+git push origin master
 ```
 
 ### 5. 记录日志打点

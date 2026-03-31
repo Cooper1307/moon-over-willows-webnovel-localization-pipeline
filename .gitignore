@@ -1,9 +1,6 @@
 # 归档原始大文件
 归档/
 
-# 临时脚本
-split_chapters.ps1
-
 # 系统文件
 Thumbs.db
 desktop.ini

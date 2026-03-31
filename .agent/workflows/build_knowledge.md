@@ -24,8 +24,8 @@ Get-ChildItem -Path .agent\knowledge -File | Format-List Name,Length
 ```
 
 ### 3. 写日志
-同步更新到总项目记事本：
+由 AI 在执行后将下方占位符 `{SUMMARY}` 替换为本次实际处理的章节范围和词条变化统计。
 // turbo
 ```powershell
-"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 成功执行 [知识库切片解构与重组] 工作流，词条和人设已被智能去重和分流更新。" | Out-File -FilePath project_log.md -Append -Encoding UTF8
+"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 成功执行 [知识库切片解构与重组] 工作流。{SUMMARY}" | Out-File -FilePath project_log.md -Append -Encoding UTF8
 ```

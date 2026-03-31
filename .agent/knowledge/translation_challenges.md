@@ -123,3 +123,39 @@
 [来自 第20章]    - 千里寻在暴怒时自称"老娘"（"有本事吃老娘一拳！"）。遵循 SOP，译为 "Yours truly" 或 "This queen" 以体现霸气和不羁。
 [来自 第20章] 3. **文人与纨绔的阶级/文化冲突**：
 [来自 第20章]    - 陈浩宇嘲笑公子们"附庸风雅...不像男人"。翻译需传达出古代重商/重武与重文之间的鄙视链。
+[来自 第21章] 1. **文化梗与人物指代**：
+[来自 第21章]    - "狗嘴里吐不出象牙" (Filthy mouth can't utter decent words / Dogs can't spit ivory)
+[来自 第21章]    - "附庸风雅" (Posing as a lover of culture / Pretending to be cultured)
+[来自 第21章]    - "吃哑巴亏" (Suffer in silence / Swallow the bitter pill)
+[来自 第21章] 2. **古人称谓**："王右丞" 指代唐代诗人王维，翻译时可能需要添加脚注说明其身份以帮助英语读者理解 (Wang Youcheng, referring to the famous Tang Dynasty poet Wang Wei)。
+[来自 第22章] 1. **俗语与成语**：
+[来自 第22章]    - "宁拆十座庙，不破一门婚" (Better to demolish ten temples than destroy one marriage)
+[来自 第22章]    - "如同嚼蜡" (Like chewing wax / Tasteless and dull)
+[来自 第22章]    - "火坑" (Fire pit / Living hell)
+[来自 第22章] 2. **长辈称呼体系**：本章出现了大量的林家长辈（族叔、大哥、二哥等），需要确保英文翻译中的亲属关系准确表达（例如 "Second Uncle" 指代林子孝）。
+[来自 第23章] 1. **《断肠谜》拆字解析**：
+[来自 第23章]    本章中林子孝对《断肠谜》进行了详细的汉字拆解说明（如“天”字去“人”为“二”），这是极高难度的翻译挑战，因为这完全依赖于汉字的字形结构。在英文中无法直接重现这种字形变化，建议采用意译加注释（[TN]）的方式解释其文字游戏原理，或者在英文中寻找数字的双关语/隐藏词来替代。
+[来自 第23章] 2. **俗语与成语**：
+[来自 第23章]    - "附庸风雅" (Posing as a lover of culture)
+[来自 第23章]    - "大门不出二门不迈" (Never stepping out of the house / Secluded indoors)
+[来自 第23章]    - "银枪蜡头" (Silver-tipped wax spear / Looks impressive but is useless)
+[来自 第23章]    - "女子无才便是德" (Innocence is a woman's virtue / A woman's virtue lies in her lack of talent)
+[来自 第24章] 1. **俗语与成语**：
+[来自 第24章]    - "置之死地而后生" (To survive by placing oneself in a deadly situation / To fight for survival with one's back to the wall)
+[来自 第24章]    - "捉奸在床" (Caught in the act (in bed))
+[来自 第24章]    - "睚眦必报" (Seeking revenge for the smallest grievance)
+[来自 第24章]    - "吃不了兜着走" (Bear the full consequences / You'll have hell to pay)
+[来自 第24章]    - "井水不犯河水" (Mind one's own business / Keep out of each other's way)
+[来自 第24章]    - "小鸟依人" (Like a little bird resting on someone / Dainty and dependent)
+[来自 第24章] 2. **情感与氛围表达**：林觉被千里寻拳风扫过时，闻到肌肤醇香并看呆的情节，需要用细腻的英文描写（e.g., The force of the punch brought a gust of air, carrying the mellow fragrance of her skin... He was utterly mesmerized）。
+[来自 第25章] 1. **诗词翻译**：《江城子·赏春》（"斜风细雨作春寒，对尊前，忆前欢..."）的意境翻译。
+[来自 第25章] 2. **佛家术语**：
+[来自 第25章]    - "南无阿弥陀佛" (Namo Amitabha / Homage to Amitabha Buddha)
+[来自 第25章]    - "木鱼" (Wooden fish / Temple block)
+[来自 第25章]    - "犍稚" (Ghanta / Striker used for the wooden fish)
+[来自 第25章]    - "蒲团" (Praying mat / Hassock)
+[来自 第25章] 3. **俗语与成语**：
+[来自 第25章]    - "伤春悲秋" (Lamenting the passing of spring and autumn / Sentimental)
+[来自 第25章]    - "青云直上" (Rapidly rising in one's career / Skyrocketing to success)
+[来自 第25章]    - "郁郁而终" (Die of a broken heart / Die in depression)
+[来自 第25章]    - "有其主必有其仆" (Like master, like servant)
