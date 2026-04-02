@@ -10,6 +10,7 @@
           {
             "id": "323b341ba0daa6ed",
             "type": "tabs",
+            "dimension": 46.941489361702125,
             "children": [
               {
                 "id": "1477b017f50b286e",
@@ -30,6 +31,7 @@
           {
             "id": "b9342c754560d9d6",
             "type": "tabs",
+            "dimension": 53.058510638297875,
             "children": [
               {
                 "id": "3baae14481c35151",
@@ -51,12 +53,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "章节原文/第1章/第1章终稿.md",
+                    "file": "章节原文/第1章/第1章终稿_清洁版.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "第1章终稿"
+                  "title": "第1章终稿_清洁版"
                 }
               }
             ],
@@ -136,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "章节原文/第1章/第1章原文.md",
+                "file": "章节原文/第5章/第5章原文.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +148,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "第1章原文 的反向链接列表"
+              "title": "第5章原文 的反向链接列表"
             }
           },
           {
@@ -155,12 +157,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "章节原文/第1章/第1章原文.md",
+                "file": "章节原文/第5章/第5章原文.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "第1章原文 的出链列表"
+              "title": "第5章原文 的出链列表"
             }
           },
           {
@@ -198,13 +200,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "章节原文/第1章/第1章原文.md",
+                "file": "章节原文/第5章/第5章原文.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "第1章原文 的大纲"
+              "title": "第5章原文 的大纲"
             }
           }
         ]
@@ -225,16 +227,32 @@
       "bases:新建数据库": false
     }
   },
-  "active": "1477b017f50b286e",
+  "active": "b0168cd783baf10f",
   "lastOpenFiles": [
+    "project_log_2_new.md",
+    "project_log-2.md",
+    "章节原文/第1章/归档/第1章L2润色.md",
+    "章节原文/第1章/归档/第1章L1校审.md",
+    "章节原文/第1章/归档/第1章终稿.md",
+    "章节原文/第1章/归档/第1章终稿_修订痕迹版.md",
+    "章节原文/第1章/归档/第1章终稿_审校报告.md",
+    "章节原文/第1章/归档/第1章术语与人设_审校意见_20260402.md",
+    "章节原文/第1章/归档/第1章初译.md",
+    "章节原文/第1章/归档 copy",
+    "章节原文/第1章/归档",
+    "章节原文/第1章/第1章原文.md",
+    "章节原文/第1章/第1章终稿_清洁版.md",
+    "章节原文/第1章/第1章终稿_修订痕迹版.md",
+    "章节原文/第1章/第1章终稿.md",
+    "章节原文/第1章/第1章终稿_审校报告.md",
+    "章节原文/第1章/第1章初译.md",
+    "章节原文/第1章/第1章L2润色.md",
+    "章节原文/第1章/第1章L1校审.md",
+    "章节原文/第5章/第5章原文.md",
+    "章节原文/第1章/第1章术语与人设_审校意见_20260402.md",
     "章节原文/第50章/第50章术语与人设.md",
     "章节原文/第49章/第49章术语与人设.md",
     "章节原文/第48章/第48章术语与人设.md",
-    "章节原文/第1章/第1章终稿.md",
-    "章节原文/第1章/第1章原文.md",
-    "章节原文/第1章/第1章L2润色.md",
-    "章节原文/第1章/第1章L1校审.md",
-    "章节原文/第1章/第1章初译.md",
     "章节原文/第1章/第1章术语与人设.md"
   ]
 }
