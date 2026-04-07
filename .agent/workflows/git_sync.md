@@ -48,5 +48,5 @@ git push origin master
 利用 cmd 命令向统一的项目日志文件里添加同步追溯记录。
 // turbo
 ```powershell
-"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 本地文件已同步推送到远程 GitHub 仓库" | Out-File -FilePath project_log.md -Append -Encoding UTF8
+"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 本地文件已同步推送到远程 GitHub 仓库" | Out-File -FilePath project_log_2_new.md -Append -Encoding UTF8
 ```
