@@ -33,7 +33,7 @@ $dirs = Get-ChildItem "章节原文" -Directory; $filled = 0; foreach ($d in $di
 
 ### 4. 记录拆分日志
 // turbo
-- `"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 章节拆分工作流已执行完毕" | Out-File -FilePath project_log.md -Append -Encoding UTF8`
+- `"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 章节拆分工作流已执行完毕" | Out-File -FilePath project_log_3_new.md -Append -Encoding UTF8`
 
 ## 注意事项
 - 脚本会覆盖已有的章节文件
