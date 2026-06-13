@@ -1,8 +1,10 @@
 # 项目翻译日志 (Project Log)
 
 ## 记录：第4章 深度审校与定稿完成 (Chapter 4 Verification & Finalization)
+
 **时间**：2026-04-10
 **动作**：
+
 1. **深度审校应用**：基于双语对照规范，彻底清理了第4章译文中的用词重复（如 "in earnest", "polished off"），并修复了时态和主谓逻辑（如 "adapting to her new identity would take time"）。
 2. **特有文化词汇迭代**：
    - 更新“包子”为更为明确的 `steamed buns`。
@@ -14,8 +16,10 @@
 至此，第4章内容正式验收通过。
 
 ## 记录：第5章 双语精校与文化定稿 (Chapter 5 Bilingual Verification & Cultural Finalization)
-**时间**：2026-04-11
+
+**时间**：2026-04-11 17：00
 **动作**：
+
 1. **名家典籍融合**：成功将文学泰斗许渊冲关于朱淑真《眼儿媚》的绝版英文重构版导入文中，提升了原词作意象翻译的跨文化质感。
 2. **术语级母语化修正**：
    - 将强直译标签和宗教敏感词修除，如：`female lyricist` -> `female ci poet`; `Yaksha` -> `vicious shrew`; `latrine` -> `privy`。
@@ -24,3 +28,5 @@
 4. **日志与词表同步**：将《第5章初译应用术语表.md》同步扩充了这批精修用词规则，确保后续章节能复用。
 
 **下一步**：执行第 5 章的最终段落连贯度通读和 L2 润色归档。
+
+2026-04-11 17:25:08 - 本地文件已同步推送到远程 GitHub 仓库
