@@ -1,0 +1,37 @@
+{
+  "watchDirectories": [
+    "章节原文",
+    ".agent",
+    "术语表",
+    "归档"
+  ],
+  "watchFileTypes": [
+    "*.md",
+    "*.ps1",
+    "*.py",
+    "*.json"
+  ],
+  "excludePatterns": [
+    "*.log",
+    "node_modules",
+    ".git",
+    ".obsidian",
+    ".agent\\tools",
+    ".agent\\config",
+    ".agent\\logs",
+    ".agent\\cache",
+    ".agent\\backups",
+    "章节原文\\00_归档"
+  ],
+  "referencePatterns": [
+    "{filename}",
+    "{filename_noext}",
+    "{filepath}"
+  ],
+  "historyFile": ".agent\\logs\\file_reference_history.json",
+  "snapshotFile": ".agent\\cache\\file_snapshot.json",
+  "backupEnabled": true,
+  "backupDir": ".agent\\backups",
+  "encoding": "UTF-8",
+  "maxBackupDays": 30
+}

@@ -79,7 +79,7 @@ description: 单章翻译全流程，从原文到终稿的完整工作流
 
 ### 8. 更新项目日志
 // turbo
-- `"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 成功完成单章翻译：第X章" | Out-File -FilePath project_log.md -Append -Encoding UTF8`
+- `"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 成功完成单章翻译：第X章" | Out-File -FilePath 项目日志_04_20260411-至今_翻译与工具整理.md -Append -Encoding UTF8`
 
 ## 输出文件命名规范
 

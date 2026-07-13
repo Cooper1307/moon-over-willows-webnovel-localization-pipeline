@@ -18,7 +18,7 @@ description: 指导并规范如何与 GitHub 远程仓库保持一致，并提�
 
 ## 3. 标准化操作指引
 1. 要执行一键式上传及同步，请直接调用现成的工作流：**`/git_sync "你要说的提交信息"`**。
-2. 该工作流会自动走完 `add -> commit -> pull --rebase -> push` 链条，并写一条打点记录到 `project_log_3_new.md` 之中。
+2. 该工作流会自动走完 `add -> commit -> pull --rebase -> push` 链条，并写一条打点记录到 `项目日志_04_20260411-至今_翻译与工具整理.md` 之中。
 
 ## 4. 异常处理：Git 冲突 (Merge Conflicts)
 若是执行了 Workflow 但在 `pull --rebase` 环节抛出错导致拉取失败：
