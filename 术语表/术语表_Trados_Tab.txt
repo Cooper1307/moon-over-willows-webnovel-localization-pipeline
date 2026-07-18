@@ -129,3 +129,9 @@ Source	Target
 舞伎	dancers
 诗会	poetry salon
 曲径通幽	winding paths leading to secluded spots
+菊花	Chrysanthemum
+《菊花》	"Chrysanthemum" (Poem)
+绿桃	Lutao
+林家大爷	Eldest Master Lin
+林家二爷	Second Master Lin
+长命百岁金锁	Longevity Gold Lock
