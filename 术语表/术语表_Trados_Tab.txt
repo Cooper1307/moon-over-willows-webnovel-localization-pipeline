@@ -121,3 +121,11 @@ Source	Target
 大公子	the eldest son
 少夫人	the young mistress
 以诗会友	make friends through poetry
+向夫人	Madame Xiang
+银杏	Yinxing
+江南女词人	The Poetess of Jiangnan
+府衙	Prefectural Office
+歌伎	songstresses / singing girls
+舞伎	dancers / dancing girls
+诗会	poetry salon / poetry gathering
+曲径通幽	winding paths to secluded spots
