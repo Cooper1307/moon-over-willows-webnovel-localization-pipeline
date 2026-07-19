@@ -143,3 +143,9 @@ Source	Target
 正院	Main Courtyard
 玉兰树	Magnolia Trees
 徐家公子	Young Master Xu
+佛堂	Buddhist Shrine / Family Temple
+嫁妆	dowry
+租子	rent / tenant rent
+法西斯	fascist
+女子无才便是德	"A woman's virtue is having no talent"
+秦晋之好	marital alliance
