@@ -140,3 +140,6 @@ Source	Target
 莱宝	Laibao
 月桂	Yuegui
 渣男	scumbag
+正院	Main Courtyard
+玉兰树	Magnolia Trees
+徐家公子	Young Master Xu
