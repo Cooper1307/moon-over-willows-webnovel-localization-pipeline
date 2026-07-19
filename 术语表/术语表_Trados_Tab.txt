@@ -68,7 +68,7 @@ Source	Target
 圆房	Consummate the marriage
 老姑娘	an old maid
 重生	Rebirth / Resurgence
-休书 / 休了我	Letter of Divorce / willingly give me a letter of divorce
+休书 / 休了我	Letter of Divorce / cast out / repudiate
 青梅竹马，两小无猜	innocently devoted childhood sweethearts
 衙门 / 官府	local yamen
 朱晞颜	Zhu Xiyan
@@ -127,7 +127,7 @@ Source	Target
 府衙	prefectural office
 歌伎	songstresses
 舞伎	dancers
-诗会	poetry salon
+诗会	poetry banquet
 曲径通幽	winding paths leading to secluded spots
 菊花	Chrysanthemum
 《菊花》	"Chrysanthemum" (Poem)
