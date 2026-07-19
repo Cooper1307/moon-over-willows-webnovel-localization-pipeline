@@ -135,3 +135,8 @@ Source	Target
 林家大爷	Eldest Master Lin
 林家二爷	Second Master Lin
 长命百岁金锁	Longevity Gold Lock
+朱景元	Zhu Jingyuan
+陈文心	Chen Wenxin
+莱宝	Laibao
+月桂	Yuegui
+渣男	scumbag
