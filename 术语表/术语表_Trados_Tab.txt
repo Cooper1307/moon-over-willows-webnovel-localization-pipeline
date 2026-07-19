@@ -149,3 +149,8 @@ Source	Target
 法西斯	fascist
 女子无才便是德	"A woman's virtue is having no talent"
 秦晋之好	marital alliance
+家法	family law / clan rules
+祠堂	ancestral hall
+杖责二十	twenty strokes of the cane
+打手板	beating the palms
+老祖宗	old ancestor / matriarch
