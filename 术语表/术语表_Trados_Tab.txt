@@ -127,7 +127,7 @@ Source	Target
 府衙	prefectural office
 歌伎	songstresses
 舞伎	dancers
-诗会	poetry banquet
+诗会	poetry banquet (formal); poetry salon (casual literary gathering)
 曲径通幽	winding paths leading to secluded spots
 菊花	Chrysanthemum
 《菊花》	"Chrysanthemum" (Poem)
@@ -181,3 +181,41 @@ Source	Target
 勾栏瓦肆	theaters and entertainment quarters
 苦蕨	Ku Jue
 冤家路窄	enemies meeting on a narrow road—what fate
+幽栖居士	Youqi Jushi (literary pseudonym of Zhu Shuzhen)
+易安居士	Yi'an Jushi (literary pseudonym of Li Qingzhao)
+德甫	Mr. Defu
+曹班	Cao Ban
+苗知瑜	Miao Zhiyu
+安明轩	An Mingxuan
+东方尘泽	Dongfang Chenze
+乔文贤	Qiao Wenxian
+青州从事	Qingzhou Attendant
+孔方兄	Brother Kong Fang
+诗眼	poetic core
+袁术	Yuan Shu
+司马相如	Sima Xiangru
+王维	Wang Wei
+摩诘居士	Mohe Jushi
+金刚经	Diamond Sutra
+茶师（点茶）	tea master / tea artisan / whisked tea performer
+伙计（茶楼）	teahouse attendant / waiter
+公子	young gentleman (direct address); Master [Surname] (respectful address); gentleman / young scholar (3rd person)
+品鉴/鉴赏（诗词）	appreciate / savor / study / review / examine
+通判	Vice-Prefect
+曹判	Judge Cao (Cao Ban's father)
+提举	Intendant
+化雨	Huayu (page boy of Dongfang Chenze)
+仪王	Prince Yi
+永泰茶楼	Yongtai Teahouse
+茶楼	teahouse
+斗茶	whisking contest / tea competition
+茶艺	tea art / tea ceremony / whisked tea performance
+包间	private room / booth
+曾丞相	Chancellor Zeng
+集英殿	Jiying Hall
+《腊梅山禽图》	Winter Plum and Mountain Birds
+鼓墩	drum stools
+蔡京	Cai Jing
+高俅	Gao Qiu
+寡人	We (imperial self-reference)
+庐山真面目	the true face of Mount Lu
