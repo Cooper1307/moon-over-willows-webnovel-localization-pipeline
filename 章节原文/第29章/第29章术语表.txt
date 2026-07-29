@@ -4,7 +4,7 @@ Source	Target
 老苦	Lao Ku
 苦荞娘	Kubiao's mother
 村长	village head
-韦嬷嬷	Nanny Wei
+韦嬷嬷	Matron Wei
 竹林	bamboo forest
 竹屋	bamboo house
 东家	owner/landlord
@@ -18,4 +18,4 @@ Source	Target
 地桃花	ground peach blossom
 银镯子	silver bracelet
 临安城	Lin'an city
-韦嬷嬷	Nanny Wei
+韦嬷嬷	Matron Wei

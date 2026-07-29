@@ -156,7 +156,7 @@ Source	Target
 老祖宗	the Old Ancestor
 佛堂小院	Buddhist Shrine Courtyard
 蒲团	prayer cushion
-秀珍嬷嬷	Nanny Xiuzhen
+秀珍嬷嬷	Matron Xiuzhen
 《断肠谜》	"The Heartbreak Riddle"
 木鱼	wooden fish
 犍稚	mallet
@@ -189,14 +189,21 @@ Source	Target
 安明轩	An Mingxuan
 东方尘泽	Dongfang Chenze
 乔文贤	Qiao Wenxian
-青州从事	Qingzhou Attendant
-孔方兄	Brother Kong Fang
+青州从事	Qingzhou Inspector / Qingzhou wine attendants
+孔方兄	Brother Kong Fang / Lord Square Hole
 诗眼	poetic core
 袁术	Yuan Shu
 司马相如	Sima Xiangru
+《子虚赋》	Rhapsody on Sir Fantasy
+乌有先生	Sir No-such
+子虚子	Sir Fantasy / Sir Vacuity
 王维	Wang Wei
 摩诘居士	Mohe Jushi
 金刚经	Diamond Sutra
+《世说新语》	A New Account of the Tales of the World
+《三国志》	Records of the Three Kingdoms
+《钱神论》	Discourse on the God of Money
+平原督邮	Pingyuan Postmaster
 茶师（点茶）	tea master / tea artisan / whisked tea performer
 伙计（茶楼）	teahouse attendant / waiter
 公子	young gentleman (direct address); Master [Surname] (respectful address); gentleman / young scholar (3rd person)
@@ -219,3 +226,122 @@ Source	Target
 高俅	Gao Qiu
 寡人	We (imperial self-reference)
 庐山真面目	the true face of Mount Lu
+"独坐一室，平生所见，皆不在目前"	"Sitting alone in a single room, nothing of what I was used to seeing in my entire life was there before my eyes" (Ronald Egan, *The Works of Li Qingzhao*, 2019)
+梁师成	Liang Shicheng
+魏夫人	Lady Wei / Wei Wan
+蹴鞠	Cuju / Ancient Chinese Football
+风流眼	The Flowing Wind Eye / Goal Ring
+球头	Team Captain / Lead Striker
+流星赶月	Meteor Chasing the Moon
+落花流水	Fallen Flowers and Flowing Water
+临安节度使	Military Commissioner of Lin'an
+水泊梁山	Water Margins of Mount Liang / The Marshes of Mount Liang
+《腊梅山禽图》	Winter Plum and Mountain Birds
+朱晞颜	Zhu Xiyan
+方腊	Fang La
+折可存	Zhe Kecun
+散茶	Loose-leaf tea
+说话艺人	Storyteller
+招安	Amnesty / Pacification
+诊金	Consultation fee
+药方	Prescription
+乔守仁	Qiao Shouren
+钱氏	Madam Qian
+米氏	Concubine Mi
+文慧	Wenhui
+文秀	Wenxiu
+南双	Nanshuang
+乔府	The Qiao Manor
+花甲之年	sixty years of age
+正室	main wife / primary wife
+妾室	concubine
+待字闺中	unmarried / awaiting marriage
+书童	page boy
+李管家	Steward Li
+幽林别居	Youlin Villa / Secluded Forest Villa
+尼姑庵	nunnery
+千年神柳	Millennial Divine Willow
+月老	Yue Lao / The Old Man Under the Moon
+红绸	red silk ribbon
+照壁	screen wall / spirit screen
+聚香楼	Juxiang Restaurant / Fragrant Gathering Pavilion
+矾楼	Fan Restaurant
+皇都春	Huangdu Chun / Spring of the Imperial Capital
+宋嫂鱼羹	Sister Song's Fish Broth
+东坡肉	Dongpo Pork
+龙井虾仁	Longjing Shrimp
+杭菊鸡丝	Hangzhou Chrysanthemum Shredded Chicken
+干炸响铃	Deep-fried Tofu Skin Rolls / Fried Ringing Bells
+西湖龙井	West Lake Longjing Tea
+有心栽花花不发，无心插柳柳成荫	Flowers planted with care may never bloom, while a willow twig planted by chance grows into a shade-giving tree
+酒逢知己千杯少，话不投机半句多	A thousand cups of wine are too few when drinking with a bosom friend; half a sentence is too much when talking to someone at cross purposes
+苟且之事	Illicit affair / Shameful deeds
+皇亲国戚	Imperial relatives / Relatives of the Emperor
+道貌岸然	Hypocritical / Sanctimonious
+伪君子	Hypocrite
+一丘之貉	Birds of a feather / Jackals of the same lair
+开个荤	Break one's fast / Take a taste (vulgar context)
+官家	Emperor (Song Dynasty)
+本公子	I / me (self-reference, avoid "this young master")
+纨绔	dandy / playboy / rich idler
+小弟（陈浩宇的）	lackeys / henchmen
+茶师（女）	female tea master / tea artisan
+桥头瓦	Qiaotou Wasi / Bridgehead Entertainment Precinct
+西三胡同	West Third Alley
+勾栏瓦肆	Goulan Wasi / Entertainment Precincts
+说书/说话艺人	Storytelling / Storyteller
+醒木	Gavel / Wood block
+话本	Huaben / Vernacular short story
+《碾玉观音》	The Jade-Carving Guanyin
+女娲娘娘	Goddess Nuwa
+花神	The Flower Goddess
+百花宫	Palace of a Hundred Flowers
+红香	Hongxiang
+丹穴山	Mount Danxue
+玄英	Xuanying
+醉云楼	Zuiyun Pavilion / Drunken Cloud Pavilion
+苗知瑜	Miao Zhiyu
+东方尘泽	Dongfang Chenze
+曹班	Cao Ban
+安明轩	An Mingxuan
+栗子糕	Chestnut Cake
+烟花柳巷	Red-light district / Flower and Willow Lanes
+囊中羞涩	Short of funds / Tight on money
+卷轴	Scroll
+镂空	Openwork / Hollowed-out
+《断肠谜》	The Heartbreak Riddle
+《断肠词》	Heartbreak Verses
+愿得一心人，白首不相离	Wishing for a heart that beats as one, never to part till our hair turns white
+卜/金钱卜落	Divination / The fall of divination coins
+恨王孙	Resent the noble scion
+皂白何须问	No need to ask of black and white (right and wrong)
+詈/动粗口	Swear / Use profanity
+下里巴人	Lowbrow / Popular and unrefined
+落魄书生	Down-and-out scholar / Impoverished scholar
+藕断丝连	Severed lotus roots connected by silk threads / Lingering ties
+八卦	Gossip
+东仁街	Dongren Street
+千离循	Qian Lixun (homophone of Qianli Xun, different characters)
+苦蕨	Kujue (Kuqiao's brother)
+小爷	Little Master / Young Master
+碎银	Broken silver / Silver pieces
+糖果和零食	Candies and snacks
+撒尿/解手	Relieve oneself / Take a leak
+三叔	Third Uncle
+闫媒婆	Matchmaker Yan
+腐肌膏	Corrosive Paste
+七出	Seven Grounds for Divorce
+净光法师	Dharma Master Jingguang
+吉祥药房	Jixiang Pharmacy
+《江城子·赏春》	"Jiangchengzi: Spring Cold" (tr. Xu Yuanchong, *The West Wind Blows: Selected Song Lyrics*, Dolphin Press / China Intercontinental Press)
+南双	Nanshuang
+乔公子	Young Master Qiao
+承佛慈力	"By the power of the Buddha's compassion" (Inagaki, *The Three Pure Land Sutras*, Numata Center)
+南无阿弥陀佛	Namo Amitabha
+慈玄法师	Master Cixuan
+功德箱	merit box
+茶筅	tea whisk
+茶汤	tea liquor
+击拂	whisk (tea)
+王右丞	Wang Youcheng (Wang Wei)
+《竹里馆》	"Bamboo Lodge"
