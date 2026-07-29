@@ -343,5 +343,6 @@ Source	Target
 茶筅	tea whisk
 茶汤	tea liquor
 击拂	whisk (tea)
+七汤	seven pourings (Song Dynasty tea ceremony)
 王右丞	Wang Youcheng (Wang Wei)
 《竹里馆》	"Bamboo Lodge"
