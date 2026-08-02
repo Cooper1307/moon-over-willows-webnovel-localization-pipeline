@@ -8,8 +8,8 @@ Source	Target
 宣和四年	The 4th Year of Xuanhe
 春金巧	Chun Jinqiao
 商妓	merchant courtesan
-约法三章	Three-Point Agreement
-轻功	lightness skill
+约法三章	Three Rules
+轻功	qinggong
 尼姑庵	nunnery
 正殿	main hall
 木鱼	wooden fish
