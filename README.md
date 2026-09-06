@@ -31,7 +31,7 @@
 ├── 归档/                scratch / 旧版（不入 git）
 ├── 术语表/              Trados CSV/Tab（导出物，勿手编）
 ├── tools/               全部脚本（进度/双语同步/标点扫描/术语构建/拆分等，见 tools/）
-└── .agent/              skills / workflows / knowledge / config
+└── .agent/              rules（主源）· skills · workflows · knowledge · config
 ```
 
 ## 四、工作流（五阶段）
