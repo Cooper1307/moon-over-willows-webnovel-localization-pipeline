@@ -339,7 +339,9 @@ def check_chapter(ch_dir, baseline, apply_mode, force_mode, stats):
             stats["blocked"] += 1
         else:
             if en_title is None:
-                en_title = extract_en_title(lines) or f"# Chapter {num}"
+                en_title = extract_en_title(lines) or f"Chapter {num}"
+            if not en_title.startswith("#"):
+                en_title = "# " + en_title
             out = [en_title, ""]
             for _zh, en, _ln in pairs:
                 out.append(en)
