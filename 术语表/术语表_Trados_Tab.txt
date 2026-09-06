@@ -174,7 +174,7 @@ Source	Target
 蔡伯喈	Cai Bojie
 陈世美	Chen Shimei
 陈浩宇	Chen Haoyu
-夏果	Xia Gu
+夏果	Xia Guo
 阳春白雪	High art / refined art
 下里巴人	Popular art / low art
 说话艺术	storytelling art
@@ -283,7 +283,7 @@ Source	Target
 开个荤	Break one's fast / Take a taste (vulgar context)
 官家	Emperor (Song Dynasty)
 本公子	I / me (self-reference, avoid "this young master")
-纨绔	dandy / playboy / rich idler
+纨绔	dandy / playboy / rich idler / rake
 小弟（陈浩宇的）	lackeys / henchmen
 茶师（女）	female tea master / tea artisan
 桥头瓦	Qiaotou Wasi / Bridgehead Entertainment Precinct
@@ -291,7 +291,7 @@ Source	Target
 勾栏瓦肆	Goulan Wasi / Entertainment Precincts
 说书/说话艺人	Storytelling / Storyteller
 醒木	Gavel / Wood block
-话本	Huaben / Vernacular short story
+话本	Huaben / Vernacular short story / storybook (free rendering)
 《碾玉观音》	The Jade-Carving Guanyin
 女娲娘娘	Goddess Nuwa
 花神	The Flower Goddess
@@ -346,3 +346,10 @@ Source	Target
 七汤	seven pourings (Song Dynasty tea ceremony)
 王右丞	Wang Youcheng (Wang Wei)
 《竹里馆》	"Bamboo Lodge"
+鼓子词	drum verse / drum-ballad (variant of 鼓词)
+丫鬟	maid / servant girl
+壮汉	burly man / strong man / thug
+打手	thug / hired thug / henchman
+磕头	kowtow
+老鼠屎	rat dropping (idiom 老鼠屎搅坏一锅汤: one bad apple spoils the barrel)
+一两（银子）	one tael (of silver)

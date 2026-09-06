@@ -87,6 +87,42 @@ Rules:
 
 ---
 
+## 三·五 去 AI 痕迹自检卡（写作时强制执行 / Humanize Gate）
+
+> **模式库**：`网文小说合集/.codebuddy/.agent/skills/humanize/humanizer-en.md`（29 类 AI 写作痕迹；放置架构见 `TODO.md` Q1）。
+> **执行时机**：每条英文段落落笔前逐项过卡，**发现即改，禁止留到审校阶段兜底**（借鉴 MTPE「双 skill 写作时自检」机制）。
+
+### A 级（零容忍，命中必改）
+
+| 痕迹 | 判据 | 改法 |
+|---|---|---|
+| AI 高频词 | delve / tapestry / testament / pivotal / robust / landscape / crucial / vibrant / underscore / showcase | 换日常词（This matters / everything changed） |
+| -ing 尾句浅析 | 句尾 `..., highlighting/symbolizing/reflecting/ensuring...` 强行升华 | 拆为独立短句或直接删 |
+| 系词回避 | serves as / functions as / features / boasts 代替 is/are/has | 改回 is/are/has |
+| 宣传腔 | boasts / vibrant / nestled / stunning / breathtaking / rich natural beauty | 中性白描 |
+| 卷曲引号 | `""` | 直引号 `"` |
+
+### B 级（每章计数上限，超出必改）
+
+| 痕迹 | 上限 | 说明 |
+|---|---|---|
+| em dash（—） | ≤2 处/章 | 打断用 `--` |
+| 三段式并列（X, Y, and Z） | ≤1 处/章 | 仅源文刻意排比可保留 |
+| 否定排比（not just X, it's Y） | 0 | 直接改写 |
+
+### C 级（小说体裁专项）
+
+| 痕迹 | 判据 | 改法 |
+|---|---|---|
+| 同义词循环 | 同一指代/动作在短距离内换多种译法 | **接受重复**；术语与称谓全书一译（权威见 `glossary.md`） |
+| 弱填充副词 | `VERB + -ly`（looked kindly / scratched his head shyly） | 转形容词补语、分词/介词结构、习语，或删 |
+| 情绪加戏 | sharply / violently / furiously / dismissively 等原文无对应 | 删（见 `translation_review.md` 第 2 条保真红线） |
+
+> ⚠️ **优先序**：忠实原文 > 术语锁 > 去 AI 痕迹 > 表达自然。
+> 凡原文确有重复（如角色口头禅式重复），**不得以"去 AI 痕迹"为由改动原文实义**。
+
+---
+
 ## 四、分块策略 (Chunking Strategy)
 
 * 每次喂给AI约 **1000中文字**（约一个场景）

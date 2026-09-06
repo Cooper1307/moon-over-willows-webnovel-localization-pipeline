@@ -108,7 +108,7 @@ def export_to_tab_delimited(merged_terms, output_path):
 
 def main():
     # 定义章节路径
-    base_dir = Path(r"d:\MyData\projects\大三下\网文小说翻译\第二本小说\章节原文")
+    base_dir = Path(r"d:\MyData\projects\01-活跃项目\02_网文创作\网文小说合集\第二本小说\章节原文")
     chapters = ['第1章', '第2章', '第3章', '第4章', '第5章']
     
     # 收集所有章节的术语
