@@ -86,6 +86,32 @@ def summarize(rows):
     return stat, complete
 
 
+def scan_archive():
+    """
+    统计 00_ 前缀目录（第91-351 章原文库等）。
+    该区约定：每章一个目录，仅存 原文(+偶有 术语与人设)，尚未翻译。
+    返回 (目录名, 章数, 最小章, 最大章, 有原文章数, 有术语章数) 或 None。
+    """
+    if not CHAPTERS.exists():
+        return None
+    best = None
+    for s in sorted(CHAPTERS.iterdir()):
+        if not s.is_dir() or not s.name.startswith("00_"):
+            continue
+        dirs = [d for d in s.iterdir() if d.is_dir() and CHAPTER_DIR_RE.match(d.name)]
+        if not dirs:
+            continue
+        dirs.sort(key=lambda d: int(CHAPTER_DIR_RE.match(d.name).group(1)))
+        nums = [int(CHAPTER_DIR_RE.match(d.name).group(1)) for d in dirs]
+        has_orig = sum(1 for d in dirs if any(
+            f.is_file() and "原文" in f.name and "术语" not in f.name for f in d.iterdir()))
+        has_term = sum(1 for d in dirs if any(
+            f.is_file() and "术语" in f.name for f in d.iterdir()))
+        if best is None or len(dirs) > best[1]:
+            best = (s.name, len(dirs), min(nums), max(nums), has_orig, has_term)
+    return best
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="写入报告文件（默认 dry-run）")
@@ -96,12 +122,16 @@ def main():
         return 1
     stat, complete = summarize(rows)
     nums = sorted(rows)
+    arch = scan_archive()
 
     print("=" * 62)
     print("项目进度基线扫描" + ("（--apply）" if args.apply else "（dry-run）"))
     print("=" * 62)
     for k, v in stat.items():
         print(f"  {k:<20} {v}")
+    if arch:
+        name, cnt, mn, mx, o, tm = arch
+        print(f"  {'00_原文库':<20} {name}：{cnt} 章（第{mn}~{mx}章），原文 {o} · 术语 {tm}（未翻译）")
     print("-" * 62)
     print("  章节 | " + " | ".join(SLOTS.keys()))
     for n in nums[:8]:
@@ -122,9 +152,9 @@ def main():
         "# 项目进度基线（自动扫描）",
         "",
         f"> 生成时间：{now}",
-        f"> 扫描范围：`{CHAPTERS.relative_to(BASE)}/`",
+        f"> 扫描范围：`{CHAPTERS.relative_to(BASE)}/`（活跃层）+ `00_` 原文库",
         "> ⚠️ **本文件为项目真实进度的唯一基准**；`项目目录索引.md` 已滞后，以其为准会产生误判。",
-        "> 用途：补基线任务（TODO #6）的缺失清单；术语回溯抽取的范围依据。",
+        "> 用途：补基线任务的缺失清单；术语回溯抽取的范围依据。",
         "",
         "## 一、统计",
         "",
@@ -132,6 +162,11 @@ def main():
         "|---|---|",
     ]
     lines += [f"| {k} | {v} |" for k, v in stat.items()]
+    if arch:
+        name, cnt, mn, mx, o, tm = arch
+        lines += [
+            f"| 原文库 {name} | {cnt} 章（第{mn}~{mx}章）· 原文 {o} · 术语 {tm} · 未翻译 |",
+        ]
     lines += ["", "---", "", "## 二、章节产物完整度", "", "✅ = 存在 · — = 缺失", "",
               "| 章节 | " + " | ".join(SLOTS.keys()) + " | 文件数 |",
               "|---|" + "|".join(["---"] * (len(SLOTS) + 1)) + "|"]
