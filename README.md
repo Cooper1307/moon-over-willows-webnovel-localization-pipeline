@@ -30,8 +30,9 @@
 ├── 章节原文/00_原文库/    第91-351 章原文库（不入 git）
 ├── 归档/                scratch / 旧版（不入 git）
 ├── 术语表/              Trados CSV/Tab（导出物，勿手编）
-├── tools/               全部脚本（进度/双语同步/标点扫描/术语构建/拆分等，见 tools/）
-└── .agent/              rules（主源）· skills · workflows · knowledge · config
+├── tools/               全部脚本（含 sync_rules.py 五平台规则同步）
+├── .agent/              skills · workflows · knowledge · config（AI 资产）
+└── .codebuddy(rules主源)/.trae/.antigravity/.workbuddy/.qoder   平台镜像（rules 由 `python tools/sync_rules.py --root . --master cb --apply` 同步）
 ```
 
 ## 四、工作流（五阶段）
@@ -54,7 +55,7 @@
 
 ## 六、给新会话的开工提示
 
-1. 先读 `_记忆索引.md`（入口）。
+1. 先读 `_记忆索引.md`（入口）；规则主源在 `.codebuddy/rules/`（各平台 `.trae/.antigravity/.workbuddy/.qoder` 为同步镜像，勿手改单份）。
 2. 要翻译/审校某章：读 `translation_sop.md` + 该章 `术语与人设.md` + glossary 相关节。
 3. 进度改动用脚本刷新基线，不手写统计。
 4. 详见 `_占位符清单.md` 待用户确认项。
