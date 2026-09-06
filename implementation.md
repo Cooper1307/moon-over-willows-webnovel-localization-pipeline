@@ -195,6 +195,14 @@
 - **Q9 副本收敛**：不动（涉及删除用户目录），仍待用户。
 - 第1/2 章补对照：属翻译侧，留待新会话（Q 备注）。
 
+### 2026-09-06 · 五平台规则镜像（WorkBuddy/CodeBuddy/TRAE/Antigravity/Qoder）
+
+- **背景**：用户要求结合各 IDE 平台配置，让工程文件跨平台一致可同步。联网确认加载位：CodeBuddy `.codebuddy/`、TRAE `.trae/rules/`、Antigravity `.antigravity`、WorkBuddy `.workbuddy`、Qoder `.qoder`（MTPE 已有五平台先例）。
+- **方案（对齐 MTPE）**：主源 = 项目根 `.codebuddy/rules/`；规则 = `project_rules.md` + `novel_rules.md`（由原 `.agent/rules/` 迁入，`.agent/rules` 已删防双源）；用 MTPE 移植的 `tools/sync_rules.py` 单向同步到 `.trae/.antigravity/.workbuddy/.qoder`。
+- **D15 决策**：skills/workflows/knowledge 留在 `.agent/`（内部以 `.agent/…` 相对引用自洽）；**memory 不做镜像**（各平台 memory 语义不同，本项目长期记忆在 `.workbuddy/memory` 与上层工作区，防覆盖）。
+- **同步命令**：`python tools/sync_rules.py --root . --master cb --apply`（dry-run 默认）。**勿手改单平台镜像，改主源后必重跑**。
+- 引用更新：`_记忆索引`/README/`_占位符清单` 规则路径 → `.codebuddy/rules/`。git 提交（R2+A9+M3），工作区干净。
+
 ### 2026-09-02
 
 - 建立本文件与 `TODO.md`，确立 7 项任务与 Q1–Q5 未决问题。
