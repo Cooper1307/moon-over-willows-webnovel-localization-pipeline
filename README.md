@@ -17,7 +17,7 @@
 | 完成度 | 章节 25.6% / 字数 ~24%（活跃 90 章口径） |
 | 三件套齐全 | 68 / 90 |
 
-> 权威进度：`项目文档/项目进度基线.md`（跑 `tools/project_status.py --apply` 刷新）。原文全库（含第91-351 章原文）在 `章节原文/00_归档/`。
+> 权威进度：`项目文档/项目进度基线.md`（跑 `tools/project_status.py --apply` 刷新）。原文全库（含第91-351 章原文）在 `章节原文/00_原文库/`。
 
 ## 三、目录结构
 
@@ -25,7 +25,7 @@
 ├── README.md / _记忆索引.md / TODO.md / implementation.md / glossary.md   ← 五件套（留根，勿移）
 ├── 项目文档/            报告（进度基线 / 规模化诊断 / 双语校验报告）
 ├── 章节原文/第X章/      原文 · 术语与人设 · 初译_对照 · 译文 · 报告
-├── 章节原文/00_归档/    第91-351 章原文库（不入 git）
+├── 章节原文/00_原文库/    第91-351 章原文库（不入 git）
 ├── 归档/                scratch / 旧版（不入 git）
 ├── 术语表/              Trados CSV/Tab（导出物，勿手编）
 ├── tools/               project_status · build_glossary_candidates · sync_bilingual · scan_halfwidth_zh
