@@ -26,7 +26,7 @@
 安全设计：
   - 默认 dry-run，必须显式 --apply / --init-md5 / --report 才写文件；
   - **已存在的 第X章译文.md 保留其原有标题行**（英文标题可能不在对照版中，禁止覆盖丢失）；
-  - 仅当「对照版英文块数 == 原文段数」或「无原文可校验」时才允许写入，段落不匹配默认跳过并报错。
+  - 写入守卫：对照存在**解析异常**（漏译/顺序倒置等）或 对照块数与原文段数差 **>5** 时跳过；正常拆分导致的 ±1-2 段差允许生成（如第31章）。
 
 规范：仅标准库；默认只读；stdout 重配 UTF-8；路径由 __file__ 推导，避免中文路径命令行乱码。
 """
@@ -332,10 +332,15 @@ def check_chapter(ch_dir, baseline, apply_mode, force_mode, stats):
                 row["问题"].append("⚠ 覆盖需 --force")
             stats["desync"] += 1
 
-    # 写入（仅 --apply 且段落校验通过）
+    # 写入（仅 --apply；守卫：解析异常 或 对照块数与原文段数差 >5 才阻断）
+    # 说明：个别章会把原文一段拆成两个中英小块（如第31章 L42+L48），此时配对无错，
+    # 只是段数与原文差 1-2，不影响生成 → 允许写入。
     if apply_mode and need_write:
-        if has_orig and orig_n and orig_n != len(pairs):
-            row["问题"].append("⚠ 段数不符，已跳过写入（需人工确认对照版分段）")
+        if anomalies:
+            row["问题"].append("⚠ 对照存在解析异常，跳过写入（需人工先修对照）")
+            stats["blocked"] += 1
+        elif has_orig and orig_n and abs(orig_n - len(pairs)) > 5:
+            row["问题"].append(f"⚠ 对照块数 {len(pairs)} 与原文段数 {orig_n} 差超过 5，跳过写入")
             stats["blocked"] += 1
         else:
             if en_title is None:
