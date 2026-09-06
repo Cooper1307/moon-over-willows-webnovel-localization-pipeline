@@ -203,7 +203,9 @@ def main():
     else:
         master = IDE_ALIASES[args.master]
         if args.targets:
-            targets = tuple(IDE_ALIASES[t.strip()] for t in args.targets.split(",") if t.strip())
+            # 允许直接传目录名（如 .agent），不局限于预设 IDE
+            targets = tuple(IDE_ALIASES.get(t.strip(), t.strip())
+                            for t in args.targets.split(",") if t.strip())
         else:
             targets = tuple(i for i in ALL_IDES if i != master)
     if master in targets:

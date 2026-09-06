@@ -32,8 +32,8 @@
 ├── 归档/                scratch / 旧版（不入 git）
 ├── 术语表/              Trados CSV/Tab（导出物，勿手编）
 ├── tools/               全部脚本（含 sync_rules.py 五平台规则同步）
-├── .agent/              skills · workflows · knowledge · config（AI 资产）
-└── .codebuddy(rules主源)/.trae/.antigravity/.workbuddy/.qoder   平台镜像（rules 由 `python tools/sync_rules.py --root . --master cb --apply` 同步）
+├── .agent/              skills（含 web-verify 镜像）· workflows · knowledge · config（AI 资产）
+└── .codebuddy(rules/skills主源)/.trae/.antigravity/.workbuddy/.qoder   平台镜像（rules+skills 由 `python tools/sync_rules.py --root . --master cb --targets .trae,.qoder,.antigravity,.workbuddy,.agent --apply` 同步）
 ```
 
 ## 四、工作流（五阶段）

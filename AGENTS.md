@@ -16,5 +16,8 @@
 - 术语一个词条一个定译，终裁权在用户；禁止凭记忆断言一致性。
 - 去 AI 痕迹、反 -ly 副词修饰动词；忠实原文 > 术语锁 > 跨章一致 > 表达自然。
 
+## 需要联网核查时
+敏感内容 / 真实性 / 时效性 / 平台规范 / 查论文资料 → 用 skill **`web-verify`**（主源 `.codebuddy/skills/web-verify/`，五方+`.agent` 镜像）：内知先提假设 → 强制联网取 ≥2 独立来源 → 冲突标 `[待人工裁定]` → 记录落盘。**结论只作建议，不擅自改译文/术语。**
+
 ## 工具
 `tools/`：project_status（进度基线）· sync_bilingual（译文生成/校验）· normalize_cn_punct（中文标点归一）· scan_halfwidth_zh（标点扫描）· sync_rules（平台规则同步）。
