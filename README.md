@@ -24,6 +24,7 @@
 ## 三、目录结构
 
 ```
+├── AGENTS.md              Antigravity 自动加载的引导（指针式，勿放重复规则）
 ├── README.md / _记忆索引.md / TODO.md / implementation.md / glossary.md   ← 五件套（留根，勿移）
 ├── 项目文档/            报告（进度基线 / 规模化诊断 / 双语校验报告）
 ├── 章节原文/第X章/      原文 · 术语与人设 · 初译_对照 · 译文 · 报告
