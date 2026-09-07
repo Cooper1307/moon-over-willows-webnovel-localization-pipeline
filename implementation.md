@@ -93,6 +93,7 @@
 6. `.workbuddy/rules/` 补齐（此前空目录，WorkBuddy 个人版读不到规则）。
 
 **决策 D14（工程）**：工程性结构变更一律记入各项目 implementation 执行记录 + 工作区记忆，避免跨会话丢失。
+**更正 D15（2026-09-07 联网证实）**：Antigravity 只自动读根 `AGENTS.md`/`GEMINI.md` 与 `.agent/rules`（**不读 `.antigravity`**）→ 原 D15"删 `.agent/rules` 防双源 + 同步 `.antigravity`"假定不成立：`.antigravity/` 已停用清空（仅留 README 壳，已从 sync 移出）；`.agent/rules` 恢复为有效镜像位（rules 更新命令含 `.agent`）。
 
 ### 2026-09-06 15:28:58 · 规模化诊断（无翻译产出）
 

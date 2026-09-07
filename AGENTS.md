@@ -7,8 +7,9 @@
 2. `.codebuddy/rules/project_rules.md` — 主源规则（通用 LAYER + 本地工程 LAYER）
 3. `.codebuddy/rules/novel_rules.md` — 古装题材专项（异域保留分级）
 
-> 以上 rules 已同步镜像至 `.trae/.qoder/.antigravity/.workbuddy/rules`（同内容，勿手改单份）；改主源后跑
-> `python tools/sync_rules.py --root . --master cb --apply`。
+> 以上 rules 已同步镜像至 `.trae/.qoder/.workbuddy/rules` 与 `.agent/rules`（同内容，勿手改单份）；改主源后跑
+> `python tools/sync_rules.py --root . --master cb --targets .trae,.qoder,.workbuddy,.agent --apply`。
+> （`.antigravity/` 已于 2026-09-07 清空移出：Antigravity 不自动读取该目录；本项目 Antigravity 入口 = 本文件 + `.agent/rules/`。）
 
 ## 红线速览（详见 rules）
 - 中文原文零改动（有 MD5 基线可查证）；对照版中文与原文逐字一致（全角标点）。

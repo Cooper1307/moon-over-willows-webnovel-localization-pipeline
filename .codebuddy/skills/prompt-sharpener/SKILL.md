@@ -52,4 +52,4 @@ description: prompt 澄清与结构化 skill。当用户消息含糊、多任务
 ## 维护
 
 主源 `.codebuddy/skills/prompt-sharpener/`，修改后执行：
-`python tools/sync_rules.py --root . --master cb --targets .trae,.qoder,.antigravity,.workbuddy,.agent --apply`
+`python tools/sync_rules.py --root . --master cb --targets .trae,.qoder,.workbuddy,.agent --apply`

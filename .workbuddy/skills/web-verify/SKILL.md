@@ -50,5 +50,5 @@ description: 翻译与本地化过程中的「联网核查」skill。遇到敏�
 ## 维护
 
 主源 `.codebuddy/skills/web-verify/`，修改后执行：
-`python tools/sync_rules.py --root . --master cb --targets .trae,.qoder,.antigravity,.workbuddy,.agent --apply`
+`python tools/sync_rules.py --root . --master cb --targets .trae,.qoder,.workbuddy,.agent --apply`
 （其余为镜像，**勿直接编辑**。）

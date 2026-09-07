@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-sync_rules.py — 四 IDE 规则同步（.codebuddy / .trae / .qoder / .antigravity）
+sync_rules.py — 平台规则同步（.codebuddy 主源 → .trae / .qoder / .workbuddy / .agent）
 
 功能：
   递归扫描指定根目录下所有项目的 rules/ 规则文件（*.md），
@@ -39,8 +39,9 @@ if sys.stdout and hasattr(sys.stdout, "reconfigure"):
 
 EXCLUDE_DIRS = {".git", ".writing", "归档", "tools", "node_modules", "__pycache__"}
 
-ALL_IDES = (".codebuddy", ".trae", ".qoder", ".antigravity", ".workbuddy")
-IDE_ALIASES = {"cb": ".codebuddy", "trae": ".trae", "qoder": ".qoder", "anti": ".antigravity", "wb": ".workbuddy"}
+# .antigravity 已于 2026-09-07 移出：Antigravity 不自动读取该目录（官方只认根 AGENTS.md/GEMINI.md 与 .agent/rules）
+ALL_IDES = (".codebuddy", ".trae", ".qoder", ".workbuddy")
+IDE_ALIASES = {"cb": ".codebuddy", "trae": ".trae", "qoder": ".qoder", "wb": ".workbuddy"}
 
 # 兼容旧版 --direction 参数
 LEGACY_DIRECTION = {
@@ -178,7 +179,7 @@ def sync_project(proj_dir, master, targets, apply):
 
 
 def parse_args():
-    ap = argparse.ArgumentParser(description="五 IDE 同步：rules 规则 + skills/agents/memory 子树（.codebuddy/.trae/.qoder/.antigravity/.workbuddy）")
+    ap = argparse.ArgumentParser(description="平台同步：rules 规则 + skills/agents/memory 子树（.codebuddy 主源 → .trae/.qoder/.workbuddy/.agent 等）")
     ap.add_argument("--root", required=True, help="工作区/项目根目录")
     ap.add_argument("--scope", choices=["root", "all"], default="root")
     ap.add_argument("--master", choices=sorted(IDE_ALIASES), default="cb",

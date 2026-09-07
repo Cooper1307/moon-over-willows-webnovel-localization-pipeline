@@ -33,7 +33,7 @@
 ├── 术语表/              Trados CSV/Tab（导出物，勿手编）
 ├── tools/               全部脚本（含 sync_rules.py 五平台规则同步）
 ├── .agent/              skills（含 web-verify 镜像）· workflows · knowledge · config（AI 资产）
-└── .codebuddy(rules/skills主源)/.trae/.antigravity/.workbuddy/.qoder   平台镜像（rules+skills 由 `python tools/sync_rules.py --root . --master cb --targets .trae,.qoder,.antigravity,.workbuddy,.agent --apply` 同步）
+└── .codebuddy(rules/skills主源)/.trae/.workbuddy/.qoder + .agent   平台镜像（rules+skills 由 `python tools/sync_rules.py --root . --master cb --targets .trae,.qoder,.workbuddy,.agent --apply` 同步；`.antigravity/` 已停用，Antigravity 入口=根 AGENTS.md + `.agent/rules/`）
 ```
 
 ## 四、工作流（五阶段）
@@ -56,7 +56,7 @@
 
 ## 六、给新会话的开工提示
 
-1. 先读 `_记忆索引.md`（入口）；规则主源在 `.codebuddy/rules/`（各平台 `.trae/.antigravity/.workbuddy/.qoder` 为同步镜像，勿手改单份）。
+1. 先读 `_记忆索引.md`（入口）；规则主源在 `.codebuddy/rules/`（各平台 `.trae/.workbuddy/.qoder` 及 `.agent` 为同步镜像，勿手改单份）。
 2. 要翻译/审校某章：读 `translation_sop.md` + 该章 `术语与人设.md` + glossary 相关节。
 3. 进度改动用脚本刷新基线，不手写统计。
 4. 详见 `_占位符清单.md` 待用户确认项。
