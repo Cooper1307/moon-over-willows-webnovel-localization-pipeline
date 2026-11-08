@@ -30,22 +30,16 @@ CHAPTERS = BASE / "章节原文"
 DOCS = BASE / "项目文档"
 DEFAULT_REPORT = DOCS / "项目进度基线.md"
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import chapter_lib as L  # noqa: E402
+
 CHAPTER_DIR_RE = re.compile(r"^第(\d+)章$")
 
-# 槽位名 -> 匹配规则（文件名包含即命中）
-SLOTS = OrderedDict([
-    ("原文", lambda n: "原文" in n and "术语" not in n),
-    ("术语与人设", lambda n: "术语与人设" in n),
-    ("初译_对照", lambda n: "初译_对照" in n or "对照" in n),
-    ("译文(纯英)", lambda n: "译文" in n or "初译_纯英文" in n),
-    ("质量评估", lambda n: "质量评估" in n),
-    ("审校意见", lambda n: "审校意见" in n),
-    ("整合报告", lambda n: "整合报告" in n or "审校意见整合" in n),
-    ("商业审校", lambda n: "商业审校" in n),
-])
-
+# 槽位判据统一由 chapter_lib 单点定义（2026-10-27）：历史上本文件自持一套规则，
+# 与 check_slot 漂移过（"三件套齐全"出现过 64/83/86 三个数字）。
+SLOTS = L.SLOTS
 # 核心三件套（交付完整性门禁 G12）
-CORE = ["原文", "初译_对照", "译文(纯英)"]
+CORE = L.CORE_SLOTS
 
 
 def scan():
@@ -59,12 +53,20 @@ def scan():
     rows = OrderedDict()
     for d in dirs:
         num = int(CHAPTER_DIR_RE.match(d.name).group(1))
-        files = [f.name for f in d.iterdir() if f.is_file()]
+        # 2026-10-27：改用 chapter_lib.find_slots（顶层优先 + 回退章内 归档/ 子目录）
+        slots = L.find_slots(d)
         slot_state = OrderedDict()
-        for slot, matcher in SLOTS.items():
-            hit = [f for f in files if matcher(f)]
-            slot_state[slot] = "✅" if hit else "—"
-        rows[num] = {"dir": d.name, "slots": slot_state, "files": len(files)}
+        archived = []
+        for slot in SLOTS:
+            v = slots[slot]
+            if v["hit"] and v["archived"]:
+                slot_state[slot] = "📦"
+                archived.append(slot)
+            else:
+                slot_state[slot] = "✅" if v["hit"] else "—"
+        files = len([f for f in d.iterdir() if f.is_file()])
+        rows[num] = {"dir": d.name, "slots": slot_state, "files": files,
+                     "archived": archived, "path": d}
 
     return rows
 
@@ -78,12 +80,45 @@ def summarize(rows):
     stat["缺号章"] = ", ".join(f"第{n}章" for n in missing_nums) if missing_nums else "无"
 
     for slot in SLOTS:
-        stat[f"有{slot}的章数"] = sum(1 for n in nums if rows[n]["slots"][slot] == "✅")
+        stat[f"有{slot}的章数"] = sum(
+            1 for n in nums if rows[n]["slots"][slot] in ("✅", "📦"))
 
-    complete = [n for n in nums if all(rows[n]["slots"][s] == "✅" for s in CORE)]
+    stat["其中槽位在归档子目录"] = sum(1 for n in nums if rows[n]["archived"])
+
+    complete = [n for n in nums if all(rows[n]["slots"][s] in ("✅", "📦") for s in CORE)]
     stat["三件套齐全章数"] = len(complete)
     stat["三件套缺失章"] = ", ".join(f"第{n}章" for n in nums if n not in complete) or "无"
     return stat, complete
+
+
+def collect_metrics(rows, arch):
+    """数值指标（--metrics 时跑，需解析 90 章对照版，耗时数秒）。"""
+    cjk_total = 0
+    en_words = 0
+    n_bi = 0
+    for _num, r in rows.items():
+        d = r["path"]
+        for f in d.iterdir():
+            if f.is_file() and L.ORIGIN_RE.match(f.name):
+                cjk_total += len(L.CJK_RE.findall(f.read_text(encoding="utf-8-sig")))
+                break
+        bi = L.parse_bilingual(d)
+        if bi["pairs"]:
+            en_words += sum(L.words(en or "") for _zh, en, _ln in bi["pairs"])
+            n_bi += 1
+    total_ch = len(rows) + (arch[1] if arch else 0)
+    avg = en_words / n_bi if n_bi else 0
+    m = OrderedDict()
+    m["原文汉字合计（活跃）"] = cjk_total
+    m["对照英词合计"] = en_words
+    m["有对照稿章数"] = n_bi
+    m["平均英词/章"] = round(avg)
+    m["全本章数（活跃+库）"] = total_ch
+    m["全本投影英词"] = round(avg * total_ch)
+    m["字数完成度"] = (f"{en_words / (avg * total_ch) * 100:.1f}%"
+                   if avg and total_ch else "—")
+    m["剩余英词"] = round(max(avg * total_ch - en_words, 0))
+    return m
 
 
 def scan_archive():
@@ -115,6 +150,8 @@ def scan_archive():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="写入报告文件（默认 dry-run）")
+    ap.add_argument("--metrics", action="store_true",
+                    help="追加数值指标（汉字/英词/全本投影/完成度；需解析 90 章，耗时数秒）")
     args = ap.parse_args()
 
     rows = scan()
@@ -123,6 +160,7 @@ def main():
     stat, complete = summarize(rows)
     nums = sorted(rows)
     arch = scan_archive()
+    mstat = collect_metrics(rows, arch) if args.metrics else None
 
     print("=" * 62)
     print("项目进度基线扫描" + ("（--apply）" if args.apply else "（dry-run）"))
@@ -132,6 +170,10 @@ def main():
     if arch:
         name, cnt, mn, mx, o, tm = arch
         print(f"  {'00_原文库':<20} {name}：{cnt} 章（第{mn}~{mx}章），原文 {o} · 术语 {tm}（未翻译）")
+    if mstat:
+        print("-" * 62)
+        for k, v in mstat.items():
+            print(f"  {k:<20} {v}")
     print("-" * 62)
     print("  章节 | " + " | ".join(SLOTS.keys()))
     for n in nums[:8]:
@@ -167,7 +209,12 @@ def main():
         lines += [
             f"| 原文库 {name} | {cnt} 章（第{mn}~{mx}章）· 原文 {o} · 术语 {tm} · 未翻译 |",
         ]
-    lines += ["", "---", "", "## 二、章节产物完整度", "", "✅ = 存在 · — = 缺失", "",
+    if mstat:
+        lines += ["", "## 一·补、数值指标（--metrics）", "", "| 指标 | 数值 |", "|---|---|"]
+        lines += [f"| {k} | {v} |" for k, v in mstat.items()]
+
+    lines += ["", "---", "", "## 二、章节产物完整度", "",
+              "✅ = 顶层存在 · 📦 = 命中章内 `归档/` 子目录（有效，建议扶正）· — = 缺失", "",
               "| 章节 | " + " | ".join(SLOTS.keys()) + " | 文件数 |",
               "|---|" + "|".join(["---"] * (len(SLOTS) + 1)) + "|"]
     for n in nums:

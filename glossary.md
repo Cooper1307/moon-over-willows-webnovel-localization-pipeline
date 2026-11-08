@@ -25,7 +25,7 @@
 | 净光法师 | Master Jingguang | 锁定 | 第25章 |  |
 | 千里寻 | Qianli Xun | 锁定 | 第1章 |  |
 | 向夫人 | Madam Xiang | 锁定 | 第10章 |  |
-| 夏果 | Xiaguo | [建议] | 第30章 | 候选：Xiaguo / Xia Guo（按出现频次推荐 `Xiaguo`，待确认） |
+| 夏果 | Xiaguo | 锁定 | 第30章 | 人名（千里寻丫鬟，非国名）。候选：Xiaguo / Xia Guo；2026-10-03 用户终裁 `Xiaguo`。31-40 批已清零变体；30/55/56 章待回溯 |
 | 安明轩 | An Mingxuan | 锁定 | 第18章 |  |
 | 慈玄法师 | Master Cixuan | 锁定 | 第26章 |  |
 | 春金巧 | Chun Jinqiao | 锁定 | 第3章 |  |
@@ -692,8 +692,8 @@
 | 自作孽不可活 | One reaps what one sows | [建议] | 第99章 | 候选：One reaps what one sows / Self-inflicted ruin（按出现频次推荐 `One reaps what one sows`，待确认） |
 | 舞伎 | dancing girl | [建议] | 第10章 | 候选：dancing girl / Dancers / Dancing girls / courtesan / dancing girls / female dancer / female dancers（按出现频次推荐 `dancing girl`，待确认） |
 | 艮岳 | Genyue | 锁定 | 第34章 |  |
-| 良田铺子 | Estates and storefronts | [建议] | 第31章 | 候选：Estates and storefronts / Fertile fields and shops（按出现频次推荐 `Estates and storefronts`，待确认） |
-| 节度使 | Jiedushi | [建议] | 第72章 | 候选：Jiedushi / Jiedushi (Military Governor) / Military Commissioner / Military Governor（按出现频次推荐 `Jiedushi`，待确认） |
+| 良田铺子 | Estates and storefronts | 锁定 | 第31章 | 候选：Estates and storefronts / Fertile fields and shops；2026-10-03 用户授权 Trae 裁定（与章节钩子 Estates 呼应）。第31章已统一，废弃变体 Fertile fields and shops |
+| 节度使 | Jiedushi | [建议] | 第36章 | 候选：Jiedushi / Jiedushi (Military Governor) / Military Commissioner / Military Governor（按出现频次推荐 `Jiedushi`，待确认）；36 章现译 Jiedushi (Military Commissioner) |
 | 花心大萝卜 | A total playboy | [建议] | 第91章 | 候选：A total playboy / Two-timing carrot（按出现频次推荐 `A total playboy`，待确认） |
 | 花甲之年 | Past sixty years of age | 锁定 | 第40章 |  |
 | 花痴 | love-struck | 锁定 | 第52章 |  |
