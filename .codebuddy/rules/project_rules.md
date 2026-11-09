@@ -53,4 +53,8 @@ description: 《月上柳梢头，人约黄昏后》中译英项目主源规则�
 - **省 Token**：待读清单一次并行读；不重复读；`@` 引用优先。
 - **git**：commit 用英文单行；只提交部分改动用 `git add <明确路径>`；大批删除/结构变更前先确认。
 - 编辑节奏：`replace_in_file` 同文件每批 ≤3 次；操作前先 read_file（防 IDE 空壳）。
+- **工程约束唯一权威**＝根目录《工程约束与会话规程.md》（目录命名/流程/备份/角色校验/会话检查项），本文件不复制其详版。
+- **会话起止必跑**：开工 `python tools/session_check.py --start --apply`；收尾 `--end --apply`（SC-S*/SC-E*）。
+- **角色一致性**：涉及人物/世界观改动时跑 `python tools/check_characters.py --apply`；语义矛盾只走审校检查单，不自动判罚。
+- **唯一笔名 CooperChen**（2026-11-09 起）；docx 作者归一只能 `tools/scrub_docx_meta.py --apply`，禁手改。
 <!-- LAYER:LOCAL_END -->

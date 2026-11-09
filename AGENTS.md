@@ -6,9 +6,10 @@
 1. `_记忆索引.md` — 入口与文件指针
 2. `.codebuddy/rules/project_rules.md` — 主源规则（通用 LAYER + 本地工程 LAYER）
 3. `.codebuddy/rules/novel_rules.md` — 古装题材专项（异域保留分级）
+4. **跑 `python tools/session_check.py --start --apply`** — 开工闸门（SC-S1~S6，见《工程约束与会话规程.md》§⑤）
+5. `交接_新对话.md` — 本轮任务边界与遗留待办；**收尾跑 `session_check.py --end --apply`**
 
-> 以上 rules 已同步镜像至 `.trae/.qoder/.workbuddy/rules` 与 `.agent/rules`（同内容，勿手改单份）；改主源后跑
-> `python tools/sync_rules.py --root . --master cb --targets .trae,.qoder,.workbuddy,.agent --apply`。
+> `.codebuddy/rules/` 是**唯一主源**；`.trae/.qoder/.workbuddy/.agent` 为**冻结只读镜像**（见 `MIRRORS.md`），日常不再同步。仅当用户明确在对应平台工作时才执行 `sync_rules.py --targets <平台> --apply`，勿手改单份镜像。
 > （`.antigravity/` 已于 2026-09-07 清空移出：Antigravity 不自动读取该目录；本项目 Antigravity 入口 = 本文件 + `.agent/rules/`。）
 
 ## 红线速览（详见 rules）
