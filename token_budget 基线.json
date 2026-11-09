@@ -1,0 +1,48 @@
+{
+  "generated": "20261108_185854",
+  "unit": "tok (CJK/1.6 + 非CJK/4)",
+  "tasks_chapter_31": {
+    "bootstrap": {
+      "before": 3013,
+      "after": 3013,
+      "save_pct": 0
+    },
+    "gate": {
+      "before": 23177,
+      "after": 15752,
+      "save_pct": 32
+    },
+    "terminology": {
+      "before": 35220,
+      "after": 27795,
+      "save_pct": 21
+    },
+    "translate": {
+      "before": 35220,
+      "after": 18924,
+      "save_pct": 46
+    },
+    "review": {
+      "before": 35220,
+      "after": 18924,
+      "save_pct": 46
+    }
+  },
+  "glossary": {
+    "full_tok": 20164,
+    "index_tok": 12739,
+    "slice_ch31_cum_tok": 3868,
+    "slice_ch31_strict_tok": 422,
+    "slice_ch90_cum_tok": 9347
+  },
+  "mirrors_kb": {
+    "total": 1028.9,
+    "single_canon_kb": 92.9,
+    "removable_kb": 823.1
+  },
+  "reproduce": [
+    "python tools/token_budget.py --compare --chapter 31",
+    "python tools/token_budget.py --mirrors",
+    "python tools/glossary_slice.py --chapter 31 --strict"
+  ]
+}
