@@ -14,7 +14,7 @@
 
 ## 红线速览（详见 rules）
 - 中文原文零改动（有 MD5 基线可查证）；对照版中文与原文逐字一致（全角标点）。
-- 对照版是唯一真源；`第X章译文.md` 是脚本派生物（`tools/sync_bilingual.py` 生成），禁手工编辑。
+- 对照版是唯一真源；`第X章译文.md` 是脚本派生物（`tools/extract_pure_en.py` 派生，`tools/sync_bilingual.py` 只读校验），禁手工编辑。
 - 术语一个词条一个定译，终裁权在用户；禁止凭记忆断言一致性。
 - 去 AI 痕迹、反 -ly 副词修饰动词；忠实原文 > 术语锁 > 跨章一致 > 表达自然。
 
@@ -30,4 +30,4 @@
 敏感内容 / 真实性 / 时效性 / 平台规范 / 查论文资料 → 用 skill **`web-verify`**（主源 `.codebuddy/skills/web-verify/`，五方+`.agent` 镜像）：内知先提假设 → 强制联网取 ≥2 独立来源 → 冲突标 `[待人工裁定]` → 记录落盘。**结论只作建议，不擅自改译文/术语。**
 
 ## 工具
-`tools/`：project_status（进度基线）· sync_bilingual（译文生成/校验）· normalize_cn_punct（中文标点归一）· scan_halfwidth_zh（标点扫描）· sync_rules（平台规则同步）。
+`tools/`：project_status（进度基线）· compose_bilingual（组装对照版）· extract_pure_en（译文派生）· sync_bilingual（只读校验）· normalize_cn_punct（中文标点归一）· scan_halfwidth_zh（标点扫描）· sync_rules（平台规则同步）。

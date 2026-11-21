@@ -42,18 +42,24 @@ import chapter_lib as L  # noqa: E402
 
 # ---------------------------------------------------------------- 词表
 
-# G6 AI 高频词（蒸馏自 MTPE tools/lqa_scan.py + check_style.py）
-AI_WORDS = [
+# G6 AI 高频词（2026-11-21 古装适配：从 MTPE 短剧词表拆两组）
+# AI_HARD = 在中文网文英译里几乎无合法用例 → P1（风格提醒，不再阻断落地）
+# AI_GENRE_OK = 古装/仙侠合法常用词（"境界"=realm 等）→ 完全不报
+AI_HARD = [
     "delve", "leverage", "pivotal", "myriad", "tapestry", "testament",
-    "navigate", "embark", "unravel", "profound", "intricate", "juxtapose",
-    "beacon", "labyrinth", "cascade", "tranquil", "resilient", "robust",
-    "underscore", "vibrant", "nestled", "realm", "epitome", "multifaceted",
+    "juxtapose", "epitome", "multifaceted",
     "in the realm of", "a testament to", "it is worth noting", "serves as",
     "functions as", "stands as a",
 ]
+AI_GENRE_OK = [
+    "navigate", "embark", "unravel", "profound", "intricate", "beacon",
+    "labyrinth", "cascade", "tranquil", "resilient", "robust", "underscore",
+    "vibrant", "nestled", "realm",
+]
+AI_WORDS = AI_HARD + AI_GENRE_OK  # 兼容旧引用
 # 匹配用正则（短语按短语，整词按词边界）
 AI_WORD_RES = [(w, re.compile(r"(?<![A-Za-z])" + re.escape(w) + r"(?![A-Za-z])", re.I))
-               for w in AI_WORDS]
+               for w in AI_HARD]
 
 # G6 三段式：句内 "A, B, and C"（两个逗号 + and/或）
 TRIO_RE = re.compile(r"[^,.;:]{3,},\s*[^,.;:]{3,},\s*(?:and|or|以及|还有)\s+[^,.;:]{3,}", re.I)
@@ -69,60 +75,74 @@ LY_FILLER = [
 ]
 LY_RES = [(w, re.compile(r"(?<![A-Za-z])" + re.escape(w) + r"(?![A-Za-z])", re.I))
           for w in LY_FILLER]
-LY_ALLOW = {  # 非弱填充的 -ly 词，避免误报
+LY_ALLOW = {  # 用户 MEMORY.md L17 明确允许 + 非副词词形
     "family", "only", "reply", "apply", "supply", "ugly", "holy", "early",
     "likely", "lonely", "friendly", "lovely", "daily", "weekly", "monthly",
     "yearly", "elderly", "assembly", "anomaly", "monopoly", "ally", "jelly",
     "belly", "rally", "tally", "dolly", "holly", "polly", "gully", "telly",
+    "truly", "perfectly", "really", "entirely", "miraculously", "actually",
+    "essentially", "relatively", "somewhat", "merely", "purely",
 }
 
-# G7 重复用词阈值（次/章）
-REPEAT_LIMITS = {"said": 3, "dark": 8, "immediately": 2, "very": 3, "quite": 3}
+# G7 重复用词（2026-11-21：said 是对话正常标签，全部降 INFO，只报告不判罚）
+REPEAT_LIMITS = {"said": 12, "dark": 20, "immediately": 6, "very": 8, "quite": 6}
+REPEAT_LEVEL = "INFO"
 
-# G4 / G5 阈值（词数口径，非字符）
-SENT_P0 = 40          # 复合句 P0 门槛（单句词数）
-SENT_P1 = 40          # 长句登记门槛
-SENT_P0_CONN = 3      # 连接词 ≥3 才判 P0（否则 P1，不误伤文学性长句）
-PARA_P0 = 150         # 单段词数上限
-EM_DASH_MAX = 2       # em dash 每章上限
-TRIO_MAX = 1          # 三段式每章上限
+# G4 / G5 阈值（2026-11-21：风格类退出 P0；段长与 1:1 红线冲突，只报告）
+SENT_P0 = 60          # ≥60 词且连接词 ≥6 → P1
+SENT_P1 = 40          # ≥40 词登记 INFO
+SENT_P0_CONN = 6
+PARA_P0 = 200         # >200 词 → INFO（段落由中文决定，译者无权合并）
+EM_DASH_MAX = 20
+TRIO_MAX = 5
+
+# G4 专用严格连接词表（不动 chapter_lib 的共享正则，避免影响其它脚本）
+CONNECTOR_STRICT = {
+    "and", "but", "or", "yet", "because", "although", "though", "while",
+    "when", "where", "which", "who", "whom", "if", "unless", "until",
+    "after", "before",
+}
 
 GATE_ORDER = ["G3", "G4", "G5", "G6", "G7"]
 
 
 # ---------------------------------------------------------------- 各项检查
 
+def _strict_connectors(sent):
+    """G4 专用连接词计数：去掉 that/for/so/since 的混计。"""
+    words = re.findall(r"[A-Za-z]+", sent.lower())
+    return sum(1 for w in words if w in CONNECTOR_STRICT)
+
+
 def check_g4(paras):
-    """G4 句长：单句 ≥40 词且连接词 ≥3 = P0；≥40 词但无从句堆叠 = P1。"""
-    p0 = p1 = 0
+    """G4 句长（2026-11-21）：≥60 词且严格连接词 ≥6 → P1；40–59 → INFO；无 P0。"""
+    p0 = 0
+    p1 = 0
+    infos = []
     details = []
     for idx, para in enumerate(paras, 1):
         for sent in L.sentences(para):
             w = L.words(sent)
             if w < SENT_P1:
                 continue
-            conn = L.connectors(sent)
-            if conn >= SENT_P0_CONN:
-                p0 += 1
-                details.append(("G4", idx, "P0",
-                                f"复合句 {w} 词 + {conn} 连接词，必拆", sent))
-            else:
+            conn = _strict_connectors(sent)
+            if w >= SENT_P0 and conn >= SENT_P0_CONN:
                 p1 += 1
                 details.append(("G4", idx, "P1",
-                                f"长句 {w} 词（连接词 {conn}），登记待裁", sent))
-    return p0, p1, details
+                                f"超长复合句 {w} 词 + {conn} 连接词（人工判断是否可拆）", sent))
+            else:
+                infos.append((idx, f"长句 {w} 词（连接词 {conn}）"))
+    return p0, p1, details, infos
 
 
 def check_g5(paras):
-    """G5 段长：单段 >150 词 = P0。"""
-    p0 = 0
-    details = []
+    """G5 段长（2026-11-21）：>200 词 → INFO；段落切分由中文决定，不判罚。"""
+    infos = []
     for idx, para in enumerate(paras, 1):
         w = L.words(para)
         if w > PARA_P0:
-            p0 += 1
-            details.append(("G5", idx, "P0", f"段长 {w} 词 > {PARA_P0}", para))
-    return p0, 0, details
+            infos.append((idx, f"段长 {w} 词 > {PARA_P0}（中文原文决定段界，仅提示）"))
+    return 0, 0, [], infos
 
 
 def check_g6(paras):
@@ -153,11 +173,12 @@ def check_g6(paras):
                     ly_hits.append((idx, m.group(0), para))
         em += para.count("—") + para.count("–")
         trio += len(TRIO_RE.findall(para))
-    p0 = len(ai_hits)
-    p1 = len(ly_hits)
+    p0 = 0  # AI 词表已全部降级：AI_HARD→P1，AI_GENRE_OK→不报
+    p1 = len(ai_hits) + len(ly_hits)
+    infos = []
     details = []
     for idx, w, para in ai_hits:
-        details.append(("G6", idx, "P0", f"AI 高频词 [{w}]", para))
+        details.append(("G6", idx, "P1", f"AI 高频词 [{w}]（人工判断）", para))
     for idx, w, para in ly_hits:
         details.append(("G6", idx, "P1", f"弱填充副词 [{w}] + 动词（人工判断是否可删）", para))
     if em > EM_DASH_MAX:
@@ -166,53 +187,41 @@ def check_g6(paras):
     if trio > TRIO_MAX:
         p1 += 1
         details.append(("G6", 0, "P1", f"三段式 {trio} 处 > {TRIO_MAX}/章", ""))
-    return p0, p1, details
+    return p0, p1, details, infos
 
 
 def check_g7(paras):
-    """重复用词。返回 (p0, p1, details)"""
-    p0 = p1 = 0
-    details = []
+    """重复用词（2026-11-21）：全部降 INFO，只报告，不判罚。"""
+    infos = []
     for word, limit in REPEAT_LIMITS.items():
         rx = re.compile(r"(?<![A-Za-z])" + word + r"(?![A-Za-z])", re.I)
         n = sum(len(rx.findall(p)) for p in paras)
         if n > limit:
-            p1 += 1
-            details.append(("G7", 0, "P1",
-                            f"[{word}] {n} 次/章 > {limit} 次/章", ""))
-    return p0, p1, details
+            infos.append((0, f"[{word}] {n} 次/章 > {limit} 次/章（仅提示）"))
+    return 0, 0, [], infos
 
 
 def check_g3(paras, glossary, coverage=False):
     """
-    术语一致（默认口径，只报真问题）：
-      - **锁定**词条的废弃变体残留 → 每处 P0（定译已定，残留即不一致）
-      - **[建议]/[!]** 词条的变体残留 → INFO（定译未裁定，**禁止**据此判罚，
-        符合红线「术语定译终裁权在用户」；这类问题应回到 glossary 裁定而非改稿）
-      - 锁定词条定译零命中 → 仅 coverage=True 时计入 info。
-        说明：一章未出现某词条属正常，全量统计会产出数百条噪音，
-        故默认关闭；需要排查「术语表有但全项目没用上」时才开。
-    返回 (p0, p1, details)；info 级问题 details 里标 "INFO" 不计 P1。
+    术语一致（2026-11-21：全部降 INFO，只报告、不判罚）：
+      465 条"锁定"多为脚本按频次自动升级、非人工裁定；变体从备注列自然语言正则抠出，
+      历史误伤严重（曾 7168 处）。改由 build_context.py --drift-report 在批次末集中人工看。
+    返回 (p0, p1, details, infos)；p0/p1 恒 0。
     """
-    p0 = p1 = 0
     details = []
+    infos = []
     for e in glossary:
         if e["variants"]:
-            level = "P0" if e["status"] == L.STATUS_LOCKED else "INFO"
             for v in e["variants"]:
                 n, hits = L.count_term(paras, v)
                 if n:
-                    if level == "P0":
-                        p0 += n
-                    details.append((("G3", 0, level,
-                                     f"（{e['status']}）变体 [{e['cn']} → {v}] ×{n}"
-                                     f"（首选 {e['preferred']}） 段{hits[:6]}", "")))
+                    infos.append((0, f"（{e['status']}）变体 [{e['cn']} → {v}] ×{n}"
+                                     f"（首选 {e['preferred']}） 段{hits[:6]}"))
         elif coverage and e["status"] == L.STATUS_LOCKED:
             n, _ = L.count_term(paras, e["en"])
             if n == 0:
-                details.append(("G3", 0, "INFO",
-                                f"锁定词条 [{e['cn']} → {e['en']}] 本章零命中", ""))
-    return p0, p1, details
+                infos.append((0, f"锁定词条 [{e['cn']} → {e['en']}] 本章零命中"))
+    return 0, 0, [], infos
 
 
 # ---------------------------------------------------------------- 主流程
@@ -225,7 +234,10 @@ def scan_chapter(n, ch_dir, glossary, gates, coverage=False):
         "对照异常": len(bi["anomalies"]), "P0": 0, "P1": 0, "details": [],
     }
     if not paras:
-        res["details"].append(("—", 0, "P1", "无英文段落（缺对照版或纯英版）", ""))
+        # 2026-11-10：整章无译文属「遗漏」，必须计入 P1。
+        # 旧实现只写 details 不加计数，会把空章误列入「全清」，与零遗漏验收冲突。
+        res["P1"] += 1
+        res["details"].append(("—", 0, "P1", "整章无英文段落（缺对照版或纯英版）＝待译遗漏", ""))
         return res
     # 真源损坏：对照版存在却几乎无中文 = 中文段落丢失，唯一真源已失效
     if bi["path"] is not None:
@@ -240,18 +252,19 @@ def scan_chapter(n, ch_dir, glossary, gates, coverage=False):
         if g not in gates:
             continue
         if g == "G3":
-            a, b, d = check_g3(paras, glossary, coverage=coverage)
+            a, b, d, inf = check_g3(paras, glossary, coverage=coverage)
         elif g == "G4":
-            a, b, d = check_g4(paras)
+            a, b, d, inf = check_g4(paras)
         elif g == "G5":
-            a, b, d = check_g5(paras)
+            a, b, d, inf = check_g5(paras)
         elif g == "G6":
-            a, b, d = check_g6(paras)
+            a, b, d, inf = check_g6(paras)
         else:
-            a, b, d = check_g7(paras)
+            a, b, d, inf = check_g7(paras)
         res["P0"] += a
         res["P1"] += b
         res["details"].extend(d)
+        res["details"].extend(("G" + g[1:], 0, "INFO", msg, "") for _, msg in inf)
     return res
 
 
@@ -263,7 +276,8 @@ def main():
     ap.add_argument("--g3-coverage", action="store_true",
                     help="额外统计「锁定词条本章零命中」（INFO，不计 P1；排查废词时才开）")
     ap.add_argument("--report", action="store_true", help="导出 项目文档/门禁扫描报告_<时间戳>.md")
-    ap.add_argument("--fail-on", default="", choices=["", "P0"], help="出现该级别问题则退出码 1")
+    ap.add_argument("--fail-on", default="", choices=["", "P0", "P1"],
+                    help="出现该级别问题则退出码 1；P1 表示要求 P0 与 P1 同时为 0")
     args = ap.parse_args()
 
     lo, hi = L.parse_range(args.chapter)
@@ -344,6 +358,10 @@ def main():
 
     if args.fail_on == "P0" and total_p0 > 0:
         print(f"\n[FAIL] P0 = {total_p0}（--fail-on P0 触发，退出码 1）")
+        return 1
+    if args.fail_on == "P1" and (total_p0 > 0 or total_p1 > 0):
+        print(f"\n[FAIL] P0 = {total_p0} · P1 = {total_p1}"
+              f"（--fail-on P1 要求两者同时为 0，退出码 1）")
         return 1
     return 0
 

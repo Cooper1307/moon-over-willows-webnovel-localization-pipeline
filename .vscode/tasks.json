@@ -1,0 +1,95 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "00 开工闸门(dry)",
+      "type": "shell",
+      "command": "python tools/session_check.py --start",
+      "problemMatcher": []
+    },
+    {
+      "label": "00 开工闸门(写基线)",
+      "type": "shell",
+      "command": "python tools/session_check.py --start --apply",
+      "problemMatcher": []
+    },
+    {
+      "label": "01 打包投喂包(dry)",
+      "type": "shell",
+      "command": "python tools/pack_external.py --start ${input:batchStart} --end ${input:batchEnd}",
+      "problemMatcher": []
+    },
+    {
+      "label": "01 打包投喂包(落盘)",
+      "type": "shell",
+      "command": "python tools/pack_external.py --start ${input:batchStart} --end ${input:batchEnd} --apply",
+      "problemMatcher": []
+    },
+    {
+      "label": "02 回收输出(dry)",
+      "type": "shell",
+      "command": "python tools/harvest_external.py --start ${input:batchStart} --end ${input:batchEnd} --input 项目文档/回收/raw_batch.txt",
+      "problemMatcher": []
+    },
+    {
+      "label": "02 回收输出(落盘)",
+      "type": "shell",
+      "command": "python tools/harvest_external.py --start ${input:batchStart} --end ${input:batchEnd} --input 项目文档/回收/raw_batch.txt --apply",
+      "problemMatcher": []
+    },
+    {
+      "label": "03 批次落地(dry)",
+      "type": "shell",
+      "command": "python tools/run_batch.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "03 批次落地(落盘)",
+      "type": "shell",
+      "command": "python tools/run_batch.py --apply",
+      "problemMatcher": []
+    },
+    {
+      "label": "04 门禁扫描(报告)",
+      "type": "shell",
+      "command": "python tools/lqa_gates.py --chapter ${input:batchStart}-${input:batchEnd} --report",
+      "problemMatcher": []
+    },
+    {
+      "label": "05 术语漂移报告",
+      "type": "shell",
+      "command": "python tools/build_context.py --drift-report --chapters ${input:batchStart}-${input:batchEnd} --apply",
+      "problemMatcher": []
+    },
+    {
+      "label": "06 上下文刷新",
+      "type": "shell",
+      "command": "python tools/build_context.py --upto ${input:batchEnd} --apply",
+      "problemMatcher": []
+    },
+    {
+      "label": "07 进度刷新",
+      "type": "shell",
+      "command": "python tools/prepare_full_scope.py --refresh --apply; python tools/project_status.py --apply",
+      "problemMatcher": []
+    },
+    {
+      "label": "08 收尾闸门",
+      "type": "shell",
+      "command": "python tools/session_check.py --end --apply",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "batchStart",
+      "type": "promptString",
+      "description": "批次起始章号（纯数字，如 91）"
+    },
+    {
+      "id": "batchEnd",
+      "type": "promptString",
+      "description": "批次结束章号（纯数字，如 95）"
+    }
+  ]
+}

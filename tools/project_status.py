@@ -92,7 +92,12 @@ def summarize(rows):
 
 
 def collect_metrics(rows, arch):
-    """数值指标（--metrics 时跑，需解析 90 章对照版，耗时数秒）。"""
+    """数值指标（--metrics 时跑，需解析全书对照版，耗时数秒）。
+
+    2026-11-10：全本章数改按「唯一章号集合」统计。原文库 91–351 接入活跃目录后，
+    活跃 rows 与冷库 arch 会出现同一章号，旧的 `len(rows) + arch[1]` 会重复计数
+    （351+261=612），导致完成度与剩余英词全错。
+    """
     cjk_total = 0
     en_words = 0
     n_bi = 0
@@ -106,7 +111,16 @@ def collect_metrics(rows, arch):
         if bi["pairs"]:
             en_words += sum(L.words(en or "") for _zh, en, _ln in bi["pairs"])
             n_bi += 1
-    total_ch = len(rows) + (arch[1] if arch else 0)
+    # 唯一章号集合：活跃目录与 00_ 冷库可能同时含同一章（原文接入后必然如此），
+    # 直接相加会把 351 章算成 612 章，完成度与剩余英词随之失真。
+    archive_nums = set()
+    for s in CHAPTERS.iterdir():
+        if s.is_dir() and s.name.startswith("00_"):
+            for sub in s.iterdir():
+                am = CHAPTER_DIR_RE.match(sub.name)
+                if sub.is_dir() and am:
+                    archive_nums.add(int(am.group(1)))
+    total_ch = len(set(rows) | archive_nums)
     avg = en_words / n_bi if n_bi else 0
     m = OrderedDict()
     m["原文汉字合计（活跃）"] = cjk_total

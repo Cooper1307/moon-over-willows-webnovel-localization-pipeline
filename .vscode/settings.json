@@ -1,0 +1,42 @@
+{
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": false,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": false,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.baiduyun.uploading.cfg": true,
+    "**/.trae": true,
+    "**/.qoder": true,
+    "**/.workbuddy": true,
+    "**/.agent": true,
+    "**/.antigravity": true,
+    "**/.obsidian": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/归档": true,
+    "**/00_原文库": true,
+    "**/.agent": true,
+    "**/.trae": true,
+    "**/.qoder": true,
+    "**/.workbuddy": true,
+    "**/交付版/**": true,
+    "**/docx交付/**": true,
+    "**/术语表/glossary_slice_*": true,
+    "**/项目文档/投喂包/**": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/章节原文/**": true,
+    "**/交付版/**": true,
+    "**/docx交付/**": true,
+    "**/项目文档/投喂包/**": true
+  },
+  "python.defaultInterpreterPath": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "python.terminal.activateEnvironment": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.cwd": "${workspaceFolder}"
+}

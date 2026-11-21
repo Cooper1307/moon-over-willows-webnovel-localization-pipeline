@@ -1,13 +1,13 @@
 {
-  "ts": "2026-11-09 12:59:52",
+  "ts": "2026-11-10 08:36:42",
   "phase": "start",
   "p0": 44,
-  "p1": 578,
+  "p1": 840,
   "pct": 24.8,
   "duizhao": 87,
   "docx_delivery": 87,
   "docx_review": 89,
   "source_ok_chapters": 87,
   "source_p0": 0,
-  "source_p1": 3
+  "source_p1": 264
 }

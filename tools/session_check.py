@@ -36,6 +36,8 @@ DOCS = REPO / "项目文档"
 BASELINE = DOCS / "会话基线.json"
 BJ = timezone(timedelta(hours=8))
 AUTHOR = "CooperChen"
+TOTAL_CHAPTERS = 351
+LEDGER = DOCS / "全书翻译台账.json"
 FORBIDDEN_META = ["审校CooperChen", "审校", "CodeBuddy", "python-docx", "Co-Author", "co-author", "协作者"]
 SAMPLE_LIMIT = 20
 
@@ -177,10 +179,25 @@ def check_docx(g, cid, sample_only):
     return len(files), bad
 
 
+def ledger_pending():
+    """从台账读「待译章」集合；台账缺失/损坏返回 None（退回严格模式）。"""
+    try:
+        data = json.loads(LEDGER.read_text(encoding="utf-8-sig"))
+        return set(int(x) for x in data.get("待译章", []))
+    except (OSError, ValueError, TypeError):
+        return None
+
+
 def check_source(g):
+    """SC-S2 真源完好：扫全书 351 章，P1 白名单改为台账动态口径。
+
+    2026-11-10：旧实现硬编码 chapter_dirs(1,90) 且 P1 白名单 {1,2,70}。
+    接入 91–351 章后，未译章都会报「缺对照版」P1，这是预期缺口；但只要台账
+    里没登记的章出现 P1，就说明有真源损坏，必须告警，不能让旧白名单掩盖。
+    """
     p0, p1, ok = [], [], 0
     try:
-        for n, d in chapter_lib.chapter_dirs(1, 90):
+        for n, d in chapter_lib.chapter_dirs(1, TOTAL_CHAPTERS):
             info = chapter_lib.cn_source_check(d)
             if info["level"] == "P0":
                 p0.append(n)
@@ -190,13 +207,18 @@ def check_source(g):
                 ok += 1
         detail = "OK %d · P0 %d %s · P1 %d %s" % (
             ok, len(p0), p0[:4], len(p1), p1[:4])
-        known_gap = set(p1) <= {1, 2, 70}
+        pending = ledger_pending()
         if p0:
             g.add("S2", "真源完好", "FAIL", "真源 P0≠0：%s" % p0[:6])
-        elif p1 and not known_gap:
-            g.add("S2", "真源完好", "WARN", "出现基线外 P1：%s" % p1[:6])
+        elif p1 and pending is None:
+            g.add("S2", "真源完好", "WARN",
+                  "台账不可读，无法判定 P1 是否属预期待译缺口：%s" % p1[:6])
+        elif p1 and not set(p1) <= pending:
+            g.add("S2", "真源完好", "WARN",
+                  "出现台账外 P1（真源可能损坏）：%s" % sorted(set(p1) - pending)[:6])
         else:
-            g.add("S2", "真源完好", "PASS", detail + "（P1 限已知缺口 1/2/70）")
+            g.add("S2", "真源完好", "PASS",
+                  detail + "（P1 限台账登记的待译章）" if p1 else detail)
         return {"source_ok": ok, "p0": len(p0), "p1": len(p1), "p1_chapters": p1}
     except Exception as e:  # noqa: BLE001
         g.add("S2", "真源完好", "WARN", "chapter_lib 调用异常：%s" % e)
@@ -353,6 +375,26 @@ def do_end(apply):
     check_git_sync(g)
     g.add("E5b", "未提交变更", "INFO" if lines else "PASS",
           "%d 项待提交（样例：%s）→ 明确路径 add，禁 -A" % (len(lines), "；".join(lines[:3])) if lines else "工作区干净")
+
+    # E2b 全书终止闸门（2026-11-10 新增）：翻译进行中只记录，待译章清零后转硬断言。
+    # 用户要求「每次复验审查均成功且无错误或遗漏后方可停止」，此项即停止条件的机器版。
+    try:
+        led = json.loads(LEDGER.read_text(encoding="utf-8-sig"))
+        pending = led.get("待译章", [])
+        if pending:
+            g.add("E2b", "全书终止闸门", "INFO",
+                  "进行中：待译 %d 章 · P0 %s · P1 %s（译完后转硬断言）" % (
+                      len(pending), metrics.get("p0"), metrics.get("p1")))
+        elif metrics.get("p0") == 0 and metrics.get("p1") == 0:
+            g.add("E2b", "全书终止闸门", "PASS",
+                  "351 章译完 · P0=0 · P1=0 · 复验轮次 %d，满足终止条件" %
+                  len(led.get("复验轮次", [])))
+        else:
+            g.add("E2b", "全书终止闸门", "FAIL",
+                  "已无待译章但 P0=%s · P1=%s ≠ 0，禁止收尾" % (
+                      metrics.get("p0"), metrics.get("p1")))
+    except (OSError, ValueError) as e:
+        g.add("E2b", "全书终止闸门", "WARN", "台账不可读：%s" % str(e)[:80])
 
     g.print()
     if apply:

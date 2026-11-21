@@ -20,6 +20,7 @@
 |---|---|---|---|---|
 | 东方尘泽 | Dongfang Chenze | 锁定 | 第18章 |  |
 | 乔文仙 | Qiao Wenxian | 锁定 | 第21章 |  |
+| 乔梦容 | Qiao Mengrong | [建议] | 第6章 | 乔文仙之妹；定译取自第99章「术语与人设」。check_characters 检出第6/7/31章词条缺失，2026-11-10 补词条，标 [建议] 待用户终裁 |
 | 二杠 | Er'gang | 锁定 | 第1章 |  |
 | 内侍 | Imperial Attendant | [建议] | 第7章 | 候选：Imperial Attendant / Inner Attendant / Palace Eunuch（按出现频次推荐 `Imperial Attendant`，待确认） |
 | 净光法师 | Master Jingguang | 锁定 | 第25章 |  |

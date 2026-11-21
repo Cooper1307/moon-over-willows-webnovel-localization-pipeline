@@ -6,8 +6,7 @@ Thumbs.db
 desktop.ini
 .DS_Store
 
-# IDE / 编辑器
-.vscode/
+# IDE / 编辑器（.vscode/ 已纳入版本管理：tasks.json 绑定闸门/打包/回收/落地命令）
 *.swp
 *.swo
 *~

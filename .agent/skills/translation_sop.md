@@ -11,7 +11,7 @@ description: 网文小说《月上柳梢头，人约黄昏后》中译英本地�
 
 ## 〇、真源与标点红线（2026-09-06 增补，最高优先）
 
-1. **对照版是唯一真源**：所有编辑落在 `第X章初译_对照.md`；`第X章译文.md` 是派生物，由 `tools/sync_bilingual.py --apply --force --chapter N` 生成，**禁止手工编辑**（杜绝"译文.md 缺失/不同步"事故）。
+1. **对照版是唯一真源**：所有编辑落在 `第X章初译_对照.md`；`第X章译文.md` 是派生物，由 `tools/extract_pure_en.py --chapter N --apply --force` 生成，`tools/sync_bilingual.py --chapter N` 只读校验，**禁止手工编辑**（杜绝"译文.md 缺失/不同步"事故）。
 2. **中文行标点必须全角**：对照版中文与原文逐字一致（含标点）。对话引号用中文“”，冒号/逗号/问叹号用全角。发现半角 → 用 `tools/normalize_cn_punct.py --apply` 归一并复核 `tools/scan_halfwidth_zh.py`（应为 0 命中）。
 3. **中文原文零改动**（含标点与空格）；术语/人名定译终裁权在用户。
 
