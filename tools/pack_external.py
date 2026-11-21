@@ -97,7 +97,7 @@ SYSTEM_TXT = """你是宋代古装穿越小说《月上柳梢头，人约黄昏�
 
 PROMPT_TEMPLATE = """# 任务：把 {count} 章中文原文逐段译成英文
 
-你收到 {start}–{end} 章的中文原文（`03_SOURCE/ALL_SOURCE.md`，按 `#CH N` 分章，每行一段）。
+你收到 {count} 章中文原文（`03_SOURCE/ALL_SOURCE.md`，按 `#CH N` 分章，每行一段；章号见 MANIFEST.json）。
 为每一章输出一份**逐段英文**：每段一行，行数与中文段数严格相等。
 
 ## 一、输出格式（机器要自动切分，必须严格）
@@ -131,7 +131,7 @@ PROMPT_TEMPLATE = """# 任务：把 {count} 章中文原文逐段译成英文
 - 角色音色靠语气区分：女主 sassy/modern、男主 composed/protective、女配 meek/dramatic。
 
 ## 五、输出前自检（逐条过一遍）
-- [ ] 章数 = {count}，章号 {start}–{end} 全齐
+- [ ] 章数 = {count}，章号见 MANIFEST.json（每章的 `#CH N` 都要有）
 - [ ] 每章英文段数 = MANIFEST 里该章 expected_paras
 - [ ] 无代码围栏、无段落编号、无 `#CH` 残留在正文
 - [ ] 每章都有 `#TITLE:`
@@ -182,16 +182,33 @@ def build_glossary():
 
 def main():
     ap = argparse.ArgumentParser(description="打包外部 AI Studio 投喂包")
-    ap.add_argument("--start", type=int, required=True)
-    ap.add_argument("--end", type=int, required=True)
+    ap.add_argument("--start", type=int, help="起始章号（与 --end 配合）")
+    ap.add_argument("--end", type=int, help="结束章号（与 --start 配合）")
+    ap.add_argument("--chapters", help="离散章号，如 110,124,132（与 --start/--end 二选一）")
     ap.add_argument("--context", help="已生成的上下文 md 路径（默认自动 build_context）")
+    ap.add_argument("--tag", help="自定义批次标签（离散章时建议给，如 retry_101_150）")
     ap.add_argument("--apply", action="store_true")
     args = ap.parse_args()
-    if args.start > args.end or args.start < 1:
-        print("[ERROR] 章号区间无效")
-        return 2
-    chapters = list(range(args.start, args.end + 1))
-    tag = f"batch_{args.start:03d}_{args.end:03d}"
+    if args.chapters:
+        try:
+            chapters = sorted({int(x.strip()) for x in args.chapters.split(",") if x.strip()})
+        except ValueError:
+            print("[ERROR] --chapters 只能是逗号分隔的数字")
+            return 2
+        if not chapters or any(n < 1 for n in chapters):
+            print("[ERROR] --chapters 章号无效")
+            return 2
+        lo, hi = chapters[0], chapters[-1]
+    else:
+        if args.start is None or args.end is None:
+            print("[ERROR] 请给 --start/--end 或 --chapters")
+            return 2
+        if args.start > args.end or args.start < 1:
+            print("[ERROR] 章号区间无效")
+            return 2
+        chapters = list(range(args.start, args.end + 1))
+        lo, hi = args.start, args.end
+    tag = args.tag or f"batch_{lo:03d}_{hi:03d}"
     out_dir = PACKS / tag
     zip_path = PACKS / f"{tag}.zip"
 
@@ -223,11 +240,14 @@ def main():
         context = ctx.read_text(encoding="utf-8-sig") if ctx.is_file() else ""
         if not context:
             print(f"[WARN] 指定上下文 {args.context} 不存在，自动生成")
-            context = build_context(args.end)["text"]
+            context = build_context(hi)["text"]
     else:
-        context = build_context(args.end)["text"]
+        context = build_context(hi)["text"]
 
-    prompt = PROMPT_TEMPLATE.format(count=len(chapters), start=args.start, end=args.end)
+    chapter_desc = (f"{lo}–{hi} 章" if args.chapters is None
+                    else f"以下 {len(chapters)} 章（章号见 MANIFEST.json）")
+    prompt = PROMPT_TEMPLATE.format(count=len(chapters), start=lo, end=hi,
+                                    chapter_desc=chapter_desc)
     manifest = {
         "batch": tag,
         "generated": datetime.now().isoformat(timespec="seconds"),
