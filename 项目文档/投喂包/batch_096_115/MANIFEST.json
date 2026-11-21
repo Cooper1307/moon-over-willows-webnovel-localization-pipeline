@@ -1,0 +1,121 @@
+{
+  "batch": "batch_096_115",
+  "generated": "2026-11-21T22:42:37",
+  "chapters": [
+    {
+      "n": 96,
+      "expected_paras": 77,
+      "title_zh": "第96章 来到校场把话训"
+    },
+    {
+      "n": 97,
+      "expected_paras": 69,
+      "title_zh": "第97章 寺庙女尼取红绸"
+    },
+    {
+      "n": 98,
+      "expected_paras": 66,
+      "title_zh": "第98章 七夕到来忙逛街"
+    },
+    {
+      "n": 99,
+      "expected_paras": 76,
+      "title_zh": "第99章 谣言慢慢被传开"
+    },
+    {
+      "n": 100,
+      "expected_paras": 67,
+      "title_zh": "第100章 勾栏请客听说书"
+    },
+    {
+      "n": 101,
+      "expected_paras": 65,
+      "title_zh": "第101章 有趣好玩乞巧宴"
+    },
+    {
+      "n": 102,
+      "expected_paras": 66,
+      "title_zh": "第102章 大家闺秀的一天"
+    },
+    {
+      "n": 103,
+      "expected_paras": 68,
+      "title_zh": "第103章 赴约千年神柳下"
+    },
+    {
+      "n": 104,
+      "expected_paras": 66,
+      "title_zh": "第104章 突如其来的变故"
+    },
+    {
+      "n": 105,
+      "expected_paras": 71,
+      "title_zh": "第105章 焚烧书稿受家法"
+    },
+    {
+      "n": 106,
+      "expected_paras": 70,
+      "title_zh": "第106章 搬离朱府遇亲情"
+    },
+    {
+      "n": 107,
+      "expected_paras": 68,
+      "title_zh": "第107章 提亲之事被搁置"
+    },
+    {
+      "n": 108,
+      "expected_paras": 74,
+      "title_zh": "第108章 再次出面帮文渊"
+    },
+    {
+      "n": 109,
+      "expected_paras": 68,
+      "title_zh": "第109章 离开朱府买礼物"
+    },
+    {
+      "n": 110,
+      "expected_paras": 78,
+      "title_zh": "第110章 探望爱人表心意"
+    },
+    {
+      "n": 111,
+      "expected_paras": 68,
+      "title_zh": "第111章 夏果偶遇陈公子"
+    },
+    {
+      "n": 112,
+      "expected_paras": 72,
+      "title_zh": "第112章 嘱托林觉忙传话"
+    },
+    {
+      "n": 113,
+      "expected_paras": 82,
+      "title_zh": "第113章 陈家上线弄风云"
+    },
+    {
+      "n": 114,
+      "expected_paras": 78,
+      "title_zh": "第114章 回到陈府见家人"
+    },
+    {
+      "n": 115,
+      "expected_paras": 80,
+      "title_zh": "第115章 茶肆喝茶听流言"
+    }
+  ],
+  "counts": {
+    "chapters": 20,
+    "paragraphs": 1429,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1295,
+    "input_glossary": 10129,
+    "input_context": 650,
+    "input_source": 31533,
+    "output_estimate": 48586
+  },
+  "note": "Gemini 4 Neon 单次输出硬顶 65536 tok（思考+输出共用）；如 output_estimate 超过 60000 请缩小批次。"
+}

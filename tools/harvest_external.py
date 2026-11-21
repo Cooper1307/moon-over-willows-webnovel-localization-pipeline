@@ -93,10 +93,16 @@ def split_chapters(lines, start, end):
     """把归一化行切成 {n: {'title':..., 'lines':[...]}}。"""
     result = {}
     cur = None
+    seen = set()
     for ln in lines:
         if ln.startswith("#CH "):
             n = int(ln[4:].strip())
             if start <= n <= end:
+                if n in seen:
+                    raise SystemExit(
+                        f"[ERROR] 第{n}章的 #CH 出现第二次——输出里疑似有'初译+修订稿'两遍。"
+                        f"请只保留终稿那一遍（保留后一个 #CH {n} 块），删掉前面的初译块后重跑。")
+                seen.add(n)
                 cur = n
                 result.setdefault(n, {"title": "", "lines": []})
             else:
@@ -205,6 +211,15 @@ def main():
     args = ap.parse_args()
 
     raw = read_clipboard() if args.clipboard else Path(args.input).read_text(encoding="utf-8-sig")
+    # 先查重复章头：若同一章出现两次（初译+修订稿），拒绝静默取第一遍
+    head_counts = {}
+    for m in re.finditer(r"^\s*#CH\s+(\d+)\s*$", raw, re.M):
+        head_counts[int(m.group(1))] = head_counts.get(int(m.group(1)), 0) + 1
+    dup = [n for n, c in head_counts.items() if c > 1 and args.start <= n <= args.end]
+    if dup:
+        raise SystemExit(
+            f"[ERROR] 以下章的 #CH 出现两遍：{sorted(dup)}——输出里疑似'初译+修订稿'两份。"
+            f"请只保留终稿那一遍，删掉前面的初译块后重跑；或把终稿另存为新文件用 --input 指定。")
     lines = normalize_model_output(raw)
     got = split_chapters(lines, args.start, args.end)
     report = io.StringIO()
@@ -213,6 +228,9 @@ def main():
     report.write("| 章 | 原文段 | 收到段 | 结果 | 诊断 |\n|---|---|---|---|---|\n")
 
     ok_all = True
+    written_count = 0
+    failed_ch = []
+    pending_ch = []
     for n in range(args.start, args.end + 1):
         title_zh, zh = expected_paras(n)
         if zh is None:
@@ -228,6 +246,7 @@ def main():
         pairs, diags = align(zh, got_lines)
         if len(got_lines) != len(zh):
             ok_all = False
+            failed_ch.append(n)
             diag = "；".join(diags[:3]) if diags else "段数不等"
             report.write(f"| {n} | {len(zh)} | {len(got_lines)} | ERROR | {diag} |\n")
             # 前 3 段对照，方便人工定位
@@ -237,20 +256,27 @@ def main():
                 report.write(f"     段{k+1} 英：{en[:70]}\n")
             continue
         written, msg = write_inbox(n, block["title"], got_lines, args.apply, args.force)
-        if not written:
+        if written:
+            written_count += 1
+        else:
             ok_all = False
+            pending_ch.append(n)
         report.write(f"| {n} | {len(zh)} | {len(got_lines)} | {'OK' if written else 'SKIP'} | {msg} |\n")
 
     name = f"回收诊断_{datetime.now():%Y%m%d_%H%M%S}.md"
-    report.write(f"\n总结：{'全部章节可落地' if ok_all else '存在待处理章，见上表 ERROR 行'}。\n")
-    print(f"[HARVEST] {args.start}–{args.end} · {'全部匹配' if ok_all else '有错位'}")
+    summary = (f"成功 {written_count}/{args.end - args.start + 1} 章。"
+               + (f" 段数错位需重出：{failed_ch}。" if failed_ch else "")
+               + (f" 已存在未覆盖（加 --force）：{pending_ch}。" if pending_ch else ""))
+    report.write(f"\n总结：{summary}\n")
+    print(f"[HARVEST] {args.start}–{args.end} · {summary}")
     print(report.getvalue()[:3000])
     if args.apply:
         (DOCS / name).write_text(report.getvalue(), encoding="utf-8", newline="\n")
         print(f"[OK] 诊断已写 {name}")
     else:
         print("[DRY-RUN] 加 --apply 落盘 chN_en.txt 与诊断")
-    return 0 if ok_all else 1
+    # 部分成功也算可用：好的章已落地，坏章下批/补喂重出即可，不让整批报失败
+    return 0 if written_count else 1
 
 
 if __name__ == "__main__":
