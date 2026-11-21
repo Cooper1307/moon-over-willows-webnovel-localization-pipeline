@@ -142,7 +142,13 @@ def has_cjk(text):
     """中文块判定（2026-10-03 由「含任意中文」改为占比 ≥ CJK_RATIO_MIN）。
 
     保留旧函数名以兼容既有调用方，但语义已变为「是否为中文正文段」。
+    2026-11-21 修补：纯中文短句（如 `“是。”` CJK 占比 0.25）会被占比阈值误判为英文，
+    导致对照版"连续两个英文块"、段数不符、纯英派生被阻断。
+    补一条：含 CJK 且**不含 ASCII 字母** → 一定是中文段；
+    英文段内嵌中文原字（如 `(寻， meaning "to seek")`）必含 ASCII，不受影响。
     """
+    if CJK_RE.search(text) and not ASCII_RE.search(text):
+        return True
     return cjk_ratio(text) >= CJK_RATIO_MIN
 
 

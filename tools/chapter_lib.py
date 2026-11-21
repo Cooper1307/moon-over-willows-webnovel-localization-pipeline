@@ -160,6 +160,8 @@ def is_english(text):
 
     2026-10-03 由「不含中文」改为占比判定：英文段内嵌中文原字
     （如 `(寻， meaning "to seek")`，占比 0.02）仍应判为英文段。
+    2026-11-21 修补：纯中文短句（`“是。”` 占比 0.25）会被误判为英文；
+    含 CJK 且不含 ASCII 字母 → 判为中文（英文段内嵌中文必含 ASCII）。
     """
     if not EN_RE.search(text):
         return False

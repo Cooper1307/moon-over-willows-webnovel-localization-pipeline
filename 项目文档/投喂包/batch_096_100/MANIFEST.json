@@ -1,0 +1,46 @@
+{
+  "batch": "batch_096_100",
+  "generated": "2026-11-21T22:30:46",
+  "chapters": [
+    {
+      "n": 96,
+      "expected_paras": 77,
+      "title_zh": "第96章 来到校场把话训"
+    },
+    {
+      "n": 97,
+      "expected_paras": 69,
+      "title_zh": "第97章 寺庙女尼取红绸"
+    },
+    {
+      "n": 98,
+      "expected_paras": 66,
+      "title_zh": "第98章 七夕到来忙逛街"
+    },
+    {
+      "n": 99,
+      "expected_paras": 76,
+      "title_zh": "第99章 谣言慢慢被传开"
+    },
+    {
+      "n": 100,
+      "expected_paras": 67,
+      "title_zh": "第100章 勾栏请客听说书"
+    }
+  ],
+  "counts": {
+    "chapters": 5,
+    "paragraphs": 355,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1295,
+    "input_glossary": 10129,
+    "input_context": 650,
+    "input_source": 7835,
+    "output_estimate": 12070
+  },
+  "note": "Gemini 4 Neon 单次输出硬顶 65536 tok（思考+输出共用）；如 output_estimate 超过 60000 请缩小批次。"
+}

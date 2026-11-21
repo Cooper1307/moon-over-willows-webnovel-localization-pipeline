@@ -172,9 +172,9 @@ def align(zh_paras, got_lines):
     return pairs, diags
 
 
-def write_inbox(n, title, lines, apply):
+def write_inbox(n, title, lines, apply, force=False):
     target = INBOX / f"ch{n}_en.txt"
-    if target.exists() and not apply:
+    if target.exists() and not force:
         return False, "已存在（--force 未给）"
     if not apply:
         return True, f"[DRY-RUN] 将写 {target.name}"
@@ -236,7 +236,7 @@ def main():
                 report.write(f"   - 段{k+1} 中：{zh[k][:70]}\n")
                 report.write(f"     段{k+1} 英：{en[:70]}\n")
             continue
-        written, msg = write_inbox(n, block["title"], got_lines, args.apply)
+        written, msg = write_inbox(n, block["title"], got_lines, args.apply, args.force)
         if not written:
             ok_all = False
         report.write(f"| {n} | {len(zh)} | {len(got_lines)} | {'OK' if written else 'SKIP'} | {msg} |\n")
