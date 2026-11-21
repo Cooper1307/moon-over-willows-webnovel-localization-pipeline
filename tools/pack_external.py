@@ -86,7 +86,7 @@ OUTPUT_TEMPLATE = """#CH <章号>
 SYSTEM_TXT = """你是宋代古装穿越小说《月上柳梢头，人约黄昏后》的中译英初译师。
 输入是按 `#CH N` 分章的中文原文（每行一段）。逐章输出英文，**每行一段**，章间用 `#CH N` 分隔，每章首行 `#TITLE: <英文题名>`。
 不要用代码围栏，不要给段落编号，不要合并或拆分段落。末尾写「## 译法建议」（没有就写"无"）。
-只输出一遍终稿：内部先初译再自审，把修正直接并入译文后一次性输出。不要先贴初译再贴修订稿（会超输出上限），不要重发任何段落。
+只输出一遍终稿：内部先初译再自审，把修正直接并入译文后一次性输出。不要先贴初译再贴修订稿，不要重发任何段落。
 
 优先级：忠实原文 > 术语锁 > 跨章一致 > 表达自然。
 风格：地道英文、手机阅读节奏、短句有画面感；角色音色分层（女主 modern/sassy、男主 composed/protective）。
@@ -107,7 +107,7 @@ PROMPT_TEMPLATE = """# 任务：把 {count} 章中文原文逐段译成英文
 4. 每段英文里不要嵌入中文译文；但原文字形解释（如 `the character "Xun" (寻， meaning "to seek")`）和成对弯引号 `“ ”` 是合法内容，**禁止清除**。
 5. 所有章输出完后写 `## 译法建议`，格式 `中文原词 | 你采用的英文 | 理由（一句话）`；没有就写"无"。
 6. **只输出一遍终稿**：先在内部完成初译+自审，把修正直接并入上面的译文。
-   **禁止**先贴一遍初译、再贴一遍修订稿——本批 {count} 章，两遍会超出单次输出上限导致截断。
+   **禁止**先贴一遍初译、再贴一遍修订稿——回收器会拒绝这种重复输出，必须只交终稿。
    若有审校说明，只在「## 译法建议」里用一行写结论，不要重发任何译文段落。
 
 ## 二、翻译红线
@@ -237,7 +237,8 @@ def main():
         "est_tok": {"input_rules": est_tok(rules), "input_glossary": est_tok(glossary),
                     "input_context": est_tok(context), "input_source": est_tok(all_src.getvalue()),
                     "output_estimate": sum(c["expected_paras"] * 34 for c in manifest_ch)},
-        "note": "Gemini 4 Neon 单次输出硬顶 65536 tok（思考+输出共用）；如 output_estimate 超过 60000 请缩小批次。",
+        "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；"
+                "总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。",
     }
 
     files = {
@@ -257,8 +258,13 @@ def main():
     print(f"[PACK] {tag} · {len(chapters)} 章 · {manifest['counts']['paragraphs']} 段")
     print(f"  est_tok: 规则 {est['input_rules']} · 术语 {est['input_glossary']} · 上下文 {est['input_context']} "
           f"· 原文 {est['input_source']} · 输出约 {est['output_estimate']}")
-    if est["output_estimate"] > 60000:
-        print("  [WARN] 输出估算超过 60000 tok，网页端可能被截断 → 建议缩小批次")
+    total_est = (est["input_rules"] + est["input_glossary"] + est["input_context"]
+                 + est["input_source"] + est["output_estimate"])
+    if total_est > 900000:
+        print(f"  [WARN] 输入+输出估算 {total_est} tok，接近 1M 共用窗口 → 请缩小批次")
+    if len(chapters) > 50:
+        print(f"  [WARN] {len(chapters)} 章超过建议上限 50 → 中间遗忘/段数错位风险上升")
+    print(f"  窗口用量估算 {total_est} / 1048576 tok（含思考余量）")
     print(f"  将生成 {len(files)} 个文件于 {out_dir.relative_to(BASE)} 与 {zip_path.relative_to(BASE)}")
 
     if not args.apply:
