@@ -1,0 +1,81 @@
+{
+  "batch": "bulk_02_remaining",
+  "generated": "2026-11-22T14:52:54",
+  "chapters": [
+    {
+      "n": 2,
+      "expected_paras": 62,
+      "title_zh": "第2章 对决地震后穿越"
+    },
+    {
+      "n": 70,
+      "expected_paras": 66,
+      "title_zh": "第70章 裁缝铺内表真情"
+    },
+    {
+      "n": 151,
+      "expected_paras": 100,
+      "title_zh": "第151章 因表白仓皇而逃"
+    },
+    {
+      "n": 152,
+      "expected_paras": 82,
+      "title_zh": "第152章 冬晴无雪配拳法"
+    },
+    {
+      "n": 153,
+      "expected_paras": 91,
+      "title_zh": "第153章 仪王就是申简辰"
+    },
+    {
+      "n": 154,
+      "expected_paras": 67,
+      "title_zh": "第154章 相认不等于接受"
+    },
+    {
+      "n": 155,
+      "expected_paras": 88,
+      "title_zh": "第155章 文心嫂嫂回娘家"
+    },
+    {
+      "n": 156,
+      "expected_paras": 73,
+      "title_zh": "第156章 第一次表演失败"
+    },
+    {
+      "n": 157,
+      "expected_paras": 95,
+      "title_zh": "第157章 当众表演亦失败"
+    },
+    {
+      "n": 158,
+      "expected_paras": 95,
+      "title_zh": "第158章 春季到来的请帖"
+    },
+    {
+      "n": 159,
+      "expected_paras": 97,
+      "title_zh": "第159章 捶丸场求纳夏果"
+    },
+    {
+      "n": 160,
+      "expected_paras": 111,
+      "title_zh": "第160章 捶丸聊天各顾各"
+    }
+  ],
+  "counts": {
+    "chapters": 12,
+    "paragraphs": 1027,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1313,
+    "input_glossary": 10129,
+    "input_context": 680,
+    "input_source": 23961,
+    "output_estimate": 34918
+  },
+  "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。"
+}
