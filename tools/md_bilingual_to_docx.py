@@ -55,39 +55,53 @@ def split_cn_en(block):
 
 
 def md_to_docx(md_path, out_path):
+    """用 sync_bilingual.parse_pairs 解析（覆盖 A-sep/B-plain/C-marked/分组新格式）。"""
     from docx import Document
     from docx.shared import RGBColor, Pt
-    from docx.enum.text import WD_ALIGN_PARAGRAPH
+    from datetime import datetime, timezone, timedelta
 
-    text = open(md_path, encoding='utf-8').read()
-    blocks = parse_blocks(text)
-    cn_title, en_title = extract_titles(blocks[0])
+    # 复用权威解析器：一组 = (中文行, 英文行, 行号)；中文可能多行、英文可能多段
+    import sys
+    sys.path.insert(0, os.path.join(REPO, 'tools'))
+    import sync_bilingual as S
+    lines = open(md_path, encoding='utf-8-sig').read().splitlines()
+    _kind, pairs, _anom, _notes = S.parse_pairs(lines)
+
+    # 标题：从对照文件首部取（中文 `第N章 ...` / 英文 `## Chapter N: ...`）
+    cn_title = en_title = ''
+    for ln in lines[:6]:
+        s = ln.strip().lstrip('#').strip()
+        if not s:
+            continue
+        if s.startswith('第') and '章' in s[:12] and not cn_title:
+            cn_title = s
+        elif s.lower().startswith('chapter ') and not en_title:
+            en_title = s
 
     doc = Document()
     if cn_title:
         doc.add_heading(cn_title, level=1)
     if en_title:
         h = doc.add_heading(en_title, level=2)
+        for run in h.runs:
+            run.font.name = 'Calibri'
 
-    pairs = 0
-    for block in blocks[1:]:
-        if not block.strip():
-            continue
-        cn, en = split_cn_en(block)
-        if cn:
-            doc.add_paragraph(cn)
+    groups = 0
+    for zh, en, _ln in pairs:
+        if zh:
+            doc.add_paragraph(zh)
         if en:
-            p = doc.add_paragraph()
-            r = p.add_run(en)
-            r.italic = True
-            r.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
-            r.font.size = Pt(11)
-        if cn or en:
-            pairs += 1
+            for en_para in en.splitlines():
+                if en_para.strip():
+                    p = doc.add_paragraph()
+                    r = p.add_run(en_para)
+                    r.italic = True
+                    r.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
+                    r.font.size = Pt(11)
+        if zh or en:
+            groups += 1
 
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    # 作者字段归一：唯一笔名 CooperChen（2026-11-09 起生效）；核验件同样不得含其它作者/AI 名
-    from datetime import datetime, timezone, timedelta
     BJ = timezone(timedelta(hours=8))
     cp = doc.core_properties
     cp.author = 'CooperChen'
@@ -100,13 +114,13 @@ def md_to_docx(md_path, out_path):
         except Exception:
             pass
     bj = datetime.now(timezone.utc).astimezone(BJ)
-    utc_naive = bj.astimezone(timezone.utc).replace(tzinfo=None)
-    cp.created = utc_naive
-    cp.modified = utc_naive
+    utc = bj.astimezone(timezone.utc).replace(tzinfo=None)
+    cp.created = utc
+    cp.modified = utc
     cp.comments = f"最后编辑时间：{bj.strftime('%Y-%m-%d %H:%M:%S')}（北京时间 UTC+8）"
     doc.save(out_path)
     os.utime(out_path, (bj.timestamp(), bj.timestamp()))
-    return pairs
+    return groups
 
 
 def one_chapter(ch, out_dir):
