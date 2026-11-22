@@ -30,18 +30,42 @@ AUTHOR = 'CooperChen'  # 唯一作者笔名（2026-11-09 起生效，不受以�
 
 
 def parse_en_md(text):
-    """返回 (标题, [段落...])；第一行为 # 标题，其余按空行分段。"""
+    """返回 (标题, [段落...])；第一行为 # / ## 标题，其余按空行分段。"""
     lines = text.split('\n')
     title = ''
     body_start = 0
     for i, ln in enumerate(lines):
-        if ln.strip().startswith('# '):
-            title = ln.strip()[2:].strip()
+        # 兼容旧章 `# Chapter N`、新章 `## Chapter N`、以及第71章那种 `# 第N章 中文` 兜底
+        m = re.match(r"^#{1,3}\s+(.*\S)", ln.strip())
+        if m:
+            t = m.group(1).strip()
+            if t.startswith('第') and '章' in t[:12]:
+                # 中文标题行：跳到下一个 Chapter 行或正文，英文标题回退为 Chapter N
+                body_start = i + 1
+                continue
+            title = t
+            # 部分源译文标题带重复章号 `Chapter N: Chapter N: ...`，只在交付 docx 里去掉一层
+            title = re.sub(r"^(Chapter\s+\d+:\s*)Chapter\s+\d+:\s*", r"\1", title)
             body_start = i + 1
             break
+    if body_start == 0:
+        body_start = 1
     body = '\n'.join(lines[body_start:])
     paras = [b.strip().replace('\n', ' ') for b in re.split(r'\n\s*\n', body) if b.strip()]
     return title, paras
+
+
+def cn_title_of(ch):
+    """从对照版（唯一真源）取中文章题，如 `第91章 三位公子的道歉`。"""
+    bi = os.path.join(REPO, '章节原文', f'第{ch}章', f'第{ch}章初译_对照.md')
+    if not os.path.exists(bi):
+        return ''
+    with open(bi, encoding='utf-8-sig') as f:
+        for ln in f:
+            s = ln.strip().lstrip('#').strip()
+            if s.startswith('第') and '章' in s[:12]:
+                return s
+    return ''
 
 
 def build_one(ch, out_dir, apply):
@@ -50,14 +74,23 @@ def build_one(ch, out_dir, apply):
         return False, f'缺译文.md（跳过）', 0
     text = open(md, encoding='utf-8').read()
     title, paras = parse_en_md(text)
+    if not title:
+        title = f'Chapter {ch}'  # 兜底：源译文标题缺失/为中文时给个规范英题
+    zh_title = cn_title_of(ch)
     cn_hits = len(CJK.findall(text))
     if not apply:
-        return True, f'[dry-run] 标题={title[:30]!r} 段={len(paras)} 中文字符告警={cn_hits}', cn_hits
+        return True, (f'[dry-run] 中题={zh_title[:24]!r} 英题={title[:30]!r} '
+                      f'段={len(paras)} 中文字符告警={cn_hits}'), cn_hits
     try:
         from docx import Document
         doc = Document()
+        if zh_title:
+            h = doc.add_heading(zh_title, level=1)
+            # 中文章题是唯一允许的中文（标题，不是正文），字体显式指定避免乱码
+            for run in h.runs:
+                run.font.name = 'SimSun'
         if title:
-            doc.add_heading(title, level=1)
+            doc.add_heading(title, level=2)
         for p in paras:
             doc.add_paragraph(p)
         # 作者字段归一：唯一笔名 CooperChen（2026-11-09 起生效）；不写入任何协作者/AI 名
