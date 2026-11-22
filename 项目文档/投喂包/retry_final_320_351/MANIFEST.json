@@ -1,0 +1,31 @@
+{
+  "batch": "retry_final_320_351",
+  "generated": "2026-11-22T21:43:18",
+  "chapters": [
+    {
+      "n": 320,
+      "expected_paras": 101,
+      "title_zh": "第320章下决心勇敢面对"
+    },
+    {
+      "n": 351,
+      "expected_paras": 118,
+      "title_zh": "第351章 月上神柳情人归 （完）"
+    }
+  ],
+  "counts": {
+    "chapters": 2,
+    "paragraphs": 219,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1313,
+    "input_glossary": 10129,
+    "input_context": 600,
+    "input_source": 4949,
+    "output_estimate": 7446
+  },
+  "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。"
+}
