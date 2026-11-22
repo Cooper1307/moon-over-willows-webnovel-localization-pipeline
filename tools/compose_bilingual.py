@@ -48,6 +48,10 @@ def read_groups(en_path):
     lines = nonempty_lines(en_path)
     if lines and lines[0].startswith("#TITLE:"):
         lines = lines[1:]
+    has_marker = any(ln.startswith("@@G@@") for ln in lines)
+    if not has_marker:
+        # 老格式/1:1：每行独立成组，按顺序对应中文段
+        return [((i + 1, i + 1), [ln]) for i, ln in enumerate(lines)]
     groups, cur = [], []
     pending = None
     for ln in lines:

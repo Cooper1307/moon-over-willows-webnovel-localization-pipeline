@@ -102,11 +102,16 @@ def is_sep(line):
 
 
 def is_title_line(line):
-    """章节标题行（无 `#` 前缀的旧体制），如 `第6章 穿越成为赵仪王`。"""
+    """章节标题行（无 `#` 前缀的旧体制），如 `第6章 穿越成为赵仪王`。
+
+    2026-11-22：放宽——第320章标题 `第320章下决心勇敢面对`（无空格）、
+    第351章 `第351章 月上神柳情人归 （完）`（以 ）结尾）原本不识别，导致 L1 中文块无配对。
+    标题行本身以 `第N章` 开头且不含句末标点即可。
+    """
     s = line.strip()
-    if not TITLE_RE.match(s):
+    if not re.match(r"^第\d+章", s):
         return False
-    return len(s) < 60 and not s.endswith(("。", "！", "？", "…", '"', "”", "）", ")"))
+    return len(s) < 80 and "。" not in s and "！" not in s and "？" not in s
 
 
 def is_continuation(prev, cur):

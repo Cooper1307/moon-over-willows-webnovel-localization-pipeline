@@ -68,9 +68,9 @@ def _title_from(ch_dir, bi):
     if path is not None:
         for line in path.read_text(encoding="utf-8-sig").splitlines():
             s = line.strip()
-            if s.startswith("#"):
-                return s
-            if s:
+            if s.startswith("#") and not L.CJK_RE.search(s.lstrip("#")):
+                return s  # 只沿用纯英文标题，跳过中文标题行（第71章曾因此继承中文）
+            if s and not s.startswith("#"):
                 break
     p = bi.get("path")
     if p is not None:
