@@ -86,7 +86,34 @@ def normalize_model_output(raw):
         s = LIST_PREFIX_RE.sub("", s)
         if s.strip():
             out.append(s.strip())
-    return out
+    return _merge_poem_lines(out)
+
+
+def _merge_poem_lines(lines):
+    """合并模型拆成多行的英文诗词：以 " 开头但未闭合 → 到闭合引号为止算一段。
+
+    诗词是多行排版，不是多个段落；不合并会让一组中文配上 4-5 行诗句，
+    后续全部错位（第192/198章实测）。TN 注行单独保留。
+    """
+    merged, buf = [], []
+    for ln in lines:
+        if buf:
+            buf.append(ln)
+            if ln.rstrip().endswith('"'):
+                merged.append(" ".join(buf))
+                buf = []
+            continue
+        if ln.startswith('"') and not ln.rstrip().endswith('"') and ln.count('"') == 1:
+            buf = [ln]
+        elif (ln.startswith("[TN:") and merged
+              and merged[-1].count('"') >= 2 and merged[-1].rstrip().endswith('"')):
+            # 诗词行的译者注：并入前一条诗词段（如 "...poem..." + [TN: ...]）
+            merged[-1] = merged[-1] + " " + ln
+        else:
+            merged.append(ln)
+    if buf:
+        merged.append(" ".join(buf))
+    return merged
 
 
 def split_chapters(lines, start, end):

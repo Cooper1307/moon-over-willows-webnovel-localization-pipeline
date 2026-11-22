@@ -187,6 +187,8 @@ def _split_blocks(lines, notes):
     blocks, cur = [], []
     for i, raw in enumerate(lines, 1):
         line = raw.strip()
+        if line == "﻿":  # 孤立 BOM 行（第184/198章原文带入），非内容，跳过
+            continue
         if not line:
             if cur:
                 blocks.append(cur)

@@ -34,8 +34,9 @@ CHAPTERS = BASE / "章节原文"
 
 
 def nonempty_lines(path):
-    """保留行内原样内容（含首尾空白），只过滤纯空行。"""
-    return [ln for ln in path.read_text(encoding="utf-8-sig").splitlines() if ln.strip()]
+    """保留行内原样内容（含首尾空白），只过滤纯空行与孤立 BOM 行。"""
+    return [ln for ln in path.read_text(encoding="utf-8-sig").splitlines()
+            if ln.strip() and ln.strip() != "﻿"]
 
 
 def read_groups(en_path):
