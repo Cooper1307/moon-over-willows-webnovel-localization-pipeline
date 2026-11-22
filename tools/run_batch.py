@@ -103,9 +103,10 @@ def process(n, p):
     zp = zh_paras(n)
     if zp is None:
         return False, [], f"第{n}章原文不存在"
-    if len(lines) != len(zp):
-        return False, [], (f"段落数不等：原文 {len(zp)} · 英文 {len(lines)}；"
-                           f"补齐英文行后下批自动重试")
+    en_n = len(lines) - (1 if lines and lines[0].startswith("#TITLE:") else 0)
+    if en_n == 0:
+        return False, [], f"第{n}章无英文译文"
+    # 2026-11-22：段数不必等于中文段数；@@G@@ 组标记由 harvest 写入，compose 负责映射
 
     tmp = Path(tempfile.gettempdir()) / f"runbatch_{n}_{stamp()}.txt"
     steps = []
@@ -209,8 +210,8 @@ def main():
         en = nonempty_lines(p)
         title = en[0] if en and en[0].startswith("#TITLE:") else ""
         en_n = len(en) - (1 if title else 0)
-        align = "OK" if zp is not None and len(zp) == en_n else f"MISMATCH {len(zp) if zp else 0}/{en_n}"
-        print(f"  第{n}章  {p.name}  对齐={align}")
+        align = "OK" if zp is not None and en_n > 0 else "EMPTY"
+        print(f"  第{n}章  {p.name}  对齐={align}（段数 {len(zp) if zp else 0}/{en_n}，按组映射）")
         if not args.apply:
             continue
         ok, steps, err = process(n, p)

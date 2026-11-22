@@ -417,8 +417,11 @@ def check_chapter(ch_dir, baseline, apply_mode, force_mode, stats):
             row["问题"].append("★原文 MD5 与基线不一致（中文被改动？）")
         else:
             row["MD5"] = "一致"
-        if orig_n and orig_n != len(pairs):
-            row["问题"].append(f"段数不符：原文 {orig_n} vs 对照 {len(pairs)}")
+        # 2026-11-22：译文按英文习惯分段，pair 数不必等于原文段数。
+        # G2 改为「对照版中文行数 == 原文非空行数」（逐字覆盖）。
+        zh_lines_in_bi = sum(len(p[0].split("\n")) for p in pairs if p[0])
+        if orig_n and zh_lines_in_bi != orig_n:
+            row["问题"].append(f"中文行覆盖不符：原文 {orig_n} 行 vs 对照 {zh_lines_in_bi} 行")
     else:
         row["MD5"] = "无原文"
         row["问题"].append("无原文文件（无法校验 G1/G2）")
@@ -437,8 +440,9 @@ def check_chapter(ch_dir, baseline, apply_mode, force_mode, stats):
         row["问题"].append("无纯英版（待生成）")
         need_write = True
         stats["missing"] += 1
-    elif en_n != len(pairs):
-        row["问题"].append(f"纯英段数 {en_n} ≠ 对照英文块数 {len(pairs)}（不同步）")
+    elif en_n != sum(len(p[1].split("\n")) for p in pairs if p[1]):
+        bi_en_total = sum(len(p[1].split("\n")) for p in pairs if p[1])
+        row["问题"].append(f"纯英段数 {en_n} ≠ 对照英文段总数 {bi_en_total}（不同步）")
         if force_mode:
             need_write = True
         else:

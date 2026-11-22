@@ -33,15 +33,15 @@
 
 （来源：第51章末 6 段）
 
-Xiaguo pounded and beat Lin Jue: "Let me go! Let me go quickly!..."
+Pounding and clawing at his chest, Xiaguo screamed: "Let me go! Let me go right now!..."
 
-How could Lin Jue let go? All he wanted was to experience on Xiaguo the feelings he had never experienced with Zhu Shuzhen.
+Fat chance Lin Jue let go—burning to claim from Xiaguo every pleasure Zhu Shuzhen had denied him!
 
-When Zhu Shuzhen married him, she was beautiful but cold, and even threatened suicide. Plus, her father was the Lin'an prefect. Lin Jue didn't dare act rashly. After he beat her unconscious and she woke up, Zhu Shuzhen actually knew martial arts. Lin Jue couldn't beat her at all, and he certainly didn't dare take liberties with her.
+When Zhu Shuzhen wed him, she stayed glacial, threatened suicide, and had the Prefect of Lin'an backing her, keeping Lin Jue in check; after knocking her out, she woke knowing lethal boxing he couldn't match, putting her way out of reach!
 
-But Xiaguo had no backing. She wasn't cold either—she was soft and weak. The key point was she was as beautiful as Zhu Shuzhen, which aroused Lin Jue's desire to possess her.
+Xiaguo had zero backing, soft and fragile—and best of all, blessed with beauty matching Zhu Shuzhen's, igniting pure possessive frenzy in him!
 
-He put Xiaguo on the bed and heavily pinned her down. He leaned in to kiss her face again, but Xiaguo kicked him hard in the groin. The pain was unbearable. He rolled off, clutching his groin and crying out in agony: "Aargh! Aargh!..."
+Dropping Xiaguo onto the bed, he pinned her flat beneath his weight and leaned in for another kiss—when Xiaguo drove a vicious kick straight into his groin! Blinding agony doubled him off the bed clutching himself howling: "Aargh! Aargh!..."
 
-Xiaguo took the chance and escaped.
+Seizing the split second, Xiaguo bolted straight out the door!
 

@@ -135,14 +135,17 @@ def anchor_score(zh, en):
 
 
 def align(zh_paras, got_lines):
-    """
-    单调 DP 对齐：返回 (pairs, diagnostics)。
-    pairs = [(zh_idx, en_idx)]，索引 0-based；诊断列出缺失/多余/疑似折行。
+    """按单调对齐生成组，返回 (groups, diagnostics)。
+
+    groups = [(zh_indices, en_indices), ...]，索引 0-based。
+    规则：中文段按顺序分给英文行；多个中文可落到同一组（英文合并），
+    多出的英文行并入前一组（英文拆分）。诊断只报告，不阻断。
     """
     n, m = len(zh_paras), len(got_lines)
-    if n == m:
-        return [(i, i) for i in range(n)], []
-    # LCS 风格 DP，带 anchor_score
+    diags = []
+    if n == 0 or m == 0:
+        return [], []
+    # 单调 DP 找锚点配对
     dp = [[0] * (m + 1) for _ in range(n + 1)]
     for i in range(1, n + 1):
         for j in range(1, m + 1):
@@ -159,35 +162,59 @@ def align(zh_paras, got_lines):
         else:
             j -= 1
     pairs.reverse()
-    matched_zh = {p[0] for p in pairs}
-    matched_en = {p[1] for p in pairs}
-    diags = []
-    missing = [i + 1 for i in range(n) if i not in matched_zh]
-    extra = [j + 1 for j in range(m) if j not in matched_en]
+    # 用配对点切组：相邻配对之间未匹配的中文/英文归入同一组
+    groups = []
+    cur_z, cur_e = [], []
+    zi = ei = 0
+    for pz, pe in pairs:
+        while zi <= pz:
+            cur_z.append(zi); zi += 1
+        while ei <= pe:
+            cur_e.append(ei); ei += 1
+        groups.append((cur_z, cur_e))
+        cur_z, cur_e = [], []
+    # 尾部残留
+    tail_z = list(range(zi, n))
+    tail_e = list(range(ei, m))
+    if tail_z or tail_e:
+        if groups:
+            gz, ge = groups[-1]
+            groups[-1] = (gz + tail_z, ge + tail_e)
+        else:
+            groups.append((tail_z, tail_e))
+    # 诊断（只报告）
+    matched_z = {x for gz, _ in groups for x in gz}
+    matched_e = {x for _, ge in groups for x in ge}
+    missing = [x + 1 for x in range(n) if x not in matched_z]
+    extra = [x + 1 for x in range(m) if x not in matched_e]
     if missing:
-        diags.append(f"缺译中文段号：{missing[:20]}" + ("…" if len(missing) > 20 else ""))
+        diags.append(f"未锚定中文段：{missing[:10]}")
     if extra:
-        diags.append(f"多余英文行号：{extra[:20]}" + ("…" if len(extra) > 20 else ""))
-    # 疑似折行：相邻两行前者不以句末标点结尾、后者以小写开头
-    merged = []
-    for j in range(m - 1):
-        if not re.search(r"[.!?。！？\"”']\s*$", got_lines[j]) and re.match(r"^[a-z]", got_lines[j + 1]):
-            merged.append(j + 1)
-    if merged:
-        diags.append(f"疑似行内折行（英文行号）：{merged[:20]}")
-    return pairs, diags
+        diags.append(f"未锚定英文行：{extra[:10]}")
+    if abs(n - m) > 0:
+        diags.append(f"段数差异 中文{n}·英文{m}（按组映射，不阻断）")
+    return groups, diags
 
 
-def write_inbox(n, title, lines, apply, force=False):
+def write_inbox(n, title, got_lines, groups, zh, apply, force=False):
+    """写收件文件；段数不等时用 @@G@@ 标出组界（去掉标记后英文行原样）。"""
     target = INBOX / f"ch{n}_en.txt"
     if target.exists() and not force:
         return False, "已存在（--force 未给）"
     if not apply:
         return True, f"[DRY-RUN] 将写 {target.name}"
     INBOX.mkdir(parents=True, exist_ok=True)
-    text = (f"#TITLE: {title or f'Chapter {n}'}\n" + "\n".join(lines) + "\n")
+    if groups and any(len(ge) != 1 or len(gz) != 1 for gz, ge in groups):
+        parts = []
+        for gz, ge in groups:
+            parts.append(f"@@G@@ {min(gz)+1}-{max(gz)+1}" if gz else "@@G@@ 0-0")
+            parts.extend(got_lines[x] for x in ge)
+        body = "\n".join(parts)
+    else:
+        body = "\n".join(got_lines)
+    text = (f"#TITLE: {title or f'Chapter {n}'}\n" + body + "\n")
     target.write_text(text, encoding="utf-8", newline="\n")
-    return True, f"[OK] 已写 {target.name}"
+    return True, f"[OK] 已写 {target.name}（{len(groups)} 组）"
 
 
 def read_clipboard():
@@ -225,7 +252,7 @@ def main():
     report = io.StringIO()
     report.write(f"# 外部输出回收诊断（{args.start}–{args.end} · {datetime.now():%Y-%m-%d %H:%M:%S}）\n\n")
     report.write("> 只有段数完全匹配的章会写入收件目录；其余需人工补行或重出。\n\n")
-    report.write("| 章 | 原文段 | 收到段 | 结果 | 诊断 |\n|---|---|---|---|---|\n")
+    report.write("| 章 | 原文段 | 收到段 | 组数 | 结果 | 诊断 |\n|---|---|---|---|---|---|\n")
 
     ok_all = True
     written_count = 0
@@ -234,12 +261,12 @@ def main():
     for n in range(args.start, args.end + 1):
         title_zh, zh = expected_paras(n)
         if zh is None:
-            report.write(f"| {n} | - | - | ERROR | 原文不存在 |\n")
+            report.write(f"| {n} | - | - | - | ERROR | 原文不存在 |\n")
             ok_all = False
             continue
         block = got.get(n)
         if not block:
-            report.write(f"| {n} | {len(zh)} | 0 | ERROR | 输出里找不到该章 `#CH {n}` |\n")
+            report.write(f"| {n} | {len(zh)} | 0 | - | ERROR | 输出里找不到该章 `#CH {n}` |\n")
             ok_all = False
             continue
         got_lines = block["lines"]
@@ -250,22 +277,23 @@ def main():
         if not got_lines:
             ok_all = False
             failed_ch.append(n)
-            report.write(f"| {n} | {len(zh)} | 0 | ERROR | 该章无译文段落 |\n")
+            report.write(f"| {n} | {len(zh)} | 0 | - | ERROR | 该章无译文段落 |\n")
             continue
         if zh_as_en:
             ok_all = False
             failed_ch.append(n)
-            report.write(f"| {n} | {len(zh)} | {len(got_lines)} | ERROR | "
+            report.write(f"| {n} | {len(zh)} | {len(got_lines)} | - | ERROR | "
                          f"第 {zh_as_en[:5]} 行仍是中文未译 |\n")
             continue
-        written, msg = write_inbox(n, block["title"], got_lines, args.apply, args.force)
+        groups, diags = align(zh, got_lines)
+        written, msg = write_inbox(n, block["title"], got_lines, groups, zh, args.apply, args.force)
         if written:
             written_count += 1
         else:
             ok_all = False
             pending_ch.append(n)
-        note = "段数按英文习惯（无需等于中文）" if len(got_lines) != len(zh) else "段数对齐"
-        report.write(f"| {n} | {len(zh)} | {len(got_lines)} | {'OK' if written else 'SKIP'} | {msg} · {note} |\n")
+        note = f"{len(groups)} 组" + ("；" + "；".join(diags[:2]) if diags else "")
+        report.write(f"| {n} | {len(zh)} | {len(got_lines)} | {len(groups)} | {'OK' if written else 'SKIP'} | {msg} · {note} |\n")
 
     name = f"回收诊断_{datetime.now():%Y%m%d_%H%M%S}.md"
     summary = (f"成功 {written_count}/{args.end - args.start + 1} 章。"

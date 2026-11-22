@@ -31,17 +31,17 @@
 
 ## 4. 上章结尾口吻参照
 
-（来源：第147章末 6 段）
+（来源：第150章末 6 段）
 
-"Dread it because marrying the Prefect's daughter might boost Haoyu's standing for the inheritance. Root for it because I'm sick of watching Haoyu live free and wild while still sitting first in line—marry Miss Zhu and he'll get mocked citywide AND battered by his own wife! Makes me grin just picturing it!"
+Staggering back into Nan Shuang's arms, Qiao Wenxian could not brawl before Prince Yi. Frozen where he stood, Chen Haoyu's taunt—"Shuzhen belongs to me now, keep your eyes off her"—hammered through his skull, wiping out every earlier complaint Chen Haoyu had made about hating the match until the whole world drained gray...
 
-"Been chewing on this myself—bet your Eldest Uncle only agreed because his hand got forced! Dig quiet and confirm why. If his hand really got forced, this match won't add one ounce to Haoyu's standing—might even sink him!"
+Rising from her chair, Miao Zhiyu stepped beside Qiao Wenxian and faced Chen Haoyu with calm poise: "Young Master Chen is mistaken. Young Master Qiao's feelings don't hurt me at all—quite the opposite, I understand entirely. I know every chapter of Youqi Jushi and Young Master Qiao's bond and wished they could end up together; only because our families sealed this betrothal were our hands tied."
 
-Chen Haodong bowed: "I'll dig up the whole truth for Father."
+Her generous, gracious speech drew admiring glances from every corner of the room—even Qiao Wenxian looked at her with fresh respect, a quiet wave of guilt stirring in his chest.
 
-"Not for me—for YOU! Make every Chen elder see YOU are the one true heir to the Chen fortune. Start with Haoyu's freeloading pack."
+Watching from the side, Xiaguo beamed inside: reasonable and gracious—Miao Zhiyu would make an easy primary wife to live under once Xiaguo became Young Master Qiao's concubine!
 
-"On it right now, Father!"
+Knowing she had won every heart in the hall, Miao Zhiyu turned warm toward Qiao Wenxian: "Sit back down and finish lunch, Young Master Qiao. Youqi Jushi only stepped out to freshen up and will be right back—whatever you need to tell her, tell her once she returns."
 
-Leaving Chen Manor, Chen Haodong stopped by the tea shop for a spell of work, then headed straight for Chunxiang Brothel.
+Backed into grace by Miao Zhiyu, Qiao Wenxian sank back into his chair—a thousand words that had burned to burst out at Shuzhen now caught silent in his throat.
 

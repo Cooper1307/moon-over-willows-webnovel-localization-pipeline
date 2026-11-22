@@ -1,6 +1,6 @@
 {
   "batch": "bulk_02_052_160",
-  "generated": "2026-11-22T00:47:34",
+  "generated": "2026-11-22T13:41:26",
   "chapters": [
     {
       "n": 2,
@@ -261,9 +261,9 @@
     "glossary_suggest": 303
   },
   "est_tok": {
-    "input_rules": 1295,
+    "input_rules": 1313,
     "input_glossary": 10129,
-    "input_context": 522,
+    "input_context": 680,
     "input_source": 82701,
     "output_estimate": 123148
   },

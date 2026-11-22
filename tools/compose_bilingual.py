@@ -22,6 +22,7 @@ compose_bilingual.py — 由「原文中文行 + 逐段英文行」组装对照�
       不修改原文、不修改译文.md（派生物由 extract_pure_en.py 生成）。
 """
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -35,6 +36,30 @@ CHAPTERS = BASE / "章节原文"
 def nonempty_lines(path):
     """保留行内原样内容（含首尾空白），只过滤纯空行。"""
     return [ln for ln in path.read_text(encoding="utf-8-sig").splitlines() if ln.strip()]
+
+
+def read_groups(en_path):
+    """读收件文件，按 @@G@@ 切组。
+
+    返回 [(zh_indices_1based_list, en_lines), ...]。
+    新格式 `@@G@@ a-b` 带中文索引；老格式（无标记）按行顺序推定 1:1。
+    """
+    lines = nonempty_lines(en_path)
+    if lines and lines[0].startswith("#TITLE:"):
+        lines = lines[1:]
+    groups, cur = [], []
+    pending = None
+    for ln in lines:
+        if ln.startswith("@@G@@"):
+            if cur:
+                groups.append((pending, cur)); cur = []
+            m = re.search(r"(\d+)\s*-\s*(\d+)", ln)
+            pending = (int(m.group(1)), int(m.group(2))) if m else None
+        else:
+            cur.append(ln)
+    if cur:
+        groups.append((pending, cur))
+    return groups
 
 
 def main():
@@ -75,18 +100,34 @@ def main():
         return 2
 
     title_zh, paras_zh = zh[0], zh[1:]
+    groups = read_groups(en_path)  # 无 @@G@@ 时每行一组（老格式兼容）
+    n_en = sum(len(en_lines) for _idx, en_lines in groups)
     print(f"章题：{title_zh}")
-    print(f"原文正文段 {len(paras_zh)} · 英文段 {len(en)}")
-    if len(paras_zh) != len(en):
-        print(f"[ERROR] 段落数不等（{len(paras_zh)} vs {len(en)}），拒绝组装。"
-              f" 请补齐英文行后再跑；不写任何文件。")
-        for i, z in enumerate(paras_zh[:3], 1):
-            print(f"  原文段{i}: {z[:50]}")
+    print(f"原文正文段 {len(paras_zh)} · 英文段 {n_en} · 组 {len(groups)}")
+    if not groups:
+        print("[ERROR] 英文行文件为空")
         return 1
 
+    # groups: [(中文索引(1-based)起止 or None, 英文行列表), ...]
     out = [title_zh, f"## Chapter {n}: {args.title}", ""]
-    for z, e in zip(paras_zh, en):
-        out += [z, e, ""]
+    written_zh = []
+    zh_i = 0
+    for idx_range, en_lines in groups:
+        if idx_range:
+            lo, hi = idx_range
+            zh_lines = [] if lo == 0 else paras_zh[lo - 1:hi]
+            zh_i = max(zh_i, hi)
+        else:
+            take = max(1, len(en_lines))
+            zh_lines = paras_zh[zh_i:zh_i + take]
+            zh_i += len(zh_lines)
+        written_zh.extend(zh_lines)
+        out.extend(zh_lines)
+        out.extend(en_lines)
+        out.append("")
+    if written_zh != paras_zh:
+        print(f"[ERROR] 中文行覆盖校验失败：原文 {len(paras_zh)} 行 · 对照 {len(written_zh)} 行；拒绝写盘")
+        return 1
     text = "\n".join(out).rstrip() + "\n"
 
     if args.apply:

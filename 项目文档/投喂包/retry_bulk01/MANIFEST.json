@@ -1,6 +1,6 @@
 {
   "batch": "retry_bulk01",
-  "generated": "2026-11-22T13:19:55",
+  "generated": "2026-11-22T13:41:29",
   "chapters": [
     {
       "n": 9,
@@ -76,7 +76,7 @@
     "glossary_suggest": 303
   },
   "est_tok": {
-    "input_rules": 1295,
+    "input_rules": 1313,
     "input_glossary": 10129,
     "input_context": 706,
     "input_source": 27843,

@@ -140,8 +140,11 @@ def derive(ch_dir, force=False, apply_mode=False, audit=False):
         title = "# " + title
     out = [title, ""]
     for _zh, en, _ln in bi["pairs"]:
-        out.append(L.strip_red(en))
-        out.append("")
+        # 2026-11-22：一组可含多段英文（按英文习惯分段），逐段展开
+        for en_para in en.split("\n"):
+            if en_para.strip():
+                out.append(L.strip_red(en_para))
+                out.append("")
 
     res["path"] = str(ch_dir / f"{name}译文.md")
     if apply_mode and not audit:          # audit 模式绝不写文件（双重保险）
