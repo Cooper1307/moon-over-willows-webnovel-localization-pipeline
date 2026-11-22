@@ -243,17 +243,20 @@ def main():
             ok_all = False
             continue
         got_lines = block["lines"]
-        pairs, diags = align(zh, got_lines)
-        if len(got_lines) != len(zh):
+        # 2026-11-22：译文按英文小说习惯分段，段数不必等于中文段数。
+        # 只要求非空（有译文）且没有明显的中文残留（整行是中文=模型没翻）。
+        zh_as_en = [i + 1 for i, l in enumerate(got_lines)
+                    if re.search(r"[㐀-鿿]", l) and not re.search(r"[A-Za-z]", l)]
+        if not got_lines:
             ok_all = False
             failed_ch.append(n)
-            diag = "；".join(diags[:3]) if diags else "段数不等"
-            report.write(f"| {n} | {len(zh)} | {len(got_lines)} | ERROR | {diag} |\n")
-            # 前 3 段对照，方便人工定位
-            for k in range(min(3, len(zh))):
-                en = got_lines[k] if k < len(got_lines) else "（缺）"
-                report.write(f"   - 段{k+1} 中：{zh[k][:70]}\n")
-                report.write(f"     段{k+1} 英：{en[:70]}\n")
+            report.write(f"| {n} | {len(zh)} | 0 | ERROR | 该章无译文段落 |\n")
+            continue
+        if zh_as_en:
+            ok_all = False
+            failed_ch.append(n)
+            report.write(f"| {n} | {len(zh)} | {len(got_lines)} | ERROR | "
+                         f"第 {zh_as_en[:5]} 行仍是中文未译 |\n")
             continue
         written, msg = write_inbox(n, block["title"], got_lines, args.apply, args.force)
         if written:
@@ -261,7 +264,8 @@ def main():
         else:
             ok_all = False
             pending_ch.append(n)
-        report.write(f"| {n} | {len(zh)} | {len(got_lines)} | {'OK' if written else 'SKIP'} | {msg} |\n")
+        note = "段数按英文习惯（无需等于中文）" if len(got_lines) != len(zh) else "段数对齐"
+        report.write(f"| {n} | {len(zh)} | {len(got_lines)} | {'OK' if written else 'SKIP'} | {msg} · {note} |\n")
 
     name = f"回收诊断_{datetime.now():%Y%m%d_%H%M%S}.md"
     summary = (f"成功 {written_count}/{args.end - args.start + 1} 章。"
