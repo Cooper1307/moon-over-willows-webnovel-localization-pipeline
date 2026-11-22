@@ -84,6 +84,24 @@ OUTPUT_TEMPLATE = """#CH <章号>
 - 章题只写在 `#TITLE:` 行，正文从第一段开始。
 """
 
+OUTPUT_TEMPLATE_REVIEW = """#CH <章号>
+锚点（该 [EN] 段前40字逐字复制） | P0/P1/P2 | 现状片段 | 建议改为 | 理由
+锚点 | P1 | Qianlixun everywhere | Qianli Xun | 拼写漂移，与既定事实表冲突
+（该章无问题则不写这个 #CH 块）
+#CH <下一章号>
+...
+
+## 审校意见
+一句话总评（这批整体质量如何）
+中文原词 | 建议译法 | 理由
+（没有术语建议就写"无"）
+
+【格式铁律】
+- 只出意见行，**绝不重写整章译文**。
+- 锚点必须从 03_SOURCE/ALL_SOURCE.md 的 [EN] 段逐字复制前 40 字（手打会导致本地匹配失败）。
+- 不要用代码围栏；不要输出两遍；每章的 #CH 只出现一次。
+"""
+
 SYSTEM_TXT = """你是宋代古装穿越小说《月上柳梢头，人约黄昏后》的中译英初译师。
 输入是按 `#CH N` 分章的中文原文（每行一段）。逐章输出英文，**每行一段**，章间用 `#CH N` 分隔，每章首行 `#TITLE: <英文题名>`。
 不要用代码围栏，不要给段落编号。**分段按英文小说习惯**：中文分段只是内容参考不是模具，可拆可合，以英语读者读起来顺为准；内容不漏不加、顺序不乱。末尾写「## 译法建议」（没有就写"无"）。
@@ -96,6 +114,49 @@ SYSTEM_TXT = """你是宋代古装穿越小说《月上柳梢头，人约黄昏�
 允许 -ly 词：really/perfectly/truly/entirely/miraculously；只禁"副词修饰动作动词"的弱填充。
 """
 
+REVIEW_SYSTEM_TXT = """你是宋代古装穿越小说《月上柳梢头，人约黄昏后》中译英的资深审校。
+输入是按 `#CH N` 分章的中英对照（`[ZH]` 中文段 / `[EN]` 英文段交替）。逐章审校，末尾输出「## 审校意见」汇总（没有问题就写"通过，无修改建议"）。
+不重写整章译文，只输出需要修改的条目；没有实质问题就不提。
+"""
+
+REVIEW_PROMPT_TEMPLATE = """# 任务：审校 {count} 章中译英译文
+
+你收到 {count} 章的**中英对照**（`03_SOURCE/ALL_SOURCE.md`，按 `#CH N` 分章；每段带 `[ZH] ` 或 `[EN] ` 前缀，交替排列；章号见 MANIFEST.json）。
+逐章对照中文审校英文，输出**可落地的修改意见**。
+
+## 一、审什么（按优先级）
+1. **漏译/误译**：中文内容在英文里缺失、或意思翻反/翻错（逐组对照扫）。
+2. **指代与施受**：代词指代是否对得上现场人物；施动者/受动者是否与中文一致。
+3. **专名与术语**：人名拼写漂移（如 Qianlixun ≠ Qianli Xun）、称谓/官制/度量是否与 `02_CONTEXT.md` 一致。
+4. **AI 痕迹**：delve/leverage/pivotal/myriad/tapestry/testament 等词；动词+-ly 弱填充副词（really/perfectly/truly/entirely/miraculously 允许）；em dash 过量。
+5. **自然度**：读起来是否像英语母语小说；不顺的句子给改法。
+
+## 二、反向护栏（不许犯）
+- **不为改而改**：正确的表达哪怕朴素也是对的；只有真问题才提。
+- **不判错正确的陌生表达**：拿不准的写"存疑"，别下结论。
+- **不破坏锁定译名**：人名/称谓/官制/词牌按 `02_CONTEXT.md`；有异议只能以"译法建议"提出。
+- **不以中文段落结构苛求英文**：英文分段按英文习惯，中英段数不等是正常现象，不算问题。
+- 诗词的 `[TN: ...]` 译者注和字形解释（如 `(寻)`）是合法内容，不是污染。
+
+## 三、输出格式（严格，机器回收）
+每章以 `#CH <章号>` 单独一行开始。发现的问题逐条列出，每条一行：
+`锚点 | 严重度 | 现状片段 | 建议改为 | 理由`
+- 锚点 = 该 `[EN]` 段**前 40 字符逐字复制**（如 `The Dongfang family's dancers soon entered`），本地靠子串匹配定位。
+- 严重度：P0 漏译误译 / P1 术语与拼写 / P2 表达优化。
+- 「建议改为」只在确有改法时填；漏译类可填 `（补译：…要点…）`。
+- 章内无问题就不写该章的 `#CH`。所有章审完写 `## 审校意见`：一句话总评 + 术语建议行 `中文 | 建议 | 理由`（没有写"无"）。
+- 禁止重写整章译文；禁止输出两遍；禁止代码围栏；锚点必须逐字复制，手打会匹配失败。
+
+## 四、自检
+- [ ] 每条意见的锚点都是从 03_SOURCE 逐字复制的 `[EN]` 段前 40 字
+- [ ] 严重度只用 P0/P1/P2
+- [ ] 末尾有「## 审校意见」
+- [ ] 全文只有一遍，无重复 `#CH`
+
+附录：`00_RULES.md` · `01_GLOSSARY.md` · `02_CONTEXT.md` · `03_SOURCE/ALL_SOURCE.md`（中英对照）· `MANIFEST.json`。
+AI Studio 用法：SYSTEM.txt 贴指令栏，PROMPT.md 贴对话框，上传 03_SOURCE/ALL_SOURCE.md。选 Gemini 4 Neon。
+"""
+
 PROMPT_TEMPLATE = """# 任务：把 {count} 章中文原文译成英文
 
 你收到 {count} 章中文原文（`03_SOURCE/ALL_SOURCE.md`，按 `#CH N` 分章，每行一段；章号见 MANIFEST.json）。
@@ -105,6 +166,7 @@ PROMPT_TEMPLATE = """# 任务：把 {count} 章中文原文译成英文
 1. 每章以 `#CH <章号>` 单独一行开始，紧跟 `#TITLE: <英文题名>` 一行，之后每行一段英文。
 2. 章与章之间只靠 `#CH` 分隔。**禁止**代码围栏（```）、`<PARA ...>` 锚点、`**Paragraph 3:**`/`P3.`/`3)` 之类编号标签、markdown 列表符号。
 3. **分段规则（重要）**：不要照搬中文的段落切分。中文原文里一句话自成一段、或几段连续短对白，在英文里通常该合并成一段；反过来，中文的长段里如果换了说话人或场景，英文里该拆成两段。**按英语小说读者的阅读习惯分段**。唯一硬要求：内容不漏、不加、顺序不乱。
+   ⚠ **本地校验器会逐章计算「英文段数 ÷ 中文段数」**：正常翻译在 0.5–1.0 之间（合并短对白会略小于 1）；**低于 0.35 的章会被判为摘要、整章退回重做**。长对话、长打斗、连续对白场景也必须逐场景译出，不许用一句话带过整页内容。
 4. 每段英文里不要嵌入中文译文；但原文字形解释（如 `the character "Xun" (寻， meaning "to seek")`）和成对弯引号 `“ ”` 是合法内容，**禁止清除**。
 5. 所有章输出完后写 `## 译法建议`，格式 `中文原词 | 你采用的英文 | 理由（一句话）`；没有就写"无"。
 6. **只输出一遍终稿**：先在内部完成初译+自审，把修正直接并入上面的译文。
@@ -188,6 +250,8 @@ def main():
     ap.add_argument("--chapters", help="离散章号，如 110,124,132（与 --start/--end 二选一）")
     ap.add_argument("--context", help="已生成的上下文 md 路径（默认自动 build_context）")
     ap.add_argument("--tag", help="自定义批次标签（离散章时建议给，如 retry_101_150）")
+    ap.add_argument("--mode", choices=["translate", "review"], default="translate",
+                    help="translate=初译（默认，喂中文原文）；review=审校（喂中英对照，只出修改意见）")
     ap.add_argument("--apply", action="store_true")
     args = ap.parse_args()
     if args.chapters:
@@ -212,27 +276,52 @@ def main():
     tag = args.tag or f"batch_{lo:03d}_{hi:03d}"
     out_dir = PACKS / tag
     zip_path = PACKS / f"{tag}.zip"
+    review_mode = args.mode == "review"
 
-    # 原文（逐字取自磁盘，零改动）
+    # 原文/对照（逐字取自磁盘，零改动）
     sources = {}
     manifest_ch = []
     all_src = io.StringIO()
-    for n in chapters:
-        p = BASE / "章节原文" / f"第{n}章" / f"第{n}章原文.md"
-        if not p.is_file():
-            print(f"[ERROR] 第{n}章原文不存在")
-            return 2
-        lines = nonempty_lines(p)
-        if not lines:
-            print(f"[ERROR] 第{n}章原文为空")
-            return 2
-        title_zh, paras = lines[0], lines[1:]
-        sources[n] = lines
-        manifest_ch.append({"n": n, "expected_paras": len(paras), "title_zh": title_zh})
-        all_src.write(f"#CH {n}\n")
-        for para in paras:
-            all_src.write(para + "\n")
-        all_src.write("\n")
+    if review_mode:
+        # 审校模式：源 = 中英对照（[ZH]/[EN] 前缀逐段），来自对照版唯一真源
+        import chapter_lib as _CL
+        for n in chapters:
+            ch_dir = BASE / "章节原文" / f"第{n}章"
+            bi = _CL.parse_bilingual(ch_dir)
+            if not bi["pairs"]:
+                print(f"[ERROR] 第{n}章无对照版，审校模式要求译文已落地")
+                return 2
+            title_zh = nonempty_lines(ch_dir / f"第{n}章原文.md")[0]
+            manifest_ch.append({"n": n, "expected_paras": len(bi["pairs"]),
+                                "title_zh": title_zh, "mode": "review"})
+            all_src.write(f"#CH {n}\n")
+            for zh, en, _ln in bi["pairs"]:
+                if zh:
+                    for zl in zh.split("\n"):
+                        if zl.strip():
+                            all_src.write("[ZH] " + zl + "\n")
+                if en:
+                    for el in en.split("\n"):
+                        if el.strip():
+                            all_src.write("[EN] " + el + "\n")
+            all_src.write("\n")
+    else:
+        for n in chapters:
+            p = BASE / "章节原文" / f"第{n}章" / f"第{n}章原文.md"
+            if not p.is_file():
+                print(f"[ERROR] 第{n}章原文不存在")
+                return 2
+            lines = nonempty_lines(p)
+            if not lines:
+                print(f"[ERROR] 第{n}章原文为空")
+                return 2
+            title_zh, paras = lines[0], lines[1:]
+            sources[n] = lines
+            manifest_ch.append({"n": n, "expected_paras": len(paras), "title_zh": title_zh})
+            all_src.write(f"#CH {n}\n")
+            for para in paras:
+                all_src.write(para + "\n")
+            all_src.write("\n")
 
     rules = read_universal_rules()
     glossary, gtotal, glocked, gsuggest = build_glossary()
@@ -247,29 +336,40 @@ def main():
 
     chapter_desc = (f"{lo}–{hi} 章" if args.chapters is None
                     else f"以下 {len(chapters)} 章（章号见 MANIFEST.json）")
-    prompt = PROMPT_TEMPLATE.format(count=len(chapters), start=lo, end=hi,
-                                    chapter_desc=chapter_desc)
+    if review_mode:
+        prompt = REVIEW_PROMPT_TEMPLATE.format(count=len(chapters))
+        system = REVIEW_SYSTEM_TXT
+        out_template = OUTPUT_TEMPLATE_REVIEW
+        out_per_para = 18  # 审校只出意见行，远小于全文翻译
+    else:
+        prompt = PROMPT_TEMPLATE.format(count=len(chapters), start=lo, end=hi,
+                                        chapter_desc=chapter_desc)
+        system = SYSTEM_TXT
+        out_template = OUTPUT_TEMPLATE
+        out_per_para = 34
     manifest = {
         "batch": tag,
-        "generated": datetime.now().isoformat(timespec="seconds"),
+        "mode": args.mode,
+        "generated": datetime.now().isoformat(timespec="seconds") if hasattr(datetime, "isoformat") else datetime.now().isoformat,
         "chapters": manifest_ch,
         "counts": {"chapters": len(chapters), "paragraphs": sum(c["expected_paras"] for c in manifest_ch),
                    "glossary_total": gtotal, "glossary_locked": glocked, "glossary_suggest": gsuggest},
         "est_tok": {"input_rules": est_tok(rules), "input_glossary": est_tok(glossary),
                     "input_context": est_tok(context), "input_source": est_tok(all_src.getvalue()),
-                    "output_estimate": sum(c["expected_paras"] * 34 for c in manifest_ch)},
+                    "output_estimate": sum(c["expected_paras"] * out_per_para for c in manifest_ch)},
         "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；"
                 "总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。",
     }
+    manifest["generated"] = datetime.now().isoformat(timespec="seconds")
 
     files = {
         "PROMPT.md": prompt,
-        "SYSTEM.txt": SYSTEM_TXT,
+        "SYSTEM.txt": system,
         "00_RULES.md": rules,
         "01_GLOSSARY.md": glossary,
         "02_CONTEXT.md": context,
         "03_SOURCE/ALL_SOURCE.md": all_src.getvalue(),
-        "04_OUTPUT_TEMPLATE.txt": OUTPUT_TEMPLATE,
+        "04_OUTPUT_TEMPLATE.txt": out_template,
         "MANIFEST.json": json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
     }
     for n, lines in sources.items():
