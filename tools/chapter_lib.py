@@ -375,20 +375,9 @@ PARA_ALIGN_TOL = 0.10    # 中文段数与原文段数允许偏差（超过判 P
 
 
 def _count_paras_origin(path):
-    """按空行分段统计原文段落数（连续非空行 = 一段，忽略标题行）。"""
-    n = 0
-    in_para = False
-    for line in path.read_text(encoding="utf-8-sig").splitlines():
-        s = line.strip()
-        if not s:
-            in_para = False
-            continue
-        if s.startswith("#"):
-            continue
-        if not in_para:
-            n += 1
-            in_para = True
-    return n
+    """每行一段统计原文（2026-11-22：与 compose_bilingual 的口径统一，忽略空行与标题行）。"""
+    lines = [s for s in path.read_text(encoding="utf-8-sig").splitlines() if s.strip()]
+    return max(0, len(lines) - 1)  # 减章题行
 
 
 def cn_source_check(ch_dir):
@@ -424,7 +413,9 @@ def cn_source_check(ch_dir):
         return info
 
     pairs = bi["pairs"]
-    info["cn_paras"] = sum(1 for zh, _en, _ln in pairs if zh and zh.strip())
+    # 2026-11-22：一组可含多段中文，按中文行数计（不是 pair 数）
+    zh_lines = [ln for zh, _en, _ln in pairs for ln in (zh or "").split("\n") if ln.strip()]
+    info["cn_paras"] = len(zh_lines)
     info["cjk"] = sum(len(CJK_RE.findall(zh or "")) for zh, _e, _l in pairs)
 
     if bi["kind"] == "EN-only" or info["cjk"] < G0_MIN_CJK:

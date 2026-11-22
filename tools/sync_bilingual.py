@@ -149,12 +149,15 @@ def has_cjk(text):
     """
     if CJK_RE.search(text) and not ASCII_RE.search(text):
         return True
+    # 中文省略号/破折号行（……、——）无 CJK 也无 ASCII 字母，属中文段落
+    if not ASCII_RE.search(text) and re.fullmatch(r"[\s…—－·、，。！？：；“”‘’（）《》]+", text):
+        return True
     return cjk_ratio(text) >= CJK_RATIO_MIN
 
 
 def is_en_block(text):
     """英文段判定：非中文块，且含 ASCII 字母。"""
-    return not has_cjk(text) and bool(ASCII_RE.search(text))
+    return not has_cjk(text) and bool(ASCII_RE.search(text) or re.fullmatch(r"[\s.,!?;:'\"\-—–()]+", text))
 
 
 def classify(lines):
@@ -223,7 +226,8 @@ def parse_by_blocks(lines, anomalies, notes):
     units = []
     for blk in blocks:
         zh_lines = [l for _i, l in blk if has_cjk(l)]
-        en_lines = [l for _i, l in blk if not has_cjk(l) and ASCII_RE.search(l)]
+        en_lines = [l for _i, l in blk if not has_cjk(l) and
+                    (ASCII_RE.search(l) or re.fullmatch(r"[\s.,!?;:'\"\-—–()]+", l))]
         units.append({
             "zh": "\n".join(zh_lines) if zh_lines else None,
             "en": "\n".join(en_lines) if en_lines else None,
