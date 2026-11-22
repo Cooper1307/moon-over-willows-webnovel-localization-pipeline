@@ -103,7 +103,7 @@ CONNECTOR_STRICT = {
     "after", "before",
 }
 
-GATE_ORDER = ["G3", "G4", "G5", "G6", "G7"]
+GATE_ORDER = ["G3", "G4", "G5", "G6", "G7", "G8"]
 
 
 # ---------------------------------------------------------------- 各项检查
@@ -248,9 +248,35 @@ def scan_chapter(n, ch_dir, glossary, gates, coverage=False):
                 "G0", 0, "P0",
                 f"对照版中文缺失（全文仅 {cn} 个中文字符）——唯一真源已损坏，"
                 f"不得据此审校；需从 第X章原文.md 重建", ""))
+    # G8 译文密度：英文段数 ÷ 中文段数。外部模型偶发「整章压成几段」的摘要式输出，
+    # 中文覆盖与配对检查只看中文侧，抓不到它（2026-11-22 实测 78 章漏网，
+    # 如第301章 103 中文段只配 8 英文段）。比率 < 0.35 判 P0，0.35–0.5 判 P1。
+    if "G8" in gates and ch_dir is not None:
+        try:
+            origin = next((f for f in ch_dir.glob("*原文.md")), None)
+            if origin is not None:
+                cn_paras = max(len([l for l in origin.read_text(encoding="utf-8-sig").splitlines()
+                                    if l.strip()]) - 1, 1)
+                en_paras = max(len([p for p in paras if p.strip()]), 1)
+                ratio = en_paras / cn_paras
+                if ratio < 0.35:
+                    res["P0"] += 1
+                    res["details"].append((
+                        "G8", 0, "P0",
+                        f"疑似摘要式输出：英文 {en_paras} 段 ÷ 中文 {cn_paras} 段 = {ratio:.2f}"
+                        f"（<0.35），需整章重译", ""))
+                elif ratio < 0.5:
+                    res["P1"] += 1
+                    res["details"].append((
+                        "G8", 0, "P1",
+                        f"译文偏薄：英文 {en_paras} 段 ÷ 中文 {cn_paras} 段 = {ratio:.2f}（人工抽查）", ""))
+        except Exception:
+            pass
     for g in GATE_ORDER:
         if g not in gates:
             continue
+        if g == "G8":
+            continue  # G8 已在上方按密度单独计算
         if g == "G3":
             a, b, d, inf = check_g3(paras, glossary, coverage=coverage)
         elif g == "G4":
