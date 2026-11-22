@@ -1,0 +1,91 @@
+{
+  "batch": "bulk_04_remaining",
+  "generated": "2026-11-22T19:30:29",
+  "chapters": [
+    {
+      "n": 247,
+      "expected_paras": 96,
+      "title_zh": "第247章 初来乍到绸缎庄"
+    },
+    {
+      "n": 248,
+      "expected_paras": 101,
+      "title_zh": "第248章 先当伙计练个手"
+    },
+    {
+      "n": 249,
+      "expected_paras": 104,
+      "title_zh": "第249章 放下一个人很难"
+    },
+    {
+      "n": 250,
+      "expected_paras": 92,
+      "title_zh": "第250章 宴会之后的筹谋"
+    },
+    {
+      "n": 251,
+      "expected_paras": 74,
+      "title_zh": "第251章 仪王就职司理院"
+    },
+    {
+      "n": 252,
+      "expected_paras": 96,
+      "title_zh": "第252章 竹林办案逢苦蕨"
+    },
+    {
+      "n": 253,
+      "expected_paras": 77,
+      "title_zh": "第253章 希望满满赴诗会"
+    },
+    {
+      "n": 254,
+      "expected_paras": 73,
+      "title_zh": "第254章 众人品诗骂淑真"
+    },
+    {
+      "n": 255,
+      "expected_paras": 88,
+      "title_zh": "第255章 闺中密友成仇敌"
+    },
+    {
+      "n": 256,
+      "expected_paras": 109,
+      "title_zh": "第256章 陈府办案偶相遇"
+    },
+    {
+      "n": 257,
+      "expected_paras": 102,
+      "title_zh": "第257章 邹嬷嬷拜访乔府"
+    },
+    {
+      "n": 258,
+      "expected_paras": 98,
+      "title_zh": "第258章 司理院劝说仪王"
+    },
+    {
+      "n": 259,
+      "expected_paras": 94,
+      "title_zh": "第259章 主动请缨施粥棚"
+    },
+    {
+      "n": 260,
+      "expected_paras": 95,
+      "title_zh": "第260章 密谋审案均顺利"
+    }
+  ],
+  "counts": {
+    "chapters": 14,
+    "paragraphs": 1299,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1313,
+    "input_glossary": 10129,
+    "input_context": 565,
+    "input_source": 31702,
+    "output_estimate": 44166
+  },
+  "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。"
+}
