@@ -19,6 +19,8 @@ run_batch.py — 连续批次编排：英文行文件 → 对照真源 → 纯�
   4. lqa_gates.py --fail-on P0              （P0 只含真源/中文/段数/工程硬红线；风格项已降 INFO/P1）
   5. prepare_full_scope.py --refresh --apply + project_status.py --apply（刷新台账与进度基线）
 
+落地成功的章会自动删除其 chN_en.txt（dry-run 不删；失败章保留供下批重试）。
+
 用法（参数全 ASCII）：
   python tools/run_batch.py                          # dry-run，列出待处理章与段数对齐情况
   python tools/run_batch.py --apply                 # 连续处理全部待处理章
@@ -214,6 +216,10 @@ def main():
         ok, steps, err = process(n, p)
         records.append({"章": n, "通过": ok, "环节": steps, "说明": err})
         print(f"    → {'PASS' if ok else 'RETRY'} {err}")
+        if ok:
+            # 四环全 0 才删收件文件：dry-run 不会走到这里；失败章保留供下批重试
+            p.unlink(missing_ok=True)
+            print(f"      ↳ 已清理 {p.name}（落地成功）")
 
     if args.apply:
         update_ledger(records)
