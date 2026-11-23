@@ -1,0 +1,225 @@
+========== 02_CONTEXT.md ==========
+# 既定事实（截至第350章 · 供外部模型使用）
+
+> 以下是已在落地译文中反复出现、经人工确认的写法。优先级高于`01_GLOSSARY.md` 的 `[建议]` 状态，但**低于忠实原文**。若与本章原文语境冲突，先按原文译并在「译法建议」提出，由人工终裁。
+
+## 1. 角色（拼写唯一，禁变体）
+
+| 中文 | 英文定法 | 备注 |
+|---|---|---|
+| 千里寻 | Qianli Xun | 来源 第1章 |
+| 朱淑真 | Zhu Shuzhen | 来源 第3章 |
+| 乔文仙 / 文渊 | Qiao Wenxian / Wenyuan | 来源 第21章 |
+| 苦荞 | Kuqiao | 来源 第1章 |
+| 夏果 | Xiaguo | 来源 第30章 |
+| 乔梦容（佳和郡主） | Qiao Mengrong / Princess Jiahe | 来源 第6章 |
+| 幽栖居士 | Youqi Jushi | 来源 第73章 |
+
+## 2. 称谓官制 / 器物母题 / 度量货币
+
+| 中文 | 英文定法 | 来源 |
+|---|---|---|
+| 官家 | His Majesty | 第1章 |
+| 朱府 | Zhu Manor | 第1章 |
+| 和离 | 独立制度词 + 首现 ≤12 词内嵌解释 | 第5章 |
+| 和衣睡倒人怀 | 按剧情动作译（fully dressed + in his arms），转述允许自然变体 | 第73章 |
+| 嬷嬷 | Matron | 全书惯例 |
+| 银两 | taels of silver（不换算 pounds） | 全书惯例 |
+
+## 3. 诗词（已核验译法）
+
+（暂无已核验条目；遇诗词先查权威译本，标 `[TN:]`。）
+
+## 4. 上章结尾口吻参照
+
+（来源：第320章末 6 段）
+
+“I tailed you, Grandmother, and Father-in-law all the way to Liu’an Villa. I was up on the roof and heard every word you said inside.” Qianli Xun let go of him. “You said it yourself—what’s the harm in a meeting? Fine, then. I’ll go meet him.”
+
+Realizing the charade was over, Chen Haoyu spun around, urgency pouring from his voice. “Since you already know the truth, there’s no point hiding it. Imperial Attendant Liang’s demand to see you is nowhere near that simple. To force your hand, he sent men to stir up trouble at our tea shop, and he has both Prince Yi and my father-in-law locked up. Going to him puts you in grave danger. Father told me your dad said Liang Shicheng is a lecher—with a special taste for married women. How could I ever let you walk into that trap?”
+
+Qianli Xun let out a cold laugh. “Him? A treacherous toad like that thinks he can get his hands on me? Not a chance! One punch from me and I’ll crack his skull open like a melon!”
+
+Seeing his wife’s fearless expression eased his heart a fraction, yet he still tried to reason with her. “Rather than clashing with him head-on, why not go into hiding where he can’t find you? Give it time, and maybe he’ll lose interest and forget.”
+
+Qianli Xun thought Chen Haoyu was being far too naive. Liang Shicheng had locked up both Prince Yi and her father, Zhu Xiyan. Until he laid eyes on her, he would never back down. What good would hiding do?
+
+“Hiding solves nothing. A man like Liang Shicheng has plenty of ways to hunt me down. I’ve made up my mind. I’ll walk right in and face him in the open—and see what he thinks he can do to me.”
+
+
+
+========== PROMPT.md ==========
+# 任务：把 13 章中文原文译成英文
+
+你收到 13 章中文原文（`03_SOURCE/ALL_SOURCE.md`，按 `#CH N` 分章，每行一段；章号见 MANIFEST.json）。
+为每一章输出英文译文：**每行一段**，段落按英文小说习惯划分。
+
+## 一、输出格式（机器要自动切分，必须严格）
+1. 每章以 `#CH <章号>` 单独一行开始，紧跟 `#TITLE: <英文题名>` 一行，之后每行一段英文。
+2. 章与章之间只靠 `#CH` 分隔。**禁止**代码围栏（```）、`<PARA ...>` 锚点、`**Paragraph 3:**`/`P3.`/`3)` 之类编号标签、markdown 列表符号。
+3. **分段规则（重要）**：不要照搬中文的段落切分。中文原文里一句话自成一段、或几段连续短对白，在英文里通常该合并成一段；反过来，中文的长段里如果换了说话人或场景，英文里该拆成两段。**按英语小说读者的阅读习惯分段**。唯一硬要求：内容不漏、不加、顺序不乱。
+   ⚠ **本地校验器会逐章计算「英文段数 ÷ 中文段数」**：正常翻译在 0.5–1.0 之间（合并短对白会略小于 1）；**低于 0.35 的章会被判为摘要、整章退回重做**。长对话、长打斗、连续对白场景也必须逐场景译出，不许用一句话带过整页内容。
+   ⚠ **这是最容易犯的错**：写累了就想概括「双方一番激辩后达成一致」——这属于摘要，会被退回。**每一句对白、每一个动作都要落到英文里**。100 段中文的章，英文通常应有 60–100 段；若你的输出只有 10–20 段，说明你在概括，必须重做。
+4. 每段英文里不要嵌入中文译文；但原文字形解释（如 `the character "Xun" (寻， meaning "to seek")`）和成对弯引号 `“ ”` 是合法内容，**禁止清除**。
+5. 所有章输出完后写 `## 译法建议`，格式 `中文原词 | 你采用的英文 | 理由（一句话）`；没有就写"无"。
+6. **只输出一遍终稿**：先在内部完成初译+自审，把修正直接并入上面的译文。
+   **禁止**先贴一遍初译、再贴一遍修订稿——回收器会拒绝这种重复输出，必须只交终稿。
+   若有审校说明，只在「## 译法建议」里用一行写结论，不要重发任何译文段落。
+
+## 二、翻译红线
+- 优先级：**忠实原文 > 术语锁 > 跨章一致 > 表达自然**。
+- 题材：宋代古装穿越，保留中国文化身份；句法节奏彻底英语化（这是网文，短句、口语、有画面感）。
+- **不可西化**：朝代 the Song、都城 Lin'an、真实人名 Zhu Shuzhen/Qianli Xun/Qiao Wenxian/Kuqiao、词牌拼音、官制（官家=His Majesty、嬷嬷=Matron、郡主=Princess Jiahe）、和离（独立制度词，首现给 ≤12 词内嵌解释）、度量（taels of silver）全部保留。禁 King/Queen/Duke/Marquis 换官制，禁 pounds/dollars 换算，禁 sonnet/ode 换词牌。
+- 剧情承重位：第73章艳词是角色当场现作、没写完、旁人后加标题；首现按原文场景译（醉酒后主动坐怀），转述允许自然变体。不许写成完整传世名词。
+- **不许补史实**：全书原文没有"父母焚稿/焚毁/断肠集"，不得写进译文正文；翻译只翻原文已有的东西。
+- 前 3 章不加宋代背景介绍或 TN 注（原文前 2 章本身就是现代网暴/都市）。
+- 诗词遇 `[POEM]/[PUZZLE]` 标记 → 停机回报，不硬翻；其余诗词用权威译本并标 `[TN: Translated by …]`，自译标 `[TN: Translator's rendering]`。
+
+## 三、术语表怎么用
+`01_GLOSSARY.md` 是**全量历史术语表，整份可推翻**。状态列是脚本按频次自动升级的，不是命令。
+更地道的译法直接用，并在「译法建议」回传。不要机械替换牺牲译文。
+`02_CONTEXT.md` 是人工确认过的既定事实，**优先级高于术语表的 `[建议]` 状态，但低于忠实原文**。
+
+## 四、写作标准
+- 去 AI 痕迹：禁 delve/leverage/pivotal/myriad/tapestry/testament 等；em dash 不过量；三段式排比仅限原文刻意设计。
+- `-ly` 只禁"副词修饰动作动词"的弱填充；`really/perfectly/truly/entirely/miraculously` 允许。
+- 不要为了本地扫描脚本的历史句长/段长阈值改写——英文自然优先，但别为了凑阈值硬改内容。
+- 角色音色靠语气区分：女主 sassy/modern、男主 composed/protective、女配 meek/dramatic。
+
+## 五、输出前自检（逐条过一遍）
+- [ ] 章数 = 13，章号见 MANIFEST.json（每章的 `#CH N` 都要有）
+- [ ] 每章英文段数合理（不要求等于中文段数；按英文习惯可拆可合）
+- [ ] 无代码围栏、无段落编号、无 `#CH` 残留在正文
+- [ ] 每章都有 `#TITLE:`
+- [ ] 末尾有「## 译法建议」（哪怕写"无"）
+- [ ] **全文只有一遍译文**（没有"初译/修订稿"两份，没有重复的 `#CH` 章头）
+- [ ] 角色名拼写与 02_CONTEXT.md 完全一致，无变体
+
+附录文件：`00_RULES.md`（规则）· `01_GLOSSARY.md`（术语）· `02_CONTEXT.md`（既定事实）· `03_SOURCE/ALL_SOURCE.md`（原文）· `04_OUTPUT_TEMPLATE.txt`（格式样例）· `MANIFEST.json`（段数）。
+AI Studio 用法：把 `SYSTEM.txt` 全文贴进"指令/系统提示"栏，把 `PROMPT.md` 全文贴进对话框，上传/粘贴 `03_SOURCE/ALL_SOURCE.md` 与其余 md（或把几个文件依次贴进同一条消息）。选 Gemini 4 Neon，思考档位调中低、输出额度留足。
+
+
+========== SYSTEM.txt ==========
+你是宋代古装穿越小说《月上柳梢头，人约黄昏后》的中译英初译师。
+输入是按 `#CH N` 分章的中文原文（每行一段）。逐章输出英文，**每行一段**，章间用 `#CH N` 分隔，每章首行 `#TITLE: <英文题名>`。
+不要用代码围栏，不要给段落编号。**分段按英文小说习惯**：中文分段只是内容参考不是模具，可拆可合，以英语读者读起来顺为准；内容不漏不加、顺序不乱。末尾写「## 译法建议」（没有就写"无"）。
+只输出一遍终稿：内部先初译再自审，把修正直接并入译文后一次性输出。不要先贴初译再贴修订稿，不要重发任何段落。
+
+优先级：忠实原文 > 术语锁 > 跨章一致 > 表达自然。
+风格：地道英文、手机阅读节奏、短句有画面感；角色音色分层（女主 modern/sassy、男主 composed/protective）。
+异域保留：宋代朝代、都城、真实人名（Zhu Shuzhen 等）、词牌、官制、和离、银两全部保留；句法节奏彻底英语化，不做完全西化置换。
+禁：把官家写成 King、嬷嬷写成 Nanny、银两写成 pounds、词牌写成 sonnet/ode；编造原文没有的史实（如"父母焚稿"）；给前 3 章额外加宋代背景或注释。
+允许 -ly 词：really/perfectly/truly/entirely/miraculously；只禁"副词修饰动作动词"的弱填充。
+
+
+========== 04_OUTPUT_TEMPLATE.txt ==========
+#CH <章号>
+#TITLE: <英文题名>
+<第1段英文>
+<第2段英文>
+...
+<最后一段英文>
+#CH <下一章号>
+#TITLE: <英文题名>
+...
+
+## 译法建议
+中文原词 | 你采用的英文 | 理由（一句话）
+（没有就写"无"）
+
+【格式铁律】
+- 每行一段，段与段之间不空行；不要给段落编号、不要加 **Paragraph N:** 之类标签。
+- 不要用代码围栏（```）包住输出。
+- **按英文小说的习惯分段**：中文原文的分段只是内容参考，不是段落模具。一段中文可以拆成两段英文（如对话从叙述里独立出来），几段中文也可以合成一段英文（如连续短对白）。以英语读者读起来顺为准。
+- 但内容不能漏、不能加、顺序不能乱：每段英文都必须对应原文语义，所有中文内容都要出现在译文里。
+- 章题只写在 `#TITLE:` 行，正文从第一段开始。
+
+
+========== MANIFEST.json ==========
+{
+  "batch": "reB_03_338_350",
+  "mode": "translate",
+  "generated": "2026-11-23T10:10:09",
+  "chapters": [
+    {
+      "n": 338,
+      "expected_paras": 106,
+      "title_zh": "第338章 王府里面藏地府"
+    },
+    {
+      "n": 339,
+      "expected_paras": 111,
+      "title_zh": "第339章 钱财换人得死讯"
+    },
+    {
+      "n": 340,
+      "expected_paras": 107,
+      "title_zh": "第340章 仪王临安传死讯"
+    },
+    {
+      "n": 341,
+      "expected_paras": 108,
+      "title_zh": "第341章 以情哄人桂花酿"
+    },
+    {
+      "n": 342,
+      "expected_paras": 127,
+      "title_zh": "第342章 洞房花烛烛泪滴"
+    },
+    {
+      "n": 343,
+      "expected_paras": 109,
+      "title_zh": "第343章 无爱失贞家难归"
+    },
+    {
+      "n": 344,
+      "expected_paras": 103,
+      "title_zh": "第344章 时代没落人亦悲"
+    },
+    {
+      "n": 345,
+      "expected_paras": 124,
+      "title_zh": "第345章 思念成曲结新缘"
+    },
+    {
+      "n": 346,
+      "expected_paras": 94,
+      "title_zh": "第346章 说话艺人传喜讯"
+    },
+    {
+      "n": 347,
+      "expected_paras": 123,
+      "title_zh": "第347章 尼姑庵请邵月婷"
+    },
+    {
+      "n": 348,
+      "expected_paras": 111,
+      "title_zh": "第348章 燕京城外忙救人"
+    },
+    {
+      "n": 349,
+      "expected_paras": 123,
+      "title_zh": "第349章 见过娘亲放美人"
+    },
+    {
+      "n": 350,
+      "expected_paras": 127,
+      "title_zh": "第350章 回归临安缘终结"
+    }
+  ],
+  "counts": {
+    "chapters": 13,
+    "paragraphs": 1473,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1313,
+    "input_glossary": 10129,
+    "input_context": 704,
+    "input_source": 32031,
+    "output_estimate": 50082
+  },
+  "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。"
+}
