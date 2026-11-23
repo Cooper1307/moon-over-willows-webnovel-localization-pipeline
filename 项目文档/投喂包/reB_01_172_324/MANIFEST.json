@@ -1,0 +1,87 @@
+{
+  "batch": "reB_01_172_324",
+  "mode": "translate",
+  "generated": "2026-11-23T10:10:08",
+  "chapters": [
+    {
+      "n": 172,
+      "expected_paras": 105,
+      "title_zh": "第172章 望月轩外遇歹徒"
+    },
+    {
+      "n": 304,
+      "expected_paras": 104,
+      "title_zh": "第304章 深夜被虏天目山"
+    },
+    {
+      "n": 313,
+      "expected_paras": 83,
+      "title_zh": "第313章 司理院内传口谕"
+    },
+    {
+      "n": 314,
+      "expected_paras": 119,
+      "title_zh": "第314章 柳岸别馆送银票"
+    },
+    {
+      "n": 315,
+      "expected_paras": 112,
+      "title_zh": "第315章 梦容失身梁内侍"
+    },
+    {
+      "n": 316,
+      "expected_paras": 113,
+      "title_zh": "第316章 小产后心神不宁"
+    },
+    {
+      "n": 317,
+      "expected_paras": 99,
+      "title_zh": "第317章 竟然要见女词人"
+    },
+    {
+      "n": 318,
+      "expected_paras": 105,
+      "title_zh": "第318章 屋顶偷窥梁师成"
+    },
+    {
+      "n": 319,
+      "expected_paras": 111,
+      "title_zh": "第319章 家人仪王忙奔走"
+    },
+    {
+      "n": 321,
+      "expected_paras": 109,
+      "title_zh": "第321章 主动踏上不归路"
+    },
+    {
+      "n": 322,
+      "expected_paras": 105,
+      "title_zh": "第322章 套着黑布的囚车"
+    },
+    {
+      "n": 323,
+      "expected_paras": 127,
+      "title_zh": "第323章 决定明日回汴梁"
+    },
+    {
+      "n": 324,
+      "expected_paras": 132,
+      "title_zh": "第324章 众人送别赵仪王"
+    }
+  ],
+  "counts": {
+    "chapters": 13,
+    "paragraphs": 1424,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1313,
+    "input_glossary": 10129,
+    "input_context": 704,
+    "input_source": 31111,
+    "output_estimate": 48416
+  },
+  "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。"
+}

@@ -1,0 +1,87 @@
+{
+  "batch": "reB_02_325_337",
+  "mode": "translate",
+  "generated": "2026-11-23T10:10:09",
+  "chapters": [
+    {
+      "n": 325,
+      "expected_paras": 106,
+      "title_zh": "第325章 仪王离开风气变"
+    },
+    {
+      "n": 326,
+      "expected_paras": 109,
+      "title_zh": "第326章 到达汴梁忙救人"
+    },
+    {
+      "n": 327,
+      "expected_paras": 110,
+      "title_zh": "第327章 十日后要被斩首"
+    },
+    {
+      "n": 328,
+      "expected_paras": 108,
+      "title_zh": "第328章 长跪不起救性命"
+    },
+    {
+      "n": 329,
+      "expected_paras": 118,
+      "title_zh": "第329章 仪王府内把旨宣"
+    },
+    {
+      "n": 330,
+      "expected_paras": 122,
+      "title_zh": "第330章 宣和七年中秋日"
+    },
+    {
+      "n": 331,
+      "expected_paras": 112,
+      "title_zh": "第331章 竹马青梅宴会逢"
+    },
+    {
+      "n": 332,
+      "expected_paras": 97,
+      "title_zh": "第332章 汴梁接人一场空"
+    },
+    {
+      "n": 333,
+      "expected_paras": 113,
+      "title_zh": "第333章 燕京街头寻神医"
+    },
+    {
+      "n": 334,
+      "expected_paras": 116,
+      "title_zh": "第334章 金人领兵入燕京"
+    },
+    {
+      "n": 335,
+      "expected_paras": 107,
+      "title_zh": "第335章 命丧燕京仪王妃"
+    },
+    {
+      "n": 336,
+      "expected_paras": 102,
+      "title_zh": "第336章 正面对战完颜池"
+    },
+    {
+      "n": 337,
+      "expected_paras": 117,
+      "title_zh": "第337章 安葬梦容探王府"
+    }
+  ],
+  "counts": {
+    "chapters": 13,
+    "paragraphs": 1437,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1313,
+    "input_glossary": 10129,
+    "input_context": 704,
+    "input_source": 31697,
+    "output_estimate": 48858
+  },
+  "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。"
+}

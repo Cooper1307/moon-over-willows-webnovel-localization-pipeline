@@ -1,0 +1,87 @@
+{
+  "batch": "reB_03_338_350",
+  "mode": "translate",
+  "generated": "2026-11-23T10:10:09",
+  "chapters": [
+    {
+      "n": 338,
+      "expected_paras": 106,
+      "title_zh": "第338章 王府里面藏地府"
+    },
+    {
+      "n": 339,
+      "expected_paras": 111,
+      "title_zh": "第339章 钱财换人得死讯"
+    },
+    {
+      "n": 340,
+      "expected_paras": 107,
+      "title_zh": "第340章 仪王临安传死讯"
+    },
+    {
+      "n": 341,
+      "expected_paras": 108,
+      "title_zh": "第341章 以情哄人桂花酿"
+    },
+    {
+      "n": 342,
+      "expected_paras": 127,
+      "title_zh": "第342章 洞房花烛烛泪滴"
+    },
+    {
+      "n": 343,
+      "expected_paras": 109,
+      "title_zh": "第343章 无爱失贞家难归"
+    },
+    {
+      "n": 344,
+      "expected_paras": 103,
+      "title_zh": "第344章 时代没落人亦悲"
+    },
+    {
+      "n": 345,
+      "expected_paras": 124,
+      "title_zh": "第345章 思念成曲结新缘"
+    },
+    {
+      "n": 346,
+      "expected_paras": 94,
+      "title_zh": "第346章 说话艺人传喜讯"
+    },
+    {
+      "n": 347,
+      "expected_paras": 123,
+      "title_zh": "第347章 尼姑庵请邵月婷"
+    },
+    {
+      "n": 348,
+      "expected_paras": 111,
+      "title_zh": "第348章 燕京城外忙救人"
+    },
+    {
+      "n": 349,
+      "expected_paras": 123,
+      "title_zh": "第349章 见过娘亲放美人"
+    },
+    {
+      "n": 350,
+      "expected_paras": 127,
+      "title_zh": "第350章 回归临安缘终结"
+    }
+  ],
+  "counts": {
+    "chapters": 13,
+    "paragraphs": 1473,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1313,
+    "input_glossary": 10129,
+    "input_context": 704,
+    "input_source": 32031,
+    "output_estimate": 50082
+  },
+  "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。"
+}
