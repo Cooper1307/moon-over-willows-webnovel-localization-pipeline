@@ -1,1 +1,2 @@
 {"id":"8fcd772511","kind":"rule","text":"必须逐段抽样至少首/中/尾各3段。","files":["必须逐段抽样至少首/中/尾各3段。"],"date":"2026-11-22","from":"954eab10-63a1-4c66-af6e-47d4c06d4cc6"}
+{"id":"3a31fd1d1c","kind":"rule","text":"禁止 delve/leverage/pivotal/myriad/tapestry/testament 等 AI 高频词。","files":["delve/leverage/pivotal/myriad/tapestry/testament"],"symbols":["#TITLE: A Meeting with Mother, Beauty Set Free"],"date":"2026-11-23","from":"954eab10-63a1-4c66-af6e-47d4c06d4cc6"}
