@@ -107,13 +107,23 @@ def process(n, p):
     if en_n == 0:
         return False, [], f"第{n}章无英文译文"
     # 2026-11-22：段数不必等于中文段数；@@G@@ 组标记由 harvest 写入，compose 负责映射
+    ch_dir = CHAPTERS / f"第{n}章"
 
     tmp = Path(tempfile.gettempdir()) / f"runbatch_{n}_{stamp()}.txt"
     steps = []
+    # 失败回滚：compose/derive 会写对照版与译文.md，若后续环节（尤其 G8 密度闸门）
+    # 判失败，必须把产物移走，否则台账会把摘要章算成「已译」（2026-11-23 实测 24 章污染）。
+    written = [ch_dir / f"第{n}章初译_对照.md", ch_dir / f"第{n}章译文.md"]
+    bak = {p: p.with_suffix(p.suffix + ".bak_rollback") for p in written}
+    pre = {p: p.exists() for p in written}
+    for p in written:
+        if p.exists():
+            p.replace(bak[p])
     try:
         with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
             fh.write("\n".join(lines) + "\n")
 
+        failed = False
         for label, cmd in [
             ("compose", ["tools/compose_bilingual.py", "--chapter", str(n),
                          "--title", title, "--en", str(tmp), "--apply", "--force"]),
@@ -129,7 +139,18 @@ def process(n, p):
             tail = " | ".join(x.strip() for x in out.splitlines() if x.strip())[-220:]
             steps.append((label, rc, tail))
             if rc != 0:
-                return False, steps, f"{label} 退出码 {rc}"
+                failed = True
+                break
+        if failed:
+            # 回滚本次产物，恢复原有（若有）
+            for p in written:
+                if p.exists():
+                    p.unlink()
+                if pre[p] and bak[p].exists():
+                    bak[p].replace(p)
+            return False, steps, f"{steps[-1][0]} 退出码 {steps[-1][1]}（已回滚产物）"
+        for p in written:
+            bak[p].unlink(missing_ok=True)
         return True, steps, ""
     finally:
         tmp.unlink(missing_ok=True)
