@@ -63,21 +63,21 @@ BLOCKED = {ST_BLOCKED_EN_ONLY, ST_BLOCKED_ANOM, ST_BLOCKED_NO_BI, ST_BLOCKED_NO_
 
 
 def _title_from(ch_dir, bi):
-    """取英文标题：优先沿用已有纯英版的标题，其次从对照版头部提取。"""
+    """取英文标题：**优先从对照版（唯一真源）取**，旧纯英版仅作兜底。"""
+    p = bi.get("path")
+    if p is not None:
+        for raw in p.read_text(encoding="utf-8-sig").splitlines()[:8]:
+            s = raw.strip().lstrip('#').strip()
+            if s.lower().startswith('chapter ') and not L.CJK_RE.search(s):
+                return '# ' + s
     path, _ = L.read_pure_en(ch_dir)
     if path is not None:
         for line in path.read_text(encoding="utf-8-sig").splitlines():
             s = line.strip()
             if s.startswith("#") and not L.CJK_RE.search(s.lstrip("#")):
-                return s  # 只沿用纯英文标题，跳过中文标题行（第71章曾因此继承中文）
+                return s
             if s and not s.startswith("#"):
                 break
-    p = bi.get("path")
-    if p is not None:
-        for raw in p.read_text(encoding="utf-8-sig").splitlines()[:8]:
-            s = raw.strip()
-            if s.startswith("#") and not L.CJK_RE.search(s.lstrip("#")):
-                return s
     return None
 
 

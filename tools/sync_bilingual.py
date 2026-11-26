@@ -241,13 +241,17 @@ def parse_by_blocks(lines, anomalies, notes):
             "line": blk[0][0],
         })
 
+    # 纯省略号块互相配对（第66/74章：中文「……」与英文「...」被 --- 分成两块）
+    for k in range(len(units) - 1):
+        z, e = units[k], units[k + 1]
+        if (z["zh"] and not z["en"] and z["zh"].strip() in ("……", "…", "...", "......")
+                and e["en"] and not e["zh"] and e["en"].strip() in ("……", "…", "...", "......")):
+            z["en"] = e["en"]
+            e["en"] = None
+            e["zh"] = None
     pairs = []
     pending_zh = None          # (中文文本, 起始行号)
     for u in units:
-        # 纯省略号块（原文的「……」占位）不参与配对：它常被 `---` 单独隔成一块，
-        # 其英文对应行（…）在别的块里，按普通中文块处理会误报「连续两个中文块」。
-        if u["zh"] and not u["en"] and u["zh"].strip() in ("……", "…", "……"):
-            continue
         if u["zh"] and u["en"]:
             if pending_zh:
                 anomalies.append((pending_zh[1], "中文块后无对应英文块（翻译缺失？）"))
