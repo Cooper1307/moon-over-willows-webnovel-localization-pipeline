@@ -1,0 +1,322 @@
+{
+  "batch": "FINAL_REVIEW_151_200",
+  "mode": "review",
+  "generated": "2026-11-23T17:11:20",
+  "chapters": [
+    {
+      "n": 151,
+      "expected_paras": 60,
+      "title_zh": "第151章 因表白仓皇而逃",
+      "mode": "review"
+    },
+    {
+      "n": 152,
+      "expected_paras": 43,
+      "title_zh": "第152章 冬晴无雪配拳法",
+      "mode": "review"
+    },
+    {
+      "n": 153,
+      "expected_paras": 60,
+      "title_zh": "第153章 仪王就是申简辰",
+      "mode": "review"
+    },
+    {
+      "n": 154,
+      "expected_paras": 51,
+      "title_zh": "第154章 相认不等于接受",
+      "mode": "review"
+    },
+    {
+      "n": 155,
+      "expected_paras": 74,
+      "title_zh": "第155章 文心嫂嫂回娘家",
+      "mode": "review"
+    },
+    {
+      "n": 156,
+      "expected_paras": 56,
+      "title_zh": "第156章 第一次表演失败",
+      "mode": "review"
+    },
+    {
+      "n": 157,
+      "expected_paras": 52,
+      "title_zh": "第157章 当众表演亦失败",
+      "mode": "review"
+    },
+    {
+      "n": 158,
+      "expected_paras": 65,
+      "title_zh": "第158章 春季到来的请帖",
+      "mode": "review"
+    },
+    {
+      "n": 159,
+      "expected_paras": 61,
+      "title_zh": "第159章 捶丸场求纳夏果",
+      "mode": "review"
+    },
+    {
+      "n": 160,
+      "expected_paras": 66,
+      "title_zh": "第160章 捶丸聊天各顾各",
+      "mode": "review"
+    },
+    {
+      "n": 161,
+      "expected_paras": 79,
+      "title_zh": "第161章 两次尴尬的相遇",
+      "mode": "review"
+    },
+    {
+      "n": 162,
+      "expected_paras": 93,
+      "title_zh": "第162章 不激烈的捶丸赛",
+      "mode": "review"
+    },
+    {
+      "n": 163,
+      "expected_paras": 64,
+      "title_zh": "第163章 捶丸无趣有人赏",
+      "mode": "review"
+    },
+    {
+      "n": 164,
+      "expected_paras": 91,
+      "title_zh": "第164章 瞧见有人放风筝",
+      "mode": "review"
+    },
+    {
+      "n": 165,
+      "expected_paras": 78,
+      "title_zh": "第165章 来到草地放风筝",
+      "mode": "review"
+    },
+    {
+      "n": 166,
+      "expected_paras": 91,
+      "title_zh": "第166章 炙肉男轻薄红豆",
+      "mode": "review"
+    },
+    {
+      "n": 167,
+      "expected_paras": 81,
+      "title_zh": "第167章 匆匆离开捶丸场",
+      "mode": "review"
+    },
+    {
+      "n": 168,
+      "expected_paras": 94,
+      "title_zh": "第168章 送走夏果闹陈家",
+      "mode": "review"
+    },
+    {
+      "n": 169,
+      "expected_paras": 63,
+      "title_zh": "第169章 大闹陈府逼退婚",
+      "mode": "review"
+    },
+    {
+      "n": 170,
+      "expected_paras": 73,
+      "title_zh": "第170章 本想退婚又耗着",
+      "mode": "review"
+    },
+    {
+      "n": 171,
+      "expected_paras": 69,
+      "title_zh": "第171章 为了孩子操碎心",
+      "mode": "review"
+    },
+    {
+      "n": 172,
+      "expected_paras": 85,
+      "title_zh": "第172章 望月轩外遇歹徒",
+      "mode": "review"
+    },
+    {
+      "n": 173,
+      "expected_paras": 48,
+      "title_zh": "第173章 决定不再忙退婚",
+      "mode": "review"
+    },
+    {
+      "n": 174,
+      "expected_paras": 41,
+      "title_zh": "第174章 离开喜宴去朱府",
+      "mode": "review"
+    },
+    {
+      "n": 175,
+      "expected_paras": 48,
+      "title_zh": "第175章 终于说出心中爱",
+      "mode": "review"
+    },
+    {
+      "n": 176,
+      "expected_paras": 44,
+      "title_zh": "第176章 仪王想要猪上树",
+      "mode": "review"
+    },
+    {
+      "n": 177,
+      "expected_paras": 58,
+      "title_zh": "第177章 蒋爷找茬未成功",
+      "mode": "review"
+    },
+    {
+      "n": 178,
+      "expected_paras": 68,
+      "title_zh": "第178章 谋划蒋爷当月老",
+      "mode": "review"
+    },
+    {
+      "n": 179,
+      "expected_paras": 56,
+      "title_zh": "第179章 好友来访求帮忙",
+      "mode": "review"
+    },
+    {
+      "n": 180,
+      "expected_paras": 78,
+      "title_zh": "第180章 白风嫂嫂望月轩",
+      "mode": "review"
+    },
+    {
+      "n": 181,
+      "expected_paras": 48,
+      "title_zh": "第181章 买回一头小笨猪",
+      "mode": "review"
+    },
+    {
+      "n": 182,
+      "expected_paras": 51,
+      "title_zh": "第182章 酉时相约茶楼内",
+      "mode": "review"
+    },
+    {
+      "n": 183,
+      "expected_paras": 64,
+      "title_zh": "第183章 险些知道是闺蜜",
+      "mode": "review"
+    },
+    {
+      "n": 184,
+      "expected_paras": 79,
+      "title_zh": "第184章 离开赌坊遇颜池",
+      "mode": "review"
+    },
+    {
+      "n": 185,
+      "expected_paras": 87,
+      "title_zh": "第185章 为逼婚巧设赌局",
+      "mode": "review"
+    },
+    {
+      "n": 186,
+      "expected_paras": 61,
+      "title_zh": "第186章 终于决定成婚日",
+      "mode": "review"
+    },
+    {
+      "n": 187,
+      "expected_paras": 88,
+      "title_zh": "第187章 终于同意嫁陈家",
+      "mode": "review"
+    },
+    {
+      "n": 188,
+      "expected_paras": 52,
+      "title_zh": "第188章 神柳之下的交谈",
+      "mode": "review"
+    },
+    {
+      "n": 189,
+      "expected_paras": 77,
+      "title_zh": "第189章 冲进朱府拦婚事",
+      "mode": "review"
+    },
+    {
+      "n": 190,
+      "expected_paras": 45,
+      "title_zh": "第190章 用泪水送走友情",
+      "mode": "review"
+    },
+    {
+      "n": 191,
+      "expected_paras": 71,
+      "title_zh": "第191章 郡主舍命拦抢婚",
+      "mode": "review"
+    },
+    {
+      "n": 192,
+      "expected_paras": 76,
+      "title_zh": "第192章 婚礼后夏果来访",
+      "mode": "review"
+    },
+    {
+      "n": 193,
+      "expected_paras": 64,
+      "title_zh": "第193章 陈家喜宴好热闹",
+      "mode": "review"
+    },
+    {
+      "n": 194,
+      "expected_paras": 63,
+      "title_zh": "第194章 婚宴之后欺新郎",
+      "mode": "review"
+    },
+    {
+      "n": 195,
+      "expected_paras": 66,
+      "title_zh": "第195章 随缘而不是攀缘",
+      "mode": "review"
+    },
+    {
+      "n": 196,
+      "expected_paras": 54,
+      "title_zh": "第196章 心情不好探邵家",
+      "mode": "review"
+    },
+    {
+      "n": 197,
+      "expected_paras": 56,
+      "title_zh": "第197章 婚宴之后乔文仙",
+      "mode": "review"
+    },
+    {
+      "n": 198,
+      "expected_paras": 61,
+      "title_zh": "第198章 一早迎来乔公子",
+      "mode": "review"
+    },
+    {
+      "n": 199,
+      "expected_paras": 59,
+      "title_zh": "第199章 新婚头天敬早茶",
+      "mode": "review"
+    },
+    {
+      "n": 200,
+      "expected_paras": 62,
+      "title_zh": "第200章 一早来访钱塘帮",
+      "mode": "review"
+    }
+  ],
+  "counts": {
+    "chapters": 50,
+    "paragraphs": 3274,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1313,
+    "input_glossary": 10129,
+    "input_context": 519,
+    "input_source": 246208,
+    "output_estimate": 58932
+  },
+  "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。"
+}

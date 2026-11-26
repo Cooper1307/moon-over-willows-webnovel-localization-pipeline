@@ -1,0 +1,3194 @@
+[
+ {
+  "ch": 4,
+  "anchor": "Once done, Kuqiao put the box away and s",
+  "sev": "P2",
+  "cur": "stood obediently to the side",
+  "sug": "stood at the ready by her side",
+  "why": "动词+-ly 弱填充副词（obediently 修饰 stood）"
+ },
+ {
+  "ch": 15,
+  "anchor": "The last elder, an older cousin-uncle se",
+  "sev": "P2",
+  "cur": "received the pair politely",
+  "sug": "received the pair with courtesy",
+  "why": "动词+-ly 弱填充副词（politely 修饰 received）"
+ },
+ {
+  "ch": 16,
+  "anchor": "Matron Xiuzhen gestured toward a prayer",
+  "sev": "P2",
+  "cur": "lowered herself obediently",
+  "sug": "sat down without a fuss",
+  "why": "动词+-ly 弱填充副词（obediently 修饰 lowered）"
+ },
+ {
+  "ch": 21,
+  "anchor": "Folding the outer robes neatly, Kuqiao a",
+  "sev": "P2",
+  "cur": "Folding the outer robes neatly",
+  "sug": "Folding the outer robes with care",
+  "why": "动词+-ly 弱填充副词（neatly 修饰 Folding）"
+ },
+ {
+  "ch": 21,
+  "anchor": "Outside Lin Jue's quarters, Kuqiao calle",
+  "sev": "P2",
+  "cur": "called in politely",
+  "sug": "called in with polite restraint",
+  "why": "动词+-ly 弱填充副词（politely 修饰 called）"
+ },
+ {
+  "ch": 23,
+  "anchor": "Matron Xiuzhen rebuked him sharply: \"Wat",
+  "sev": "P2",
+  "cur": "rebuked him sharply",
+  "sug": "snapped back",
+  "why": "动词+-ly 弱填充副词（sharply 修饰 rebuked）"
+ },
+ {
+  "ch": 23,
+  "anchor": "Folding the sheet carefully into his sle",
+  "sev": "P2",
+  "cur": "Folding the sheet carefully into his sleeve",
+  "sug": "Folding the sheet into his robe with care",
+  "why": "动词+-ly 弱填充副词，且原文\"揣进怀里\"非衣袖"
+ },
+ {
+  "ch": 26,
+  "anchor": "Seven infusions turned into three splash",
+  "sev": "P2",
+  "cur": "Kuqiao lamented silently",
+  "sug": "Kuqiao lamented in silence",
+  "why": "动词+-ly 弱填充副词（silently 修饰 lamented）"
+ },
+ {
+  "ch": 34,
+  "anchor": "Returning the bow, Liang Shicheng spoke",
+  "sev": "P2",
+  "cur": "spoke smoothly",
+  "sug": "gave a smooth reply",
+  "why": "动词+-ly 弱填充副词（spoke smoothly）"
+ },
+ {
+  "ch": 36,
+  "anchor": "Drums rolled again and the second half e",
+  "sev": "P2",
+  "cur": "Three straight shots blocked cold!",
+  "sug": "Several shots in a row blocked cold!",
+  "why": "原文\"一连几个球都是如此\"，非明确三球"
+ },
+ {
+  "ch": 50,
+  "anchor": "Only an hour back to Lin'an by carriage—",
+  "sev": "P0",
+  "cur": "barely two hours on foot for Kujue",
+  "sug": "over two hours on foot for Kujue",
+  "why": "误译：\"一个多时辰\"为两小时以上，barely 意思翻反"
+ },
+ {
+  "ch": 51,
+  "anchor": "Thanking Miss profusely, Xiaguo rose and",
+  "sev": "P2",
+  "cur": "Thanking Miss profusely",
+  "sug": "With profuse thanks",
+  "why": "动词+-ly 弱填充副词（profusely 修饰 Thanking）"
+ },
+ {
+  "ch": 52,
+  "anchor": "Xiaguo threw herself forward, knelt down",
+  "sev": "P2",
+  "cur": "wailed loudly: \"Wuwu...",
+  "sug": "wailed: \"Sob...",
+  "why": "动词+-ly 弱填充副词，且拟声词\"呜呜\"未译直出拼音"
+ },
+ {
+  "ch": 52,
+  "anchor": "Xiaguo knelt down again: \"Wuwu... The L",
+  "sev": "P2",
+  "cur": "\"Wuwu... / Wuwu...!\"",
+  "sug": "\"Sob... / Sob...!\"",
+  "why": "拟声词\"呜呜\"未译直出拼音"
+ },
+ {
+  "ch": 52,
+  "anchor": "\"Wuwu...! No, he didn't. I kicked the Lor",
+  "sev": "P2",
+  "cur": "\"Wuwu...! / Wuwu...!\"",
+  "sug": "\"Sob...! / Sob...!\"",
+  "why": "拟声词\"呜呜\"未译直出拼音"
+ },
+ {
+  "ch": 52,
+  "anchor": "Qianli Xun breathed a sigh of relief, th",
+  "sev": "P2",
+  "cur": "then said angrily",
+  "sug": "then snapped in anger",
+  "why": "动词+-ly 弱填充副词（angrily 修饰 said）"
+ },
+ {
+  "ch": 52,
+  "anchor": "Kuqiao held back Young Lady: \"If you go,",
+  "sev": "P1",
+  "cur": "the Young Master / postponed indefinitely",
+  "sug": "Son-in-law / drag on without end",
+  "why": "\"姑爷\"实指林觉，译作 Young Master 易与大公子或乔公子混淆；含动词+-ly"
+ },
+ {
+  "ch": 52,
+  "anchor": "Lin Jue was sitting at the table holding",
+  "sev": "P2",
+  "cur": "looking hypocritically dignified",
+  "sug": "wearing a pious, self-righteous air",
+  "why": "\"道貌岸然\"译法生硬且含 -ly"
+ },
+ {
+  "ch": 52,
+  "anchor": "Qianli Xun said: \"Hmph! I've already deci",
+  "sev": "P0",
+  "cur": "bringing any merchant prostitutes back",
+  "sug": "bringing any courtesans back",
+  "why": "误译：\"商妓\"系宋代歌妓/青楼女子，非\"商人的妓女\"；另 the Lin residence 宜作 Lin Manor"
+ },
+ {
+  "ch": 52,
+  "anchor": "Lin Jue was provoked: \"You... you...! Ch",
+  "sev": "P1",
+  "cur": "I'll divorce you!",
+  "sug": "I'll cast you out!",
+  "why": "\"休了你\"与上下文\"和离\"属不同制度，宜区分 cast out"
+ },
+ {
+  "ch": 52,
+  "anchor": "\"Divorce me? I'd love that! If you don'",
+  "sev": "P2",
+  "cur": "Divorce me? ... obediently apologize",
+  "sug": "Cast me out? ... apologize right now",
+  "why": "\"休我\"宜与和离区分，且 obediently 为动词+-ly"
+ },
+ {
+  "ch": 52,
+  "anchor": "Lin Jue suppressed his anger and tried t",
+  "sev": "P2",
+  "cur": "persuade her gently",
+  "sug": "reason with her in a soothing tone",
+  "why": "动词+-ly 弱填充副词（gently 修饰 persuade）"
+ },
+ {
+  "ch": 52,
+  "anchor": "Lin Jue walked up to Xiaguo and reluctan",
+  "sev": "P2",
+  "cur": "reluctantly spat out",
+  "sug": "forced out with reluctance",
+  "why": "动词+-ly 弱填充副词（reluctantly 修饰 spat）"
+ },
+ {
+  "ch": 52,
+  "anchor": "Qianli Xun knew when to stop. She didn'",
+  "sev": "P2",
+  "cur": "kindly reminded him ... think seriously",
+  "sug": "offered a parting reminder ... give it serious thought",
+  "why": "动词+-ly 弱填充副词（kindly/seriously）"
+ },
+ {
+  "ch": 52,
+  "anchor": "The matter with Xiaguo made the anticip",
+  "sev": "P2",
+  "cur": "seem indefinitely distant ... quickly exhausted",
+  "sug": "seem far out of reach ... already run out",
+  "why": "动词+-ly 弱填充副词（indefinitely/quickly）"
+ },
+ {
+  "ch": 52,
+  "anchor": "Thinking of this, she felt a bit satisfi",
+  "sev": "P2",
+  "cur": "slowly dismantled ... patiently wait",
+  "sug": "dismantled bit by bit ... wait in patience",
+  "why": "动词+-ly 弱填充副词（slowly/patiently）"
+ },
+ {
+  "ch": 52,
+  "anchor": "Qianli Xun observed the surroundings m",
+  "sev": "P2",
+  "cur": "observed the surroundings more carefully",
+  "sug": "scanned the surroundings more closely",
+  "why": "动词+-ly 弱填充副词（carefully 修饰 observed）"
+ },
+ {
+  "ch": 52,
+  "anchor": "Qianli Xun approached the pavilion, thin",
+  "sev": "P2",
+  "cur": "cautiously called out",
+  "sug": "called out in caution",
+  "why": "动词+-ly 弱填充副词（cautiously 修饰 called）"
+ },
+ {
+  "ch": 52,
+  "anchor": "Kuqiao explained: \"When the master is",
+  "sev": "P0",
+  "cur": "the master",
+  "sug": "our masters",
+  "why": "原文\"主人说话\"指小姐与客位乔公子，单数阳性感 the master 易指代错位"
+ },
+ {
+  "ch": 52,
+  "anchor": "Qianli Xun deliberately pretended to be",
+  "sev": "P2",
+  "cur": "deliberately pretended ... reputation？”",
+  "sug": "put on a serious face ... reputation?\"",
+  "why": "动词+-ly 弱填充副词，且末尾混入中文全角问号 ？"
+ },
+ {
+  "ch": 52,
+  "anchor": "He didn't expect everything to go so sm",
+  "sev": "P2",
+  "cur": "go so smoothly",
+  "sug": "go so smooth",
+  "why": "动词+-ly 弱填充副词（smoothly 修饰 go）"
+ },
+ {
+  "ch": 52,
+  "anchor": "Qiao Wenxian didn't admit it and made ex",
+  "sev": "P1",
+  "cur": "quickly leave Youlin Villa",
+  "sug": "left Youlin Retreat in haste",
+  "why": "\"幽林别居\"与第41-50章 Youlin Retreat 不一致，且含动词+-ly"
+ },
+ {
+  "ch": 53,
+  "anchor": "Xiaguo, on the other hand, was quite env",
+  "sev": "P2",
+  "cur": "ask bluntly",
+  "sug": "ask straight out",
+  "why": "动词+-ly 弱填充副词（bluntly 修饰 ask）"
+ },
+ {
+  "ch": 53,
+  "anchor": "Qianli Xun found it difficult. Writing",
+  "sev": "P2",
+  "cur": "：“First learn all",
+  "sug": ": \"First learn all",
+  "why": "英文段内混入中文全角冒号 ："
+ },
+ {
+  "ch": 53,
+  "anchor": "The carriage arrived at the Lin residenc",
+  "sev": "P1",
+  "cur": "the Lin residence / Aunt Wei",
+  "sug": "Lin Manor / Matron Wei",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron；\"林府\"应统一为 Lin Manor"
+ },
+ {
+  "ch": 53,
+  "anchor": "The carriage arrived at the Lin residenc",
+  "sev": "P2",
+  "cur": "quickly closed ... immediately knelt",
+  "sug": "shut the door fast and knelt at once",
+  "why": "动词+-ly 弱填充副词（quickly/immediately）"
+ },
+ {
+  "ch": 53,
+  "anchor": "Aunt Wei was surprised and stepped forwa",
+  "sev": "P1",
+  "cur": "Aunt Wei",
+  "sug": "Matron Wei",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 53,
+  "anchor": "Qianli Xun insisted on staying kneeling:",
+  "sev": "P1",
+  "cur": "Auntie",
+  "sug": "Matron",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 53,
+  "anchor": "\"I also hope Young Lady can divorce the",
+  "sev": "P1",
+  "cur": "the Young Master / Aunt Wei",
+  "sug": "Son-in-law / Matron Wei",
+  "why": "\"姑爷\"指林觉；\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 53,
+  "anchor": "Aunt Wei ordered the maidservant to se",
+  "sev": "P1",
+  "cur": "Aunt Wei / the Young Master",
+  "sug": "Matron Wei / Son-in-law",
+  "why": "违背 02_CONTEXT.md 锁定译名 Matron，且姑爷不宜作 Young Master"
+ },
+ {
+  "ch": 53,
+  "anchor": "Qianli Xun didn't want to hide anything",
+  "sev": "P1",
+  "cur": "Aunt Wei",
+  "sug": "Matron Wei",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 53,
+  "anchor": "\"Exactly! As long as Master Zhu agrees,",
+  "sev": "P1",
+  "cur": "the Young Master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"指林觉，译作 Young Master 易混淆"
+ },
+ {
+  "ch": 53,
+  "anchor": "“Sigh, I can't think of anything right n",
+  "sev": "P1",
+  "cur": "the Zhu residence / Aunt Wei / the Young Master",
+  "sug": "Zhu Manor / Matron Wei / Son-in-law",
+  "why": "\"朱府\"\"嬷嬷\"违背 02_CONTEXT.md 锁定译名；另混入全角标点 ： 与 。"
+ },
+ {
+  "ch": 53,
+  "anchor": "\"Thank you, Auntie.\"",
+  "sev": "P1",
+  "cur": "Auntie",
+  "sug": "Matron",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 53,
+  "anchor": "\"The Master is very stubborn. I'm afrai",
+  "sev": "P1",
+  "cur": "the Young Master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"指林觉，需统一作 Son-in-law"
+ },
+ {
+  "ch": 53,
+  "anchor": "\"Auntie, please don't.\"",
+  "sev": "P1",
+  "cur": "Auntie",
+  "sug": "Matron",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 53,
+  "anchor": "\"Don't worry, Young Lady. I won't do any",
+  "sev": "P1",
+  "cur": "Aunt Wei",
+  "sug": "Matron Wei",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron；另 secretly 宜作 in secret"
+ },
+ {
+  "ch": 53,
+  "anchor": "Qiao Wenxian returned to Youlin Villa an",
+  "sev": "P1",
+  "cur": "Youlin Villa",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"与前文第41-50章 Youlin Retreat 不一致"
+ },
+ {
+  "ch": 53,
+  "anchor": "Once inside, before either of them had",
+  "sev": "P2",
+  "cur": "said excitedly: “You'll",
+  "sug": "blurted in excitement: \"You'll",
+  "why": "动词+-ly 弱填充副词，且含中文全角冒号 ："
+ },
+ {
+  "ch": 53,
+  "anchor": "Shen Jianchen found it quite ridiculous",
+  "sev": "P2",
+  "cur": "excited？”",
+  "sug": "excited?\"",
+  "why": "英文段内混入中文全角问号 ？"
+ },
+ {
+  "ch": 53,
+  "anchor": "Qiao Wenxian immediately sobered up: “Ri",
+  "sev": "P2",
+  "cur": "immediately sobered up: ... do.”",
+  "sug": "sobered up at once: ... do.\"",
+  "why": "动词+-ly 弱填充副词，且含中文全角句号 。"
+ },
+ {
+  "ch": 53,
+  "anchor": "\"You'll help me?\" Qiao Wenxian was stunn",
+  "sev": "P1",
+  "cur": "Regional Governor of Lin'an",
+  "sug": "Military Commissioner of Lin'an",
+  "why": "\"临安节度使\"与第36、57、59、96章译法不统一"
+ },
+ {
+  "ch": 53,
+  "anchor": "Qiao Wenxian let go of Prince Yi: “I fin",
+  "sev": "P2",
+  "cur": "wonderful！”",
+  "sug": "wonderful!\"",
+  "why": "英文段内混入中文全角感叹号 ！"
+ },
+ {
+  "ch": 53,
+  "anchor": "Shen Jianchen sighed: \"Sigh. I'm Prince",
+  "sev": "P1",
+  "cur": "Regional Governor of Lin'an",
+  "sug": "Military Commissioner of Lin'an",
+  "why": "\"临安节度使\"官制译名不一致；另 sighed: \"Sigh. 叠床架屋"
+ },
+ {
+  "ch": 53,
+  "anchor": "Qiao Wenxian said: “You are the Emperor'",
+  "sev": "P1",
+  "cur": "the Emperor's son",
+  "sug": "His Majesty's son",
+  "why": "\"官家\"违背 02_CONTEXT.md 锁定译名 His Majesty"
+ },
+ {
+  "ch": 53,
+  "anchor": "Butler Li arrived in the courtyard hold",
+  "sev": "P2",
+  "cur": "here？”",
+  "sug": "here?\"",
+  "why": "英文段内混入中文全角问号 ？"
+ },
+ {
+  "ch": 53,
+  "anchor": "\"Since the Emperor enjoys them, everyon",
+  "sev": "P1",
+  "cur": "the Emperor",
+  "sug": "His Majesty",
+  "why": "\"官家\"违背 02_CONTEXT.md 锁定译名 His Majesty"
+ },
+ {
+  "ch": 53,
+  "anchor": "“Shuzhen is Youqi Jushi, famous through",
+  "sev": "P2",
+  "cur": "attend。”",
+  "sug": "attend.\"",
+  "why": "英文段内混入中文全角句号 。"
+ },
+ {
+  "ch": 53,
+  "anchor": "Outside the courtyard gate, he ran into",
+  "sev": "P1",
+  "cur": "County Princess Jiahe / County Princess",
+  "sug": "Princess Jiahe / Princess",
+  "why": "\"佳和郡主\"违背 02_CONTEXT.md 锁定译名 Princess Jiahe；另 shopping 过西化，含全角句号 。"
+ },
+ {
+  "ch": 53,
+  "anchor": "Xilan quickly admitted her mistake: \"Cou",
+  "sev": "P1",
+  "cur": "County Princess",
+  "sug": "Princess",
+  "why": "\"郡主\"违背 02_CONTEXT.md 锁定译名；另 quickly admitted 含动词+-ly"
+ },
+ {
+  "ch": 53,
+  "anchor": "Shen Jianchen walked toward the courtyard",
+  "sev": "P1",
+  "cur": "County Princess Jiahe",
+  "sug": "Princess Jiahe",
+  "why": "\"佳和郡主\"违背 02_CONTEXT.md 锁定译名；另 asked anxiously 含动词+-ly"
+ },
+ {
+  "ch": 53,
+  "anchor": "Having received permission, Qiao Mengron",
+  "sev": "P1",
+  "cur": "Youlin Villa",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"译名不一致"
+ },
+ {
+  "ch": 53,
+  "anchor": "Shen Jianchen paid no attention. He simpl",
+  "sev": "P1",
+  "cur": "Sacred Willow",
+  "sug": "Divine Willow",
+  "why": "\"神柳\"与前文及全书定译 Divine Willow 不一致；另 simply/silently 为动词+-ly"
+ },
+ {
+  "ch": 53,
+  "anchor": "The woman replied: \"Of course it works!",
+  "sev": "P1",
+  "cur": "Sacred Willow",
+  "sug": "Divine Willow",
+  "why": "\"神柳\"专名不一致"
+ },
+ {
+  "ch": 53,
+  "anchor": "Qiao Mengrong watched the couple finish",
+  "sev": "P2",
+  "cur": "leave happily",
+  "sug": "walk off in high spirits",
+  "why": "动词+-ly 弱填充副词（happily 修饰 leave）"
+ },
+ {
+  "ch": 54,
+  "anchor": "Shen Jianchen walked up to the Sacred Wi",
+  "sev": "P1",
+  "cur": "Sacred Willow (两处)",
+  "sug": "Divine Willow",
+  "why": "\"神柳\"与前文定译 Divine Willow 不一致"
+ },
+ {
+  "ch": 54,
+  "anchor": "Qiao Mengrong also found a stone to sit",
+  "sev": "P1",
+  "cur": "Sacred Willow",
+  "sug": "Divine Willow",
+  "why": "\"神柳\"专名不一致"
+ },
+ {
+  "ch": 54,
+  "anchor": "Qiao Mengrong remembered the couple tyin",
+  "sev": "P2",
+  "cur": "asked tentatively",
+  "sug": "ventured to ask",
+  "why": "动词+-ly 弱填充副词（tentatively 修饰 asked）"
+ },
+ {
+  "ch": 54,
+  "anchor": "\"I want to write both our names on it, a",
+  "sev": "P1",
+  "cur": "Sacred Willow",
+  "sug": "Divine Willow",
+  "why": "\"神柳\"专名不一致"
+ },
+ {
+  "ch": 54,
+  "anchor": "Qiao Mengrong also stood up and looked at",
+  "sev": "P1",
+  "cur": "Sacred Willow",
+  "sug": "Divine Willow",
+  "why": "\"神柳\"专名不一致"
+ },
+ {
+  "ch": 54,
+  "anchor": "Brother had already turned and walked ba",
+  "sev": "P2",
+  "cur": "followed closely",
+  "sug": "followed close behind",
+  "why": "动词+-ly 弱填充副词（closely 修饰 followed）"
+ },
+ {
+  "ch": 54,
+  "anchor": "Qiao Mengrong had to let go and asked te",
+  "sev": "P2",
+  "cur": "asked tentatively",
+  "sug": "asked in a tentative tone",
+  "why": "动词+-ly 弱填充副词（tentatively 修饰 asked）"
+ },
+ {
+  "ch": 54,
+  "anchor": "Xilan observed the two and worried deepl",
+  "sev": "P1",
+  "cur": "the County Princess (两处)",
+  "sug": "Princess Jiahe / the Princess",
+  "why": "\"郡主\"违背 02_CONTEXT.md 锁定译名；另 worried deeply 为动词+-ly"
+ },
+ {
+  "ch": 54,
+  "anchor": "Zhu Xiyan hosted the banquet for three r",
+  "sev": "P1",
+  "cur": "the Emperor (两处)",
+  "sug": "His Majesty",
+  "why": "\"官家\"违背 02_CONTEXT.md 锁定译名 His Majesty"
+ },
+ {
+  "ch": 54,
+  "anchor": "The Emperor's banquets usually required",
+  "sev": "P1",
+  "cur": "The Emperor's / the Emperor",
+  "sug": "His Majesty's / His Majesty",
+  "why": "\"官家\"违背 02_CONTEXT.md 锁定译名 His Majesty"
+ },
+ {
+  "ch": 54,
+  "anchor": "Qianli Xun did not travel with Lin Jue b",
+  "sev": "P1",
+  "cur": "the Zhu residence / Aunt Wei",
+  "sug": "Zhu Manor / Matron Wei",
+  "why": "\"朱府\"\"嬷嬷\"违背 02_CONTEXT.md 锁定译名"
+ },
+ {
+  "ch": 54,
+  "anchor": "Arriving at the Zhu residence, Qianli Xu",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名"
+ },
+ {
+  "ch": 54,
+  "anchor": "She sat in her room resting, also look",
+  "sev": "P1",
+  "cur": "the Elder",
+  "sug": "the Old Ancestor",
+  "why": "\"老祖宗\"与前文第15–24章定译 the Old Ancestor 不一致"
+ },
+ {
+  "ch": 54,
+  "anchor": "Qianli Xun said lightly: \"If Mother is s",
+  "sev": "P2",
+  "cur": "said lightly",
+  "sug": "kept her tone light and said",
+  "why": "动词+-ly 弱填充副词（lightly 修饰 said）"
+ },
+ {
+  "ch": 54,
+  "anchor": "Seeing Aunt Wei had also returned, Madam",
+  "sev": "P1",
+  "cur": "Aunt Wei / Auntie",
+  "sug": "Matron Wei / Matron",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 54,
+  "anchor": "\"Madam, let's talk inside.\" Aunt Wei or",
+  "sev": "P1",
+  "cur": "Aunt Wei / the maidservants",
+  "sug": "Matron Wei / the attendants",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md；原文\"下人\"非特指丫鬟"
+ },
+ {
+  "ch": 54,
+  "anchor": "Once inside and everyone was seated, Mad",
+  "sev": "P1",
+  "cur": "Auntie",
+  "sug": "Matron",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 54,
+  "anchor": "Aunt Wei said: “First, I've come back to",
+  "sev": "P1",
+  "cur": "Aunt Wei",
+  "sug": "Matron Wei",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 54,
+  "anchor": "\"Sigh! I failed to take good care of You",
+  "sev": "P1",
+  "cur": "The Young Master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"实指林觉，不可误作 Young Master"
+ },
+ {
+  "ch": 54,
+  "anchor": "Madam Xiang felt a pang of sadness. Sh",
+  "sev": "P2",
+  "cur": "explained patiently",
+  "sug": "explained with patience",
+  "why": "动词+-ly 弱填充副词（patiently 修饰 explained）"
+ },
+ {
+  "ch": 54,
+  "anchor": "Aunt Wei replied: \"I'm not qualified to",
+  "sev": "P1",
+  "cur": "Aunt Wei",
+  "sug": "Matron Wei",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 54,
+  "anchor": "Aunt Wei saw them to the door and told",
+  "sev": "P1",
+  "cur": "Aunt Wei",
+  "sug": "Matron Wei",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron；另 attend closely 宜作 attend close"
+ },
+ {
+  "ch": 54,
+  "anchor": "Xiaguo replied reluctantly: \"Yes.\" She w",
+  "sev": "P1",
+  "cur": "Aunt Wei",
+  "sug": "Matron Wei",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 54,
+  "anchor": "Xiaguo replied reluctantly: \"Yes.\" She w",
+  "sev": "P2",
+  "cur": "replied reluctantly ... watched helplessly",
+  "sug": "gave a reluctant \"Yes\" and watched helpless",
+  "why": "动词+-ly 弱填充副词连用"
+ },
+ {
+  "ch": 54,
+  "anchor": "After greeting her mother-in-law, she t",
+  "sev": "P0",
+  "cur": "\"Sister-in-law, hello.\"",
+  "sug": "\"Little Sister, hello.\"",
+  "why": "称谓反译：原文陈文心称呼小姑子\"妹妹好\"，不可反译成 Sister-in-law"
+ },
+ {
+  "ch": 55,
+  "anchor": "As Qiao Wenxian passed by Shuzhen, he ga",
+  "sev": "P1",
+  "cur": "Weimomo's",
+  "sug": "Matron Wei's",
+  "why": "\"韦嬷嬷\"直出拼音且违背 02_CONTEXT.md 锁定译名 Matron；另 silently/successfully 为动词+-ly"
+ },
+ {
+  "ch": 55,
+  "anchor": "When Chen Haoyu politely called out \"Yo",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定；另 politely called / get lost quickly 含动词+-ly"
+ },
+ {
+  "ch": 55,
+  "anchor": "Because of her daughter's situation, Ma",
+  "sev": "P1",
+  "cur": "Young Master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"指林觉，译作 Young Master 易混淆"
+ },
+ {
+  "ch": 55,
+  "anchor": "Lin Jue couldn't stand it and wanted t",
+  "sev": "P1",
+  "cur": "Young Master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"指林觉，宜统一作 Son-in-law"
+ },
+ {
+  "ch": 55,
+  "anchor": "Zhu Xiyan spoke: \"Esteemed colleagues, yo",
+  "sev": "P0",
+  "cur": "(1101) / (1102-1106) / (1107-1110) / (1111-1118) / (1118-1119) / (1119-1125)",
+  "sug": "（删除全部现代公元纪年括号）",
+  "why": "擅增史实穿帮：宋代官员讲话不可能口述公元年份括号，且中文原文并无此内容"
+ },
+ {
+  "ch": 55,
+  "anchor": "Shen Jianchen thought: \"I'd rather toas",
+  "sev": "P1",
+  "cur": "Sacred Willow",
+  "sug": "Divine Willow",
+  "why": "\"神柳\"专名不一致"
+ },
+ {
+  "ch": 55,
+  "anchor": "The maidservant not far away was Xia Guo",
+  "sev": "P1",
+  "cur": "Xia Guo",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定拼写 Xiaguo"
+ },
+ {
+  "ch": 55,
+  "anchor": "Xia Guo took advantage of Weimomo's inat",
+  "sev": "P1",
+  "cur": "Xia Guo / Weimomo's / Nanshuang",
+  "sug": "Xiaguo / Matron Wei's / Nan Shuang",
+  "why": "\"夏果\"\"韦嬷嬷\"违背 02_CONTEXT.md 锁定，且南双拼写漂移"
+ },
+ {
+  "ch": 55,
+  "anchor": "Qiao Wenxian looked in the direction the",
+  "sev": "P1",
+  "cur": "Xia Guo",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定拼写 Xiaguo"
+ },
+ {
+  "ch": 55,
+  "anchor": "When Qiao Wenxian saw Xia Guo, Xia Guo",
+  "sev": "P1",
+  "cur": "Xia Guo (两处)",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定拼写 Xiaguo"
+ },
+ {
+  "ch": 55,
+  "anchor": "Kuqiao asked strangely: \"Xia Guo, why ar",
+  "sev": "P1",
+  "cur": "Xia Guo",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md；另 asked strangely 为动词+-ly"
+ },
+ {
+  "ch": 55,
+  "anchor": "Xia Guo covered up: \"No... nothing.\"",
+  "sev": "P1",
+  "cur": "Xia Guo",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定拼写 Xiaguo"
+ },
+ {
+  "ch": 55,
+  "anchor": "\"If the young lady waves, I'll go over.",
+  "sev": "P1",
+  "cur": "Xia Guo",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定拼写 Xiaguo"
+ },
+ {
+  "ch": 55,
+  "anchor": "Qiao Wenxian's words made Shen Jianchen r",
+  "sev": "P2",
+  "cur": "a fascinating spirit?",
+  "sug": "an interesting soul?",
+  "why": "后两段对话追问 \"An interesting soul?\"，同一核心词\"有趣的灵魂\"翻译断裂"
+ },
+ {
+  "ch": 55,
+  "anchor": "Qiao Wenxian leaned closer to the Prince",
+  "sev": "P1",
+  "cur": "County Princess Jiahe",
+  "sug": "Princess Jiahe",
+  "why": "\"佳和郡主\"违背 02_CONTEXT.md 锁定译名 Princess Jiahe"
+ },
+ {
+  "ch": 56,
+  "anchor": "Xia Guo saw her young lady leave the fem",
+  "sev": "P1",
+  "cur": "Xia Guo",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定拼写 Xiaguo"
+ },
+ {
+  "ch": 56,
+  "anchor": "Kuqiao replied: \"The young lady probably",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 56,
+  "anchor": "Xia Guo felt relieved and focused her at",
+  "sev": "P1",
+  "cur": "Xia Guo",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定拼写 Xiaguo"
+ },
+ {
+  "ch": 56,
+  "anchor": "Nan Shuang waved her chopsticks in front",
+  "sev": "P0",
+  "cur": "her chopsticks / Xia Guo's",
+  "sug": "his chopsticks / Xiaguo's",
+  "why": "南双为男性书童，阴性代词 her 严重错乱；且夏果拼写违背 02_CONTEXT.md"
+ },
+ {
+  "ch": 56,
+  "anchor": "Xia Guo's face immediately turned red. S",
+  "sev": "P1",
+  "cur": "Xia Guo's",
+  "sug": "Xiaguo's",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定；另 immediately turned 为动词+-ly"
+ },
+ {
+  "ch": 56,
+  "anchor": "Xia Guo saw that Huayu had an excellent",
+  "sev": "P1",
+  "cur": "Xia Guo",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定拼写 Xiaguo"
+ },
+ {
+  "ch": 56,
+  "anchor": "Huayu got up and switched places with Xi",
+  "sev": "P1",
+  "cur": "Xia Guo",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定拼写 Xiaguo"
+ },
+ {
+  "ch": 56,
+  "anchor": "\"Young Lady Kuqiao, keep it for yourself",
+  "sev": "P0",
+  "cur": "Young Lady Kuqiao / Xia Guo",
+  "sug": "Sister Kuqiao / Xiaguo",
+  "why": "误译：原文为\"苦荞姐姐\"，同为丫鬟不可误称小姐；且夏果拼写违背 02_CONTEXT.md"
+ },
+ {
+  "ch": 56,
+  "anchor": "Xia Guo continued to look at Qiao Wenxia",
+  "sev": "P1",
+  "cur": "Xia Guo",
+  "sug": "Xiaguo",
+  "why": "\"夏果\"违背 02_CONTEXT.md 锁定拼写 Xiaguo"
+ },
+ {
+  "ch": 56,
+  "anchor": "Miao Zhiyu and Youqi Jushi walked and",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 56,
+  "anchor": "\"I'm already married. What do you mean",
+  "sev": "P0",
+  "cur": "Young Lady Qiao",
+  "sug": "Lady Miao",
+  "why": "误译传讹：现场对话人为苗知瑜，原文\"乔姑娘\"属作者笔误，译成 Young Lady Qiao 导致人物错乱"
+ },
+ {
+  "ch": 56,
+  "anchor": "\"You're in the process of a mutual div",
+  "sev": "P1",
+  "cur": "Military Training Official",
+  "sug": "Training Officer",
+  "why": "\"练兵官\"与前文定译 Training Officer 不一致"
+ },
+ {
+  "ch": 56,
+  "anchor": "Before Miao Zhiyu could finish, Chen Hao",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 56,
+  "anchor": "When he heard Zhu Shuzhen refer to herse",
+  "sev": "P2",
+  "cur": "secretly look Zhu Shuzhen over",
+  "sug": "steal a closer look at Zhu Shuzhen",
+  "why": "动词+-ly 弱填充副词（secretly 修饰 look）"
+ },
+ {
+  "ch": 57,
+  "anchor": "The Zhu residence's greatest advantage w",
+  "sev": "P1",
+  "cur": "The Zhu residence's",
+  "sug": "Zhu Manor's",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 57,
+  "anchor": "*Light clouds adorn the evening, the west",
+  "sev": "P2",
+  "cur": "*Light clouds",
+  "sug": "Light clouds",
+  "why": "诗词首尾不应保留 markdown 星号 * 号"
+ },
+ {
+  "ch": 57,
+  "anchor": "Instead of changing year after year?*",
+  "sev": "P1",
+  "cur": "Instead of changing year after year?*",
+  "sug": "Instead of changing year after year? [TN: Translator's rendering]",
+  "why": "自译诗词缺 [TN: Translator's rendering] 译者注，且末尾含多余星号 *"
+ },
+ {
+  "ch": 57,
+  "anchor": "Nanny Xiuzhen replied: \"The day before y",
+  "sev": "P1",
+  "cur": "Nanny Xiuzhen",
+  "sug": "Matron Xiuzhen",
+  "why": "\"秀珍嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 57,
+  "anchor": "Nanny Xiuzhen set out the paper and brus",
+  "sev": "P1",
+  "cur": "Nanny Xiuzhen",
+  "sug": "Matron Xiuzhen",
+  "why": "\"秀珍嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 57,
+  "anchor": "Nanny Xiuzhen received it, walked out of",
+  "sev": "P1",
+  "cur": "Nanny Xiuzhen",
+  "sug": "Matron Xiuzhen",
+  "why": "\"秀珍嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 57,
+  "anchor": "After he received the letter, Nanny Xiuz",
+  "sev": "P1",
+  "cur": "Nanny Xiuzhen",
+  "sug": "Matron Xiuzhen",
+  "why": "\"秀珍嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 58,
+  "anchor": "In the female guest section, Madam Xiang",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名；另 carefully observed 含动词+-ly"
+ },
+ {
+  "ch": 58,
+  "anchor": "Madam Xiang whispered: \"Go tell Nanny We",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 58,
+  "anchor": "After Prince Yi left his seat, Qiao Wenx",
+  "sev": "P2",
+  "cur": "really wanted to immediately tell",
+  "sug": "wanted to tell ... at once",
+  "why": "动词+-ly 弱填充副词（immediately 修饰 tell）"
+ },
+ {
+  "ch": 58,
+  "anchor": "As Zhu Xiyan was thinking, a servant cam",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 58,
+  "anchor": "Nanny Wei had long finished enjoying the",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定；另 quickly got down 含动词+-ly"
+ },
+ {
+  "ch": 58,
+  "anchor": "Zhu Xiyan guessed that Nanny Wei must be",
+  "sev": "P1",
+  "cur": "Nanny Wei / busy herself",
+  "sug": "Matron Wei / busied herself",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md；且 busy herself 时态/语法有误"
+ },
+ {
+  "ch": 58,
+  "anchor": "After receiving permission, Nanny Wei en",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 58,
+  "anchor": "Nanny Wei chose a chair and sat down.",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 58,
+  "anchor": "\"Did Nanny Wei return with Shuzhen?\"",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 58,
+  "anchor": "Originally, Nanny Wei had thought of man",
+  "sev": "P1",
+  "cur": "Nanny Wei / the young master",
+  "sug": "Matron Wei / Son-in-law",
+  "why": "违背 02_CONTEXT.md 锁定译名 Matron，且姑爷不宜作 young master"
+ },
+ {
+  "ch": 58,
+  "anchor": "\"Brutal beatings? That's an exaggeration",
+  "sev": "P1",
+  "cur": "the young master (两处)",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"指林觉，不宜译作 young master"
+ },
+ {
+  "ch": 58,
+  "anchor": "\"How can the master downplay it so casua",
+  "sev": "P1",
+  "cur": "the young master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"指林觉；另 downplay it so casually 为动词+-ly"
+ },
+ {
+  "ch": 58,
+  "anchor": "\"Indulging? That's not it. Now the youn",
+  "sev": "P1",
+  "cur": "the young master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"指林觉，需统一作 Son-in-law"
+ },
+ {
+  "ch": 58,
+  "anchor": "“It seems the master already knows abou",
+  "sev": "P1",
+  "cur": "the young master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"指林觉，需统一作 Son-in-law"
+ },
+ {
+  "ch": 58,
+  "anchor": "Nanny Wei didn't want to talk about othe",
+  "sev": "P1",
+  "cur": "Nanny Wei / the young master",
+  "sug": "Matron Wei / Son-in-law",
+  "why": "违背 02_CONTEXT.md 锁定，姑爷应作 Son-in-law；另 quickly got 为动词+-ly"
+ },
+ {
+  "ch": 58,
+  "anchor": "\"Nanny Wei only wants to follow Shuzhen",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 58,
+  "anchor": "\"I've already thought it through. After",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 58,
+  "anchor": "Nanny Wei had already planned for the fu",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 58,
+  "anchor": "Nanny Wei said: \"The young master has c",
+  "sev": "P1",
+  "cur": "Nanny Wei / the young master",
+  "sug": "Matron Wei / Son-in-law",
+  "why": "违背 02_CONTEXT.md 锁定，姑爷应作 Son-in-law"
+ },
+ {
+  "ch": 58,
+  "anchor": "Zhu Xiyan also thought Lin Jue had come",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 58,
+  "anchor": "Lin Jue didn't dare to casually strike u",
+  "sev": "P2",
+  "cur": "casually strike up ... stood respectfully",
+  "sug": "strike up an idle conversation ... stood in respectful silence",
+  "why": "动词+-ly 弱填充副词连用"
+ },
+ {
+  "ch": 58,
+  "anchor": "After entering, Lin Jue first bowed to",
+  "sev": "P1",
+  "cur": "Nanny Wei (两处)",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 58,
+  "anchor": "Before his bottom even warmed the seat,",
+  "sev": "P2",
+  "cur": "quickly got up ... said respectfully",
+  "sug": "sprang back up ... spoke with deference",
+  "why": "动词+-ly 弱填充副词连用"
+ },
+ {
+  "ch": 58,
+  "anchor": "Nanny Wei smiled: \"It's truly rare for",
+  "sev": "P1",
+  "cur": "Nanny Wei / the young master",
+  "sug": "Matron Wei / Son-in-law",
+  "why": "违背 02_CONTEXT.md 锁定，姑爷应作 Son-in-law"
+ },
+ {
+  "ch": 58,
+  "anchor": "Nanny Wei countered: \"Does the young mast",
+  "sev": "P1",
+  "cur": "Nanny Wei / the young master",
+  "sug": "Matron Wei / Son-in-law",
+  "why": "违背 02_CONTEXT.md 锁定，姑爷应作 Son-in-law"
+ },
+ {
+  "ch": 58,
+  "anchor": "Nanny Wei continued: \"The master doesn'",
+  "sev": "P1",
+  "cur": "Nanny Wei / the young master",
+  "sug": "Matron Wei / Son-in-law",
+  "why": "违背 02_CONTEXT.md 锁定，姑爷应作 Son-in-law"
+ },
+ {
+  "ch": 58,
+  "anchor": "Zhu Xiyan was so startled that he immedi",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定；另 immediately stood up 含动词+-ly"
+ },
+ {
+  "ch": 58,
+  "anchor": "Nanny Wei was also someone who had seen",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定；另 quickly got up 含动词+-ly"
+ },
+ {
+  "ch": 59,
+  "anchor": "Zhu Xiyan saw a person standing in the c",
+  "sev": "P1",
+  "cur": "the emperor",
+  "sug": "His Majesty",
+  "why": "\"官家\"违背 02_CONTEXT.md 锁定译名 His Majesty"
+ },
+ {
+  "ch": 59,
+  "anchor": "Shen Jianchen didn't press further: \"Eve",
+  "sev": "P1",
+  "cur": "Grand Marshal Gao / The emperor",
+  "sug": "Grand Commandant Gao / His Majesty",
+  "why": "\"高太尉\"应作 Grand Commandant Gao；\"官家\"违背 02_CONTEXT.md 锁定"
+ },
+ {
+  "ch": 59,
+  "anchor": "Since the father-in-law didn't sit, Lin",
+  "sev": "P2",
+  "cur": "stood respectfully",
+  "sug": "stood in respectful posture",
+  "why": "动词+-ly 弱填充副词（respectfully 修饰 stood）"
+ },
+ {
+  "ch": 59,
+  "anchor": "After the banquet ended, the guests one",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 59,
+  "anchor": "Shen Jianchen told Wenyuan that Zhu Xiya",
+  "sev": "P1",
+  "cur": "Youlin Biejü",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"专名漂移；另 happily said 含动词+-ly"
+ },
+ {
+  "ch": 59,
+  "anchor": "He had Nanshuang stop the carriage, jump",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "\"南双\"人名拼写漂移；另 ran happily 含动词+-ly"
+ },
+ {
+  "ch": 59,
+  "anchor": "Qiao Mengrong poked her head out from th",
+  "sev": "P2",
+  "cur": "running excitedly",
+  "sug": "sprinting in excitement",
+  "why": "动词+-ly 弱填充副词（excitedly 修饰 running）"
+ },
+ {
+  "ch": 60,
+  "anchor": "After the banquet ended, Qianli Xun did",
+  "sev": "P1",
+  "cur": "the Lin residence / Nanny Wei (两处)",
+  "sug": "Lin Manor / Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名；\"林府\"应统一作 Lin Manor"
+ },
+ {
+  "ch": 60,
+  "anchor": "When she arrived at Madam Xiang's courty",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Xiaguo immediately knelt down: \"Nanny, pl",
+  "sev": "P1",
+  "cur": "Nanny",
+  "sug": "Matron",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定；另 immediately knelt 含动词+-ly"
+ },
+ {
+  "ch": 60,
+  "anchor": "Nanny Wei said: \"Single you out? You're",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Before Nanny Wei could finish, Qianli Xu",
+  "sev": "P1",
+  "cur": "Nanny Wei / Nanny",
+  "sug": "Matron Wei / Matron",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Since the young lady had spoken, Nanny W",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Although Qianli Xun felt sorry for Xiagu",
+  "sev": "P1",
+  "cur": "Nanny Wei's",
+  "sug": "Matron Wei's",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "After the two entered the room, Qianli X",
+  "sev": "P1",
+  "cur": "Nanny Wei (两处)",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Yinxing came in from outside: \"Young lad",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Nanny Wei asked: \"Is it just Nanny Wei a",
+  "sev": "P1",
+  "cur": "Nanny Wei (两处)",
+  "sug": "Matron Wei / me",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Nanny Wei judged: \"It seems something bi",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Coming to the courtyard, Nanny Wei glanc",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Xiaguo looked very wronged. Seeing Nanny",
+  "sev": "P1",
+  "cur": "Nanny Wei (两处)",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Kuqiao advised: \"Don't think wildly. As",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Kuqiao thought and said: \"I don't rememb",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "When Qianli Xun and Nanny Wei arrived at",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 60,
+  "anchor": "Zhu Xiyan replied: \"The thirteenth son o",
+  "sev": "P1",
+  "cur": "the emperor",
+  "sug": "His Majesty",
+  "why": "\"官家\"违背 02_CONTEXT.md 锁定译名 His Majesty"
+ },
+ {
+  "ch": 60,
+  "anchor": "Zhu Xiyan continued: \"Jingyuan, tomorrow",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 61,
+  "anchor": "Tomorrow was the day of the mutual divor",
+  "sev": "P1",
+  "cur": "the Lin residence / Nanny Wei",
+  "sug": "Lin Manor / Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名；\"林府\"应作 Lin Manor"
+ },
+ {
+  "ch": 61,
+  "anchor": "After the banquet, the Zhu residence ret",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 61,
+  "anchor": "Let sparrows and swallows come and chatt",
+  "sev": "P2",
+  "cur": "chatter noisily",
+  "sug": "chatter away",
+  "why": "动词+-ly 弱填充副词（noisily 修饰 chatter）"
+ },
+ {
+  "ch": 61,
+  "anchor": "(\"Quatrain on Bamboo\")",
+  "sev": "P1",
+  "cur": "(\"Quatrain on Bamboo\")",
+  "sug": "(\"Quatrain on Bamboo\") [TN: Translator's rendering]",
+  "why": "自译诗词缺 [TN: Translator's rendering] 译者注"
+ },
+ {
+  "ch": 61,
+  "anchor": "\"Actually, the storytelling scripts Young",
+  "sev": "P1",
+  "cur": "storytelling scripts",
+  "sug": "huaben scripts",
+  "why": "\"话本\"与第30–50、93、100章术语 huaben 不一致（下两段同）"
+ },
+ {
+  "ch": 61,
+  "anchor": "\"Forget it. The stories in the storytell",
+  "sev": "P1",
+  "cur": "storytelling scripts",
+  "sug": "huaben scripts",
+  "why": "\"话本\"术语一致化"
+ },
+ {
+  "ch": 61,
+  "anchor": "\"Things have been busy lately, so there'",
+  "sev": "P1",
+  "cur": "storytelling scripts",
+  "sug": "huaben scripts",
+  "why": "\"话本\"术语一致化"
+ },
+ {
+  "ch": 61,
+  "anchor": "In the main hall of the Zhu residence, p",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 62,
+  "anchor": "Matchmaker Yan had just left when Lin Ju",
+  "sev": "P2",
+  "cur": "immediately dropped to his knees",
+  "sug": "dropped to his knees at once",
+  "why": "动词+-ly 弱填充副词（immediately 修饰 dropped）"
+ },
+ {
+  "ch": 62,
+  "anchor": "After the servant left, Nanny Wei whispe",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 62,
+  "anchor": "Xiaguo's leg injury had healed last nigh",
+  "sev": "P1",
+  "cur": "the Zhu residence's",
+  "sug": "Zhu Manor's",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定；另 hurriedly followed 含动词+-ly"
+ },
+ {
+  "ch": 62,
+  "anchor": "Along the way, she couldn't guess the re",
+  "sev": "P1",
+  "cur": "young master's",
+  "sug": "Son-in-law's",
+  "why": "\"姑爷\"实指林觉，不可误作 young master"
+ },
+ {
+  "ch": 62,
+  "anchor": "The nervousness she felt when first ente",
+  "sev": "P1",
+  "cur": "the young master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"实指林觉，不可误作 young master"
+ },
+ {
+  "ch": 62,
+  "anchor": "\"It's settled. Let the Military Training",
+  "sev": "P1",
+  "cur": "the Zhu residence / Military Training Officer",
+  "sug": "Zhu Manor / Training Officer",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定；练兵官定译 Training Officer"
+ },
+ {
+  "ch": 62,
+  "anchor": "Xiaguo cried: \"Wuwu... Madam, I don't l",
+  "sev": "P2",
+  "cur": "Wuwu... (两处)",
+  "sug": "Sob...",
+  "why": "拟声词\"呜呜\"未译直出拼音"
+ },
+ {
+  "ch": 62,
+  "anchor": "Nanny Wei said: \"If you miss the Militar",
+  "sev": "P1",
+  "cur": "Nanny Wei / Military Training Officer",
+  "sug": "Matron Wei / Training Officer",
+  "why": "违背 02_CONTEXT.md 锁定；另 obediently follow 含动词+-ly"
+ },
+ {
+  "ch": 62,
+  "anchor": "Xiaguo cried to her young lady: \"Young",
+  "sev": "P1",
+  "cur": "the young master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"指林觉；另两处 wuwu... 应译 sob..."
+ },
+ {
+  "ch": 62,
+  "anchor": "Nanny Wei scolded sharply: \"Xiaguo! Shu",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定；另 scolded sharply 含动词+-ly"
+ },
+ {
+  "ch": 62,
+  "anchor": "Madam Xiang worried about her daughter,",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 62,
+  "anchor": "Only then did Madam Xiang feel reassured",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 62,
+  "anchor": "Xiaguo knelt on the ground, crying even",
+  "sev": "P1",
+  "cur": "the young master",
+  "sug": "Son-in-law",
+  "why": "\"姑爷\"指林觉；另 Wuwu... 及 crying... sadly 待修"
+ },
+ {
+  "ch": 62,
+  "anchor": "Qianli Xun emphasized: \"Don't call him",
+  "sev": "P1",
+  "cur": "'young master'",
+  "sug": "'Son-in-law'",
+  "why": "\"姑爷\"指林觉，称谓统一为 Son-in-law"
+ },
+ {
+  "ch": 62,
+  "anchor": "Lin Jue emphasized: \"Your father, the Pr",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 62,
+  "anchor": "Xiaguo got up, wiped her tears, and fo",
+  "sev": "P1",
+  "cur": "the Zhu residence's",
+  "sug": "Zhu Manor's",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 63,
+  "anchor": "Back at the garden, Xiaguo said worriedl",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定；另 said worriedly 含动词+-ly"
+ },
+ {
+  "ch": 63,
+  "anchor": "“Get up. Since you don't want to go bac",
+  "sev": "P1",
+  "cur": "the Zhu residence / Nanny Wei",
+  "sug": "Zhu Manor / Matron Wei",
+  "why": "违背 02_CONTEXT.md 锁定译名 Zhu Manor 与 Matron"
+ },
+ {
+  "ch": 63,
+  "anchor": "Just as Qianli Xun finished speaking, N",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 63,
+  "anchor": "Nanny Wei scolded: \"The young lady took",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 63,
+  "anchor": "Xiaguo cried: \"Wuwu... I don't want to",
+  "sev": "P2",
+  "cur": "Wuwu... (两处)",
+  "sug": "Sob...",
+  "why": "拟声词\"呜呜\"未译直出拼音"
+ },
+ {
+  "ch": 63,
+  "anchor": "Nanny Wei said: \"The young lady is too",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 63,
+  "anchor": "Seeing the young lady's determination, N",
+  "sev": "P1",
+  "cur": "Nanny Wei / the Zhu residence",
+  "sug": "Matron Wei / Zhu Manor",
+  "why": "违背 02_CONTEXT.md 锁定译名 Matron 与 Zhu Manor"
+ },
+ {
+  "ch": 63,
+  "anchor": "Qianli Xun was genuinely happy to stay",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 63,
+  "anchor": "\"I want to stay at the Zhu residence for",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 63,
+  "anchor": "Just then, Xiaguo came out with a bund",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 63,
+  "anchor": "Xiaguo bowed again: \"Thank you, young la",
+  "sev": "P1",
+  "cur": "Nanny",
+  "sug": "Matron",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 63,
+  "anchor": "Nanny Wei continued to instruct: \"Rememb",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 63,
+  "anchor": "\"Don't worry, Nanny. The young lady is",
+  "sev": "P1",
+  "cur": "Nanny",
+  "sug": "Matron",
+  "why": "\"嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 63,
+  "anchor": "After Xiaguo left, Nanny Wei chatted f",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 63,
+  "anchor": "Lvtao came in from outside, bringing m",
+  "sev": "P1",
+  "cur": "Lvtao",
+  "sug": "Lutao",
+  "why": "\"绿桃\"拼写漂移，与第11、14章及术语表 Lutao 不一致"
+ },
+ {
+  "ch": 63,
+  "anchor": "Lvtao saw her young lady sitting on the",
+  "sev": "P1",
+  "cur": "Lvtao / the Zhu residence",
+  "sug": "Lutao / Zhu Manor",
+  "why": "\"绿桃\"拼写漂移；\"朱府\"违背 02_CONTEXT.md 锁定"
+ },
+ {
+  "ch": 63,
+  "anchor": "\"I ran into Kuqiao on my way here. She s",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "\"南双\"拼写漂移"
+ },
+ {
+  "ch": 63,
+  "anchor": "The lanterns were soon hung. Lvtao took",
+  "sev": "P1",
+  "cur": "Lvtao",
+  "sug": "Lutao",
+  "why": "\"绿桃\"拼写漂移"
+ },
+ {
+  "ch": 63,
+  "anchor": "The mistress and maid left the Zhu res",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 63,
+  "anchor": "Qianli Xun looked at the red silk hung h",
+  "sev": "P2",
+  "cur": ", a silent testament to her hopes.",
+  "sug": "（删去）",
+  "why": "AI 禁用词 testament，且\"希望的见证\"为原文所无之幻觉增补"
+ },
+ {
+  "ch": 64,
+  "anchor": "Qianli Xun asked: \"Does Prince Yi know",
+  "sev": "P1",
+  "cur": "qinggong",
+  "sug": "light-foot skill",
+  "why": "\"轻功\"与第20、28、36、41章定法 light-foot skill 不一致且无解释"
+ },
+ {
+  "ch": 64,
+  "anchor": "Shen Jianchen asked suspiciously: \"How d",
+  "sev": "P1",
+  "cur": "qinggong",
+  "sug": "light-foot skill",
+  "why": "\"轻功\"术语不一致；另 asked suspiciously 含动词+-ly"
+ },
+ {
+  "ch": 64,
+  "anchor": "Qianli Xun explained: \"Only someone who",
+  "sev": "P1",
+  "cur": "qinggong",
+  "sug": "light-foot skill",
+  "why": "\"轻功\"术语不一致"
+ },
+ {
+  "ch": 64,
+  "anchor": "Shen Jianchen was slightly puzzled: \"Co",
+  "sev": "P1",
+  "cur": "qinggong",
+  "sug": "light-foot skill",
+  "why": "\"轻功\"术语不一致"
+ },
+ {
+  "ch": 64,
+  "anchor": "Qianli Xun concealed the truth: \"I... I.",
+  "sev": "P1",
+  "cur": "qinggong",
+  "sug": "light-foot skill",
+  "why": "\"轻功\"术语不一致"
+ },
+ {
+  "ch": 64,
+  "anchor": "Thousand Mile Fist was quite powerful. S",
+  "sev": "P1",
+  "cur": "Thousand Mile Fist",
+  "sug": "Qianli Fist",
+  "why": "\"千里拳\"专名违背前后定译 Qianli Fist"
+ },
+ {
+  "ch": 64,
+  "anchor": "Since she refused, Shen Jianchen couldn'",
+  "sev": "P1",
+  "cur": "Drunken Cloud Tower",
+  "sug": "Zuiyun Tower",
+  "why": "\"醉云楼\"与第45章定译 Zuiyun Tower 不一致"
+ },
+ {
+  "ch": 64,
+  "anchor": "Qiao Mengrong walked over and invited: \"",
+  "sev": "P1",
+  "cur": "Secluded Forest Villa",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"与第41–50、91–100章定译 Youlin Retreat 不一致"
+ },
+ {
+  "ch": 64,
+  "anchor": "\"Secluded Forest Villa?\"",
+  "sev": "P1",
+  "cur": "Secluded Forest Villa",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"专名不一致"
+ },
+ {
+  "ch": 64,
+  "anchor": "Qiao Mengrong pointed to the woods not",
+  "sev": "P1",
+  "cur": "Secluded Forest Villa",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"专名不一致"
+ },
+ {
+  "ch": 64,
+  "anchor": "So the residence she saw when she used",
+  "sev": "P1",
+  "cur": "qinggong",
+  "sug": "light-foot skill",
+  "why": "\"轻功\"术语不一致"
+ },
+ {
+  "ch": 65,
+  "anchor": "Shen Jianchen had just stepped into Secl",
+  "sev": "P1",
+  "cur": "Secluded Forest Villa",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"专名不一致"
+ },
+ {
+  "ch": 65,
+  "anchor": "Her brother quickly left Secluded Fore",
+  "sev": "P1",
+  "cur": "Secluded Forest Villa",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"专名不一致；另 quickly left 含动词+-ly"
+ },
+ {
+  "ch": 65,
+  "anchor": "Prince Yi didn't bother with small tal",
+  "sev": "P2",
+  "cur": "asked directly",
+  "sug": "asked straight out",
+  "why": "动词+-ly 弱填充副词（directly 修饰 asked）"
+ },
+ {
+  "ch": 65,
+  "anchor": "Shen Jianchen felt sad for a while longe",
+  "sev": "P2",
+  "cur": "in leaving him alone in this era",
+  "sug": "for him to stay alone in this era",
+  "why": "原文\"留下他一人\"，leaving him alone 易误解为别人抛下他"
+ },
+ {
+  "ch": 65,
+  "anchor": "On the way back to Secluded Forest Vil",
+  "sev": "P1",
+  "cur": "Secluded Forest Villa",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"专名不一致"
+ },
+ {
+  "ch": 65,
+  "anchor": "Bai Feng wasn't around, and he hadn't b",
+  "sev": "P1",
+  "cur": "Shuang",
+  "sug": "Nan Shuang",
+  "why": "\"南双\"漏译姓氏 Nan 且与全书拼写不一致"
+ },
+ {
+  "ch": 66,
+  "anchor": "\"I'm worried the emperor will punish y",
+  "sev": "P1",
+  "cur": "the emperor",
+  "sug": "His Majesty",
+  "why": "\"官家\"违背 02_CONTEXT.md 锁定译名 His Majesty"
+ },
+ {
+  "ch": 66,
+  "anchor": "\"Don't worry. The only way the emperor",
+  "sev": "P1",
+  "cur": "the emperor",
+  "sug": "His Majesty",
+  "why": "\"官家\"违背 02_CONTEXT.md 锁定译名 His Majesty"
+ },
+ {
+  "ch": 66,
+  "anchor": "Kuqiao came back with a cloth bag in her",
+  "sev": "P1",
+  "cur": "Sister Lvtao / Nanny Wei",
+  "sug": "Sister Lutao / Matron Wei",
+  "why": "\"绿桃\"拼写漂移；\"韦嬷嬷\"违背 02_CONTEXT.md 锁定"
+ },
+ {
+  "ch": 66,
+  "anchor": "\"Let's leave right now. Otherwise, if m",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 67,
+  "anchor": "After arriving at West Lake, Qianli Xun",
+  "sev": "P0",
+  "cur": "There was still one hour before the hour of wei.",
+  "sug": "There was still one shichen before the hour of wei.",
+  "why": "误译：\"一个时辰\"为两小时，译作 one hour 与紧接句 two hours 自相矛盾；另 Lake-viewing Pavilion 宜作 Wangjing Pavilion"
+ },
+ {
+  "ch": 67,
+  "anchor": "Kuqiao saw her young lady turn away f",
+  "sev": "P1",
+  "cur": "Lake-viewing Pavilion",
+  "sug": "Wangjing Pavilion",
+  "why": "\"望景亭\"与第68、72、91章定译 Wangjing Pavilion 不一致"
+ },
+ {
+  "ch": 67,
+  "anchor": "Qianli Xun stepped onto Bai Causeway, wa",
+  "sev": "P1",
+  "cur": "...cast their shade.\"",
+  "sug": "...cast their shade.\" [TN: Translator's rendering]",
+  "why": "白居易诗句缺 [TN: Translator's rendering] 译者注"
+ },
+ {
+  "ch": 67,
+  "anchor": "“Better not. Walking the entire Bai Caus",
+  "sev": "P1",
+  "cur": "Lake-viewing Pavilion",
+  "sug": "Wangjing Pavilion",
+  "why": "\"望景亭\"专名不一致"
+ },
+ {
+  "ch": 67,
+  "anchor": "Qianli Xun turned her head and stared at",
+  "sev": "P2",
+  "cur": "a tapeworm in her stomach",
+  "sug": "a mind reader",
+  "why": "\"肚中的蛔虫\"直译 tapeworm 具强烈生理违和感"
+ },
+ {
+  "ch": 67,
+  "anchor": "Another said: \"I think so too. Otherwis",
+  "sev": "P0",
+  "cur": "be invited to tour West Lake",
+  "sug": "meet up to tour West Lake",
+  "why": "误译：原文\"相约\"指双方约定同游，非被动受邀 be invited"
+ },
+ {
+  "ch": 68,
+  "anchor": "Qianli Xun headed toward the agreed-upon",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "\"南双\"拼写漂移，本章及下数段均应统一作 Nan Shuang"
+ },
+ {
+  "ch": 68,
+  "anchor": "Qiao Wenxian carefully looked at Zhu Shu",
+  "sev": "P2",
+  "cur": "carefully looked at",
+  "sug": "studied",
+  "why": "动词+-ly 弱填充副词（carefully 修饰 looked）"
+ },
+ {
+  "ch": 68,
+  "anchor": "Nanshuang had already tidied up the food",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "\"南双\"拼写漂移（本段及后5段 Nanshuang 均同）"
+ },
+ {
+  "ch": 68,
+  "anchor": "Qiao Wenxian gently corrected: \"It's 'a",
+  "sev": "P2",
+  "cur": "gently corrected",
+  "sug": "corrected in a gentle voice",
+  "why": "动词+-ly 弱填充副词（gently 修饰 corrected）"
+ },
+ {
+  "ch": 68,
+  "anchor": "Qiao Wenxian saw food stuck at the corne",
+  "sev": "P2",
+  "cur": "gently wiped it away",
+  "sug": "dabbed it away with gentle care",
+  "why": "动词+-ly 弱填充副词（gently 修饰 wiped）"
+ },
+ {
+  "ch": 68,
+  "anchor": "Kuqiao reminded: \"They're done eating.",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "\"南双\"拼写漂移（下四段 Nanshuang 同）"
+ },
+ {
+  "ch": 69,
+  "anchor": "Chen Haoyu glanced at the boat not far a",
+  "sev": "P2",
+  "cur": "I thought it was someone! ... our affinal kin? ... shameless.”",
+  "sug": "Look who we have here! ... my dear in-law ... shameless.\"",
+  "why": "\"我当是谁\"直译不地道；affinal kin 生硬；含全角标点 ！"
+ },
+ {
+  "ch": 69,
+  "anchor": "Someone said: “Young Master Chen seems",
+  "sev": "P2",
+  "cur": "affinal relative",
+  "sug": "in-law",
+  "why": "\"亲家姑娘\"译作 affinal relative 过于学究公文腔"
+ },
+ {
+  "ch": 69,
+  "anchor": "She cursed loudly: “Chen Haoyu! I didn'",
+  "sev": "P2",
+  "cur": "cursed loudly ... teach you a lesson！”",
+  "sug": "shouted a curse ... teach you a lesson!\"",
+  "why": "动词+-ly 弱填充副词，且末尾混入全角感叹号 ！"
+ },
+ {
+  "ch": 69,
+  "anchor": "Chen Haoyu couldn't stand it anymore: “H",
+  "sev": "P2",
+  "cur": "embarrassing！”",
+  "sug": "embarrassing!\"",
+  "why": "英文段内混入中文全角感叹号 ！"
+ },
+ {
+  "ch": 69,
+  "anchor": "The boat had stabilized. With the help o",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "\"南双\"拼写漂移"
+ },
+ {
+  "ch": 69,
+  "anchor": "Qianli Xun was furious: “Chen Haoyu! Tw",
+  "sev": "P2",
+  "cur": "you！”",
+  "sug": "you!\"",
+  "why": "英文段内混入中文全角感叹号 ！"
+ },
+ {
+  "ch": 69,
+  "anchor": "Chen Haoyu was worried that Zhu Shuzhen",
+  "sev": "P2",
+  "cur": "shouted loudly: “Row the boat away quickly！”",
+  "sug": "roared: \"Row the boat away fast!\"",
+  "why": "动词+-ly 弱填充副词连用，且末尾混入全角感叹号 ！"
+ },
+ {
+  "ch": 71,
+  "anchor": "Xiangrong quickly explained: \"Please re",
+  "sev": "P2",
+  "cur": "quickly explained ... earn our rice",
+  "sug": "explained at once ... earn our living",
+  "why": "动词+-ly 弱填充副词；\"讨口饭吃\"直译 earn our rice 属洋泾浜"
+ },
+ {
+  "ch": 71,
+  "anchor": "Xiangrong said: “I'm so happy to have m",
+  "sev": "P2",
+  "cur": "the Youqi Jushi",
+  "sug": "Youqi Jushi",
+  "why": "雅号前不应加定冠词 the（本章另有5处 the Youqi Jushi 均宜删去 the）"
+ },
+ {
+  "ch": 71,
+  "anchor": "She looked around for Kuqiao and found",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "\"南双\"拼写漂移"
+ },
+ {
+  "ch": 71,
+  "anchor": "Early that morning, after getting up,",
+  "sev": "P1",
+  "cur": "Baifeng / the Yi Wang's",
+  "sug": "Bai Feng / Prince Yi's",
+  "why": "\"白风\"拼写漂移；\"仪王\"违背全书定译 Prince Yi"
+ },
+ {
+  "ch": 71,
+  "anchor": "When the carriage arrived at the gate of",
+  "sev": "P1",
+  "cur": "the Youlin Villa / the Youlin forest",
+  "sug": "Youlin Retreat / the secluded woods",
+  "why": "\"幽林别居\"专名不一致；\"幽林\"宜意译或与别居保持对应"
+ },
+ {
+  "ch": 72,
+  "anchor": "By the time they reached the Divine Will",
+  "sev": "P0",
+  "cur": "they reached",
+  "sug": "he reached",
+  "why": "指代错误：第71章末交代申简辰只身一人前往神柳，现场并无他人"
+ },
+ {
+  "ch": 72,
+  "anchor": "Shen Jianchen tucked the red silk ribbo",
+  "sev": "P1",
+  "cur": "the Youlin forest / Baifeng",
+  "sug": "the secluded woods / Bai Feng",
+  "why": "专名拼写漂移（下3段 Baifeng 同）"
+ },
+ {
+  "ch": 72,
+  "anchor": "The Youlin Villa wasn't far from West",
+  "sev": "P1",
+  "cur": "The Youlin Villa",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"专名不一致"
+ },
+ {
+  "ch": 72,
+  "anchor": "Miao Zhiyu already knew the other was",
+  "sev": "P1",
+  "cur": "Yi Wang (两处)",
+  "sug": "Prince Yi",
+  "why": "\"仪王\"爵位译法漂移（下数段 Your Highness Yi Wang 同）"
+ },
+ {
+  "ch": 72,
+  "anchor": "\"Of course I have. He's at the Wangjing",
+  "sev": "P0",
+  "cur": "drinking his sorrows away",
+  "sug": "drinking her sorrows away",
+  "why": "性别代词重大错乱：朱淑真为女性，误作 his"
+ },
+ {
+  "ch": 72,
+  "anchor": "Now that Yi Wang has recovered and is f",
+  "sev": "P1",
+  "cur": "Yi Wang / the Emperor",
+  "sug": "Prince Yi / His Majesty",
+  "why": "\"官家\"违背 02_CONTEXT.md 锁定译名 His Majesty；\"仪王\"称谓漂移"
+ },
+ {
+  "ch": 73,
+  "anchor": "Baifeng followed Yi Wang as they hurried",
+  "sev": "P1",
+  "cur": "Baifeng / Yi Wang / the Wangjing Pavilion",
+  "sug": "Bai Feng / Prince Yi / Sightseeing Pavilion",
+  "why": "人名爵位漂移；此处原文为\"观景亭\"，与第51-52章 Sightseeing Pavilion 对应"
+ },
+ {
+  "ch": 73,
+  "anchor": "When they reached a spot not far from",
+  "sev": "P1",
+  "cur": "Wangjing Pavilion / Baifeng / Nanshuang",
+  "sug": "Sightseeing Pavilion / Bai Feng / Nan Shuang",
+  "why": "亭名、人名拼写不一致"
+ },
+ {
+  "ch": 73,
+  "anchor": "The three young men immediately perked",
+  "sev": "P1",
+  "cur": "...approach the vanity.\"",
+  "sug": "...approach the vanity.\" [TN: Translator's rendering]",
+  "why": "自译词作《清平乐》缺 [TN: Translator's rendering] 译者注；另 immediately perked 含动词+-ly"
+ },
+ {
+  "ch": 73,
+  "anchor": "At this sight, Shen Jianchen could no",
+  "sev": "P2",
+  "cur": "when pigs fly",
+  "sug": "when pigs climb trees",
+  "why": "母题一致：\"除非猪能上树\"全书作 when pigs climb trees，不宜偷换为 pigs fly"
+ },
+ {
+  "ch": 73,
+  "anchor": "Nanshuang asked: \"Should Young Master re",
+  "sev": "P1",
+  "cur": "Nanshuang / the Qiao residence / the Youlin Villa",
+  "sug": "Nan Shuang / Qiao Manor / Youlin Retreat",
+  "why": "人名地名拼写漂移"
+ },
+ {
+  "ch": 73,
+  "anchor": "When they returned to the Youlin Villa,",
+  "sev": "P1",
+  "cur": "the Youlin Villa / Yi Wang's",
+  "sug": "Youlin Retreat / Prince Yi's",
+  "why": "地名及爵位称谓漂移（下数段 Yi Wang 及 Baifeng 同）"
+ },
+ {
+  "ch": 74,
+  "anchor": "\"Maybe she's as lonely inside as I am.",
+  "sev": "P2",
+  "cur": "turned everything to bubbles",
+  "sug": "turned everything to empty smoke",
+  "why": "\"化为泡影\"直译 to bubbles 不自然"
+ },
+ {
+  "ch": 74,
+  "anchor": "Mengrong's request didn't change Shen Ji",
+  "sev": "P1",
+  "cur": "her ladyship",
+  "sug": "the Princess",
+  "why": "\"郡主\"违背 02_CONTEXT.md 锁定译名 Princess Jiahe，不宜用欧式 her ladyship"
+ },
+ {
+  "ch": 74,
+  "anchor": "Xilan came over with the cloak, ready",
+  "sev": "P1",
+  "cur": "her ladyship",
+  "sug": "the Princess",
+  "why": "\"郡主\"违背 02_CONTEXT.md 锁定译名"
+ },
+ {
+  "ch": 74,
+  "anchor": "Xilan immediately draped the cloak ove",
+  "sev": "P1",
+  "cur": "her ladyship",
+  "sug": "the Princess",
+  "why": "\"郡主\"违背 02_CONTEXT.md 锁定；另 immediately draped 含动词+-ly"
+ },
+ {
+  "ch": 74,
+  "anchor": "Outside the door came Lvtiao's voice: \"M",
+  "sev": "P1",
+  "cur": "Lvtiao's",
+  "sug": "Lutao's",
+  "why": "\"绿桃\"严重错拼（键盘输入法错码），与第11、14章 Lutao 冲突"
+ },
+ {
+  "ch": 75,
+  "anchor": "After tidying up, Qianli Xun had a sim",
+  "sev": "P1",
+  "cur": "Lady Xiang's / Nanny Wei",
+  "sug": "Madam Xiang's / Matron Wei",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md；\"向夫人\"宜统一为 Madam Xiang"
+ },
+ {
+  "ch": 75,
+  "anchor": "Though Nanny Wei and Lady Xiang were mis",
+  "sev": "P1",
+  "cur": "Nanny Wei (两处) / Lady Xiang / the Zhu residence",
+  "sug": "Matron Wei / Madam Xiang / Zhu Manor",
+  "why": "\"嬷嬷\"\"朱府\"违背 02_CONTEXT.md 锁定译名"
+ },
+ {
+  "ch": 75,
+  "anchor": "Lady Xiang said: \"That's good then. Lvt",
+  "sev": "P1",
+  "cur": "Lady Xiang / Lvtiao / Nanny Wei",
+  "sug": "Madam Xiang / Lutao / Matron Wei",
+  "why": "\"绿桃\"错拼；\"韦嬷嬷\"违背 02_CONTEXT.md（本章后文多处 Nanny Wei 与 the Zhu residence 同此统一）"
+ },
+ {
+  "ch": 75,
+  "anchor": "Lin Jue said angrily: \"Zhu Shuzhen, for",
+  "sev": "P2",
+  "cur": "said angrily ... past kinship",
+  "sug": "snapped in anger ... past bond as husband and wife",
+  "why": "动词+-ly 弱填充副词；\"夫妻情分\"译作 kinship 易误为血缘亲属"
+ },
+ {
+  "ch": 76,
+  "anchor": "Qiao Wenxian asked: \"Why didn't you go t",
+  "sev": "P1",
+  "cur": "Xisan Hutong",
+  "sug": "West Third Alley",
+  "why": "\"西三胡同\"与前文定译 West Third Alley 不一致（本章各处 Baifeng 均应作 Bai Feng）"
+ },
+ {
+  "ch": 76,
+  "anchor": "\"Have you found Qianlixun already?\"",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "\"千里寻\"违背 02_CONTEXT.md 锁定拼写 Qianli Xun"
+ },
+ {
+  "ch": 76,
+  "anchor": "\"Oh, when you go back, send my regards",
+  "sev": "P0",
+  "cur": "send my regards to your grandfather",
+  "sug": "send my regards to Grandfather",
+  "why": "误译：仪王让文渊代自己向\"仪王的外公\"（即文渊之父乔守仁）问好，译成 your grandfather 伦理大乱"
+ },
+ {
+  "ch": 76,
+  "anchor": "Qiao Wenxian left Youlin Bieju and too",
+  "sev": "P1",
+  "cur": "Youlin Bieju / the Qiao residence",
+  "sug": "Youlin Retreat / Qiao Manor",
+  "why": "\"幽林别居\"与\"乔府\"专名不一致"
+ },
+ {
+  "ch": 77,
+  "anchor": "Qiao Wenxian was speechless. Why was som",
+  "sev": "P0",
+  "cur": "hard for him to figure out",
+  "sug": "fail to work on me",
+  "why": "误译：\"放在自己身上就是不灵\"误作对他来说很难猜；且 him 主客颠倒"
+ },
+ {
+  "ch": 77,
+  "anchor": "Qiao Wenxian was speechless. Why was som",
+  "sev": "P1",
+  "cur": "'nv' (woman)",
+  "sug": "'nü' (woman)",
+  "why": "汉语拼音错拼：使用键盘输入法键位 nv 代替 ü"
+ },
+ {
+  "ch": 77,
+  "anchor": "His son pressed again. Qiao Shouren didn",
+  "sev": "P0",
+  "cur": "with your mother and your concubine",
+  "sug": "with your mother and your birth mother",
+  "why": "严重伦理误译：\"你母亲，还有你娘\"分指嫡母钱氏与生母米氏，译作 your concubine 变成文渊自己的妾室；另 Nanshuang 宜作 Nan Shuang，carefully 为动词+-ly"
+ },
+ {
+  "ch": 77,
+  "anchor": "Meanwhile, after leaving Youlin Bieju,",
+  "sev": "P1",
+  "cur": "Youlin Bieju / Baifeng / the Zhu residence",
+  "sug": "Youlin Retreat / Bai Feng / Zhu Manor",
+  "why": "违背 02_CONTEXT.md 朱府锁定译名，且别居与白风拼写漂移"
+ },
+ {
+  "ch": 77,
+  "anchor": "He took out the red silk from his robe:",
+  "sev": "P1",
+  "cur": "the Sacred Willow / storytelling scripts",
+  "sug": "the Divine Willow / huaben scripts",
+  "why": "\"神柳\"与\"话本\"术语不一致"
+ },
+ {
+  "ch": 77,
+  "anchor": "Hearing this, Baifeng finally understood",
+  "sev": "P1",
+  "cur": "Baifeng / Xisan Hutong",
+  "sug": "Bai Feng / West Third Alley",
+  "why": "人名地名拼写漂移"
+ },
+ {
+  "ch": 77,
+  "anchor": "After settling into the carriage, Shen J",
+  "sev": "P1",
+  "cur": "'lao niang'",
+  "sug": "'this lady'",
+  "why": "自称\"老娘\"未译直出拼音（下两段同）"
+ },
+ {
+  "ch": 77,
+  "anchor": "Qianli Xun felt puzzled. She'd never ca",
+  "sev": "P1",
+  "cur": "\"lao niang\"",
+  "sug": "\"this lady\"",
+  "why": "自称\"老娘\"未译直出拼音"
+ },
+ {
+  "ch": 77,
+  "anchor": "Kuqiao thought for a moment and said:",
+  "sev": "P1",
+  "cur": "'lao niang'",
+  "sug": "'this lady'",
+  "why": "自称\"老娘\"未译直出拼音"
+ },
+ {
+  "ch": 78,
+  "anchor": "Concubine Mi curled her lips: “Of course",
+  "sev": "P0",
+  "cur": "the magistrate's wife ... tigress.”",
+  "sug": "the Vice-Prefect's wife ... tigress.\"",
+  "why": "官职误译：\"通判\"在第18章定译为 Vice-Prefect，非县令 magistrate；另含中文全角问号 ？"
+ },
+ {
+  "ch": 78,
+  "anchor": "Shen Jianchen left the Zhu residence and",
+  "sev": "P1",
+  "cur": "the Zhu residence / Baifeng / Juxiang Restaurant",
+  "sug": "Zhu Manor / Bai Feng / Juxiang Tower",
+  "why": "违背 02_CONTEXT.md 锁定译名，且白风与聚香楼拼写漂移"
+ },
+ {
+  "ch": 78,
+  "anchor": "Baifeng asked: \"How did Your Highness d",
+  "sev": "P1",
+  "cur": "Baifeng / Qianlixun",
+  "sug": "Bai Feng / Qianli Xun",
+  "why": "违背 02_CONTEXT.md 锁定拼写 Qianli Xun（本章后文4处 Qianlixun 均应改作 Qianli Xun）"
+ },
+ {
+  "ch": 78,
+  "anchor": "Baifeng muttered to himself: \"In this",
+  "sev": "P1",
+  "cur": "Baifeng / Youlin Villa",
+  "sug": "Bai Feng / Youlin Retreat",
+  "why": "人名地名专名不一致"
+ },
+ {
+  "ch": 79,
+  "anchor": "Back at Youlin Villa, Baifeng supported",
+  "sev": "P1",
+  "cur": "Youlin Villa / Baifeng",
+  "sug": "Youlin Retreat / Bai Feng",
+  "why": "地名人名专名不一致"
+ },
+ {
+  "ch": 79,
+  "anchor": "What “senior executive，” what “company”",
+  "sev": "P2",
+  "cur": "executive，”",
+  "sug": "executive,\"",
+  "why": "英文段内混入中文全角逗号 ，"
+ },
+ {
+  "ch": 79,
+  "anchor": "Early that morning, after Chen Haoyu vis",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 79,
+  "anchor": "Chen Haoyu continued: “The three talente",
+  "sev": "P2",
+  "cur": "gathering？”",
+  "sug": "gathering?\"",
+  "why": "英文段内混入中文全角问号 ？"
+ },
+ {
+  "ch": 80,
+  "anchor": "Dongfang Chenze stood up and walked to t",
+  "sev": "P0",
+  "cur": "The two of us, Cao Ban and An Mingxuan, quietly memorized it.",
+  "sug": "Cao Ban, An Mingxuan, and I memorized it in secret.",
+  "why": "施动者与人数错乱：原文\"我与曹班、安明轩两位公子\"共三人，译文变成只有两人且吞掉说话人"
+ },
+ {
+  "ch": 80,
+  "anchor": "Someone stood up: \"Let me say a few wor",
+  "sev": "P1",
+  "cur": "'sleeping in someone's arms fully clothed'",
+  "sug": "'falling asleep in someone's arms, fully dressed'",
+  "why": "\"和衣睡倒人怀\"宜保留 02_CONTEXT.md 动作核心 falling asleep 及 fully dressed（下数段同）"
+ },
+ {
+  "ch": 80,
+  "anchor": "Cao Ban hoped to redirect everyone's att",
+  "sev": "P0",
+  "cur": "with his younger brothers",
+  "sug": "with his disciples",
+  "why": "误译传讹：原文\"弟弟们\"实为\"弟子们\"明显笔误，孔子与弟子论诗经绝非\"弟弟们\""
+ },
+ {
+  "ch": 80,
+  "anchor": "Cao Ban hoped to redirect everyone's att",
+  "sev": "P1",
+  "cur": "Classic of Poetry / 'Ospreys' / 'Youthful Roaming'",
+  "sug": "Book of Songs / 'Guan Ju' / 'Shaonian You'",
+  "why": "典籍词牌宜与前文第31章及术语表保持一致"
+ },
+ {
+  "ch": 81,
+  "anchor": "Hearing \"both innocent and beautiful,\"",
+  "sev": "P2",
+  "cur": "Beautiful your head!",
+  "sug": "Beautiful my foot!",
+  "why": "\"美好你个头\"逐字死译成中式英语"
+ },
+ {
+  "ch": 81,
+  "anchor": "Someone was moved: \"Young Master An's an",
+  "sev": "P2",
+  "cur": "wonderfully indescribable",
+  "sug": "brilliant beyond words",
+  "why": "\"妙不可言\"直译生硬且含 -ly"
+ },
+ {
+  "ch": 81,
+  "anchor": "Chen Haoyu said: “Stop! Stop! A true her",
+  "sev": "P2",
+  "cur": "compare to me？”",
+  "sug": "compare to me?\"",
+  "why": "英文段内混入中文全角问号 ？"
+ },
+ {
+  "ch": 81,
+  "anchor": "Dongfang Chenze said: \"It's settled then.",
+  "sev": "P1",
+  "cur": "Youlin Villa",
+  "sug": "Youlin Retreat",
+  "why": "\"幽林别居\"专名不一致"
+ },
+ {
+  "ch": 82,
+  "anchor": "Qiao Wenxian left the Qiao residence bu",
+  "sev": "P1",
+  "cur": "the Qiao residence / Youlin Villa",
+  "sug": "Qiao Manor / Youlin Retreat",
+  "why": "地名不一致（本章其余各处 Youlin Villa 均宜作 Youlin Retreat）"
+ },
+ {
+  "ch": 82,
+  "anchor": "Nanshuang got the wine and also climbed",
+  "sev": "P0",
+  "cur": "filled the prince's cup",
+  "sug": "filled Young Master's cup",
+  "why": "人物指代大错：原文\"替公子满上\"指乔文仙，仪王此时在屋内醉睡；另 Nanshuang 应作 Nan Shuang"
+ },
+ {
+  "ch": 82,
+  "anchor": "Seeing Nanshuang come in, Baifeng, who",
+  "sev": "P0",
+  "cur": "pulled her",
+  "sug": "pulled him",
+  "why": "性别代词重大错乱：南双为男性书童，阴性代词 her 错误；另人名宜作 Nan Shuang / Bai Feng"
+ },
+ {
+  "ch": 82,
+  "anchor": "After dark, the garden of the Zhu resi",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名 Zhu Manor（下4段同）"
+ },
+ {
+  "ch": 82,
+  "anchor": "Hearing Qianlixun had come, Shen Jianche",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "\"千里寻\"违背 02_CONTEXT.md 锁定拼写 Qianli Xun"
+ },
+ {
+  "ch": 82,
+  "anchor": "\"Brother, I was wrong. I shouldn't have",
+  "sev": "P1",
+  "cur": "the divine willow",
+  "sug": "the Divine Willow",
+  "why": "\"神柳\"专名漏大写"
+ },
+ {
+  "ch": 83,
+  "anchor": "Qianlixun didn't hide her feelings at",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "\"千里寻\"违背 02_CONTEXT.md 锁定拼写（本章另有10余处 Qianlixun 均应统改 Qianli Xun）"
+ },
+ {
+  "ch": 83,
+  "anchor": "Qiao Wenxian arrived outside Youlin Vill",
+  "sev": "P1",
+  "cur": "Youlin Villa / Nanshuang",
+  "sug": "Youlin Retreat / Nan Shuang",
+  "why": "地名人名专名不一致（下段及尾段 Youlin Villa、Baifeng、Nanshuang 及 the Prince of Yi 均宜统一）"
+ },
+ {
+  "ch": 84,
+  "anchor": "Leaning on Qiao Wenxian's shoulder, Qia",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "\"千里寻\"违背 02_CONTEXT.md 锁定拼写（本章其余7处 Qianlixun 均应统改 Qianli Xun）"
+ },
+ {
+  "ch": 84,
+  "anchor": "Nanshuang took it and tucked it into h",
+  "sev": "P0",
+  "cur": "into her bosom",
+  "sug": "inside his robe",
+  "why": "性别代词重大错乱：南双为男性书童，误用阴性 her bosom；且 Nanshuang 应作 Nan Shuang"
+ },
+ {
+  "ch": 84,
+  "anchor": "The carriage arrived at the side gate",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "\"朱府\"违背 02_CONTEXT.md 锁定译名（本章其余各处 the Zhu residence 同）"
+ },
+ {
+  "ch": 85,
+  "anchor": "After breakfast, Qianlixun accompanied M",
+  "sev": "P1",
+  "cur": "Qianlixun / Nanny Wei",
+  "sug": "Qianli Xun / Matron Wei",
+  "why": "违背 02_CONTEXT.md 锁定译名 Qianli Xun 与 Matron"
+ },
+ {
+  "ch": 85,
+  "anchor": "Qianlixun stood up abruptly: \"They've g",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "\"千里寻\"违背 02_CONTEXT.md；另 stood up abruptly 含动词+-ly"
+ },
+ {
+  "ch": 86,
+  "anchor": "Nanny Wei grabbed the young lady: \"No ne",
+  "sev": "P1",
+  "cur": "Nanny Wei / training officer",
+  "sug": "Matron Wei / Training Officer",
+  "why": "\"韦嬷嬷\"违背 02_CONTEXT.md 锁定译名（本章后文10余处 Nanny Wei 均同）"
+ },
+ {
+  "ch": 86,
+  "anchor": "Qianlixun remembered that Lin Jue wanted",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "\"千里寻\"违背 02_CONTEXT.md 锁定拼写（本章其余各处 Qianlixun、Zhu residence、Lin residence、Baifeng、Nanshuang 均应按锁定统一）"
+ },
+ {
+  "ch": 87,
+  "anchor": "When Zhu Jingyuan arrived at the small",
+  "sev": "P1",
+  "cur": "Qianlixun / story scripts",
+  "sug": "Qianli Xun / huaben scripts",
+  "why": "违背 02_CONTEXT.md 锁定拼写 Qianli Xun，且\"话本\"术语不一致（本章其余10余处 Qianlixun 均同）"
+ },
+ {
+  "ch": 88,
+  "anchor": "Arriving at her brother's courtyard, as",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "（本段暂无误；本章自第3段起各处 Qianlixun 违背 02_CONTEXT.md，共10余处需统改 Qianli Xun，并注意 the Zhu residence 改 Zhu Manor）"
+ },
+ {
+  "ch": 89,
+  "anchor": "Kuqiao, holding the new manuscript, arri",
+  "sev": "P1",
+  "cur": "West Three Alley",
+  "sug": "West Third Alley",
+  "why": "\"西三胡同\"与第44–57章定译 West Third Alley 不一致"
+ },
+ {
+  "ch": 89,
+  "anchor": "Kuqiao emphasized: \"My young master doe",
+  "sev": "P0",
+  "cur": "She writes stories",
+  "sug": "He writes stories",
+  "why": "剧情逻辑穿帮：苦荞正对说话艺人假称作者是\"我家公子\"男性，中文口语\"她/他\"同音不露馅，英译 She 当场穿帮"
+ },
+ {
+  "ch": 89,
+  "anchor": "\"My young master said, if everyone enjo",
+  "sev": "P0",
+  "cur": "the stories she writes",
+  "sug": "the stories he writes",
+  "why": "剧情逻辑穿帮：同上，假扮男公子期间口语\"她\"误译作 she 会直接露馅"
+ },
+ {
+  "ch": 89,
+  "anchor": "Kuqiao walked out of the alley. The carr",
+  "sev": "P1",
+  "cur": "Baifeng",
+  "sug": "Bai Feng",
+  "why": "\"白风\"拼写漂移（下数段 Baifeng、Qianlixun、the Zhu residence、Lvtao 均需按锁定统一）"
+ },
+ {
+  "ch": 90,
+  "anchor": "Arriving at Youlin Villa at the agreed",
+  "sev": "P1",
+  "cur": "Youlin Villa / Nanshuang",
+  "sug": "Youlin Retreat / Nan Shuang",
+  "why": "地名人名专名不一致（本章其余各处 Qianlixun、Youlin Villa、Baifeng、Nanshuang 及 the Prince of Yi 均应按锁定统一为 Qianli Xun、Youlin Retreat、Bai Feng、Nan Shuang、Prince Yi）"
+ },
+ {
+  "ch": 90,
+  "anchor": "`Arriving at her brother's courtyard, as",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "（本段暂无误；本章自第3段起...`"
+ },
+ {
+  "ch": 90,
+  "anchor": "Once done, Kuqiao put the box away and s",
+  "sev": "P2",
+  "cur": "stood obediently to the side",
+  "sug": "stood at the ready by her side",
+  "why": "动词+-ly 弱填充副词（obediently 修饰 stood）"
+ },
+ {
+  "ch": 52,
+  "anchor": "Xiaguo knelt down again: \"Wuwu... The L",
+  "sev": "P2",
+  "cur": "Wuwu... (两处)",
+  "sug": "Sob...",
+  "why": "拟声词“呜呜”未译直出拼音"
+ },
+ {
+  "ch": 52,
+  "anchor": "\"Wuwu...! No, he didn't. I kicked the Lor",
+  "sev": "P2",
+  "cur": "Wuwu...! (两处)",
+  "sug": "Sob...!",
+  "why": "拟声词“呜呜”未译直出拼音"
+ },
+ {
+  "ch": 52,
+  "anchor": "Qianli Xun said: \"Hmph! I've already deci",
+  "sev": "P0",
+  "cur": "bringing any merchant prostitutes back / the Lin residence",
+  "sug": "bringing any courtesans back / Lin Manor",
+  "why": "误译：“商妓”系青楼歌妓，非“商人的妓女”；另“林府”宜统一为 Lin Manor"
+ },
+ {
+  "ch": 53,
+  "anchor": "Qianli Xun found it difficult. Writing",
+  "sev": "P2",
+  "cur": "：“First",
+  "sug": ": \"First",
+  "why": "英文段内混入中文全角冒号 ："
+ },
+ {
+  "ch": 53,
+  "anchor": "\"Don't worry, Young Lady. I won't do any",
+  "sev": "P1",
+  "cur": "Aunt Wei / secretly",
+  "sug": "Matron Wei / in secret",
+  "why": "“韦嬷嬷”违背 02_CONTEXT.md 锁定；另含动词+-ly"
+ },
+ {
+  "ch": 72,
+  "anchor": "Later, when Noble Consort Qiao passed aw",
+  "sev": "P1",
+  "cur": "Yi Wang (两处) / the Emperor",
+  "sug": "Prince Yi / His Majesty",
+  "why": "“官家”违背 02_CONTEXT.md 锁定；“仪王”称谓漂移"
+ },
+ {
+  "ch": 73,
+  "anchor": "Nanshuang and Huayu widened their eyes a",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "“南双”拼写漂移"
+ },
+ {
+  "ch": 74,
+  "anchor": "She had drunk too much wine yesterday an",
+  "sev": "P2",
+  "cur": "slept soundly",
+  "sug": "slept deep",
+  "why": "动词+-ly 弱填充副词（soundly 修饰 slept）"
+ },
+ {
+  "ch": 75,
+  "anchor": "Nanny Wei said: \"Madam needn't worry to",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "“韦嬷嬷”违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 75,
+  "anchor": "Nanny Wei continued: \"Our young lady is",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "“韦嬷嬷”违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 75,
+  "anchor": "Qianli Xun said: \"If you don't believe m",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "“韦嬷嬷”违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 75,
+  "anchor": "Nanny Wei smiled: \"Madam, Young Master C",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "“韦嬷嬷”违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 75,
+  "anchor": "Lady Xiang pondered the words \"the curre",
+  "sev": "P1",
+  "cur": "Lady Xiang / Nanny Wei",
+  "sug": "Madam Xiang / Matron Wei",
+  "why": "“韦嬷嬷”违背 02_CONTEXT.md 锁定；“向夫人”统一作 Madam Xiang"
+ },
+ {
+  "ch": 75,
+  "anchor": "Nanny Wei glanced at the young lady and",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "“韦嬷嬷”违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 75,
+  "anchor": "Lady Xiang nodded: \"What you say makes",
+  "sev": "P1",
+  "cur": "Lady Xiang",
+  "sug": "Madam Xiang",
+  "why": "“向夫人”称谓一致化"
+ },
+ {
+  "ch": 75,
+  "anchor": "As they were walking, a maid came hurri",
+  "sev": "P1",
+  "cur": "the Lin residence",
+  "sug": "Lin Manor",
+  "why": "“林府”与前后文定译 Lin Manor 不一致"
+ },
+ {
+  "ch": 75,
+  "anchor": "Lady Xiang asked her daughter: \"Shuzhen,",
+  "sev": "P1",
+  "cur": "Lady Xiang",
+  "sug": "Madam Xiang",
+  "why": "“向夫人”称谓一致化"
+ },
+ {
+  "ch": 75,
+  "anchor": "Qianli Xun instructed the maid: \"Go tell",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "“朱府”违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 75,
+  "anchor": "Lady Xiang worried: \"Is this alright?\"",
+  "sev": "P1",
+  "cur": "Lady Xiang",
+  "sug": "Madam Xiang",
+  "why": "“向夫人”称谓一致化"
+ },
+ {
+  "ch": 75,
+  "anchor": "Nanny Wei said: \"Whether it's alright o",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "“韦嬷嬷”违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 75,
+  "anchor": "Qianli Xun praised: \"Nanny Wei knows me",
+  "sev": "P1",
+  "cur": "Nanny Wei",
+  "sug": "Matron Wei",
+  "why": "“韦嬷嬷”违背 02_CONTEXT.md 锁定译名 Matron"
+ },
+ {
+  "ch": 75,
+  "anchor": "The Lin family's servants carried the",
+  "sev": "P1",
+  "cur": "the Lin residence",
+  "sug": "Lin Manor",
+  "why": "“林府”专名一致化"
+ },
+ {
+  "ch": 76,
+  "anchor": "Baifeng was attending the prince nearby.",
+  "sev": "P1",
+  "cur": "Baifeng",
+  "sug": "Bai Feng",
+  "why": "“白风”拼写漂移"
+ },
+ {
+  "ch": 76,
+  "anchor": "\"Yes.\" Baifeng ran off to find Nanshuan",
+  "sev": "P1",
+  "cur": "Baifeng / Nanshuang",
+  "sug": "Bai Feng / Nan Shuang",
+  "why": "“白风”“南双”拼写漂移"
+ },
+ {
+  "ch": 76,
+  "anchor": "Baifeng and Nanshuang came in carrying b",
+  "sev": "P1",
+  "cur": "Baifeng / Nanshuang",
+  "sug": "Bai Feng / Nan Shuang",
+  "why": "“白风”“南双”拼写漂移"
+ },
+ {
+  "ch": 76,
+  "anchor": "Before Qiao Wenxian could react, Prince",
+  "sev": "P1",
+  "cur": "Baifeng",
+  "sug": "Bai Feng",
+  "why": "“白风”拼写漂移"
+ },
+ {
+  "ch": 76,
+  "anchor": "Nanshuang called inward: \"Princess, You",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "“南双”拼写漂移"
+ },
+ {
+  "ch": 78,
+  "anchor": "After seeing Qianlixun today, Shen Jianc",
+  "sev": "P1",
+  "cur": "Qianlixun (两处)",
+  "sug": "Qianli Xun",
+  "why": "违背 02_CONTEXT.md 锁定拼写 Qianli Xun（本章后文3处 Qianlixun 均同）"
+ },
+ {
+  "ch": 80,
+  "anchor": "Chen Haoyu slept soundly and had a wonde",
+  "sev": "P2",
+  "cur": "slept soundly",
+  "sug": "slept deep",
+  "why": "动词+-ly 弱填充副词（soundly 修饰 slept）"
+ },
+ {
+  "ch": 82,
+  "anchor": "Baifeng said he and the Prince of Yi we",
+  "sev": "P1",
+  "cur": "Baifeng / the Prince of Yi",
+  "sug": "Bai Feng / Prince Yi",
+  "why": "人名爵位漂移"
+ },
+ {
+  "ch": 82,
+  "anchor": "Baifeng and Nanshuang happily ran out.",
+  "sev": "P1",
+  "cur": "Baifeng / Nanshuang",
+  "sug": "Bai Feng / Nan Shuang",
+  "why": "人名拼写漂移；另 happily ran 含动词+-ly"
+ },
+ {
+  "ch": 82,
+  "anchor": "The sky grew darker and darker. Wenyuan",
+  "sev": "P1",
+  "cur": "the Prince of Yi / Nanshuang",
+  "sug": "Prince Yi / Nan Shuang",
+  "why": "爵位与人名拼写漂移"
+ },
+ {
+  "ch": 83,
+  "anchor": "Qiao Wenxian arrived outside Youlin Vil",
+  "sev": "P1",
+  "cur": "Youlin Villa",
+  "sug": "Youlin Retreat",
+  "why": "“幽林别居”专名不一致"
+ },
+ {
+  "ch": 83,
+  "anchor": "Kuqiao and Nanshuang, seeing the two b",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "“南双”拼写漂移（后文 Nanshuang、Baifeng、Youlin Villa 及 the Prince of Yi 均宜统一）"
+ },
+ {
+  "ch": 84,
+  "anchor": "The Qiao family's carriage followed be",
+  "sev": "P1",
+  "cur": "Nanshuang",
+  "sug": "Nan Shuang",
+  "why": "“南双”拼写漂移"
+ },
+ {
+  "ch": 84,
+  "anchor": "\"Nanshuang, what's the name of the gua",
+  "sev": "P1",
+  "cur": "Nanshuang / the Prince of Yi's",
+  "sug": "Nan Shuang / Prince Yi's",
+  "why": "人名爵位拼写漂移"
+ },
+ {
+  "ch": 84,
+  "anchor": "The carriage arrived at the side gate",
+  "sev": "P1",
+  "cur": "the Zhu residence / Nanshuang",
+  "sug": "Zhu Manor / Nan Shuang",
+  "why": "“朱府”违背 02_CONTEXT.md 锁定译名；人名拼写漂移"
+ },
+ {
+  "ch": 84,
+  "anchor": "Qianlixun hadn't woken up yet. She was",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "“千里寻”违背 02_CONTEXT.md 锁定；另 sleeping soundly 含动词+-ly"
+ },
+ {
+  "ch": 84,
+  "anchor": "Qiao Wenxian watched Shuzhen walk into t",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "“朱府”违背 02_CONTEXT.md 锁定译名 Zhu Manor（下数段 Zhu residence、Lin residence 及 Baifeng 均宜统一）"
+ },
+ {
+  "ch": 85,
+  "anchor": "Qianlixun stood up abruptly: \"They've g",
+  "sev": "P1",
+  "cur": "Qianlixun / the Lin residence",
+  "sug": "Qianli Xun / Lin Manor",
+  "why": "违背 02_CONTEXT.md 锁定拼写 Qianli Xun；另 stood up abruptly 含动词+-ly"
+ },
+ {
+  "ch": 86,
+  "anchor": "Nanny Wei grabbed the young lady: \"No ne",
+  "sev": "P1",
+  "cur": "Nanny Wei / the training officer",
+  "sug": "Matron Wei / the Training Officer",
+  "why": "“韦嬷嬷”违背 02_CONTEXT.md 锁定（本章后文10余处 Nanny Wei / Nanny 均同）"
+ },
+ {
+  "ch": 87,
+  "anchor": "“Father, tell me — is Xiaguo's happiness",
+  "sev": "P2",
+  "cur": "more important？”",
+  "sug": "more important?\"",
+  "why": "英文段内混入中文全角问号 ？"
+ },
+ {
+  "ch": 88,
+  "anchor": "Qianlixun teased: \"Sister-in-law, that'",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "“千里寻”违背 02_CONTEXT.md 锁定拼写（本章其余10余处 Qianlixun 均应统改 Qianli Xun）"
+ },
+ {
+  "ch": 88,
+  "anchor": "Seeing Shuzhen fuming, Chen Wenxin said",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "“朱府”违背 02_CONTEXT.md 锁定译名 Zhu Manor；另 said sharply 含动词+-ly"
+ },
+ {
+  "ch": 88,
+  "anchor": "Chen Wenxin said: “Shuzhen, you're comp",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "“朱府”违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 89,
+  "anchor": "The storyteller felt relieved and opened",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "“千里寻”违背 02_CONTEXT.md 锁定拼写 Qianli Xun"
+ },
+ {
+  "ch": 89,
+  "anchor": "\"Kuqiao, tell Lvtao and the other maids",
+  "sev": "P1",
+  "cur": "Lvtao / the Zhu residence",
+  "sug": "Lutao / Zhu Manor",
+  "why": "“绿桃”键盘错拼 Lvtao，且违背 02_CONTEXT.md 锁定译名 Zhu Manor"
+ },
+ {
+  "ch": 56,
+  "anchor": "Qianli Xun turned to Qiao Mengrong: \"You",
+  "sev": "P2",
+  "cur": "\"Young Lady Qiao is Wenyuan's distant relative.",
+  "sug": "\"So you're Wenyuan's distant relative, Miss Qiao.",
+  "why": "当面称呼对方却用第三人称“Young Lady Qiao is...”不符合英语对话习惯"
+ },
+ {
+  "ch": 66,
+  "anchor": "\"You two are going on a date. If Mengron",
+  "sev": "P0",
+  "cur": "wouldn't we be third wheels?",
+  "sug": "wouldn't we be shining like a light bulb—a pair of third wheels?",
+  "why": "衔接断层：下句乔文仙反问“A light bulb? What on earth is that?”，此处若仅译 third wheels 而不带出 light bulb 会导致答非所问"
+ },
+ {
+  "ch": 73,
+  "anchor": "Baifeng followed Yi Wang as they hurried",
+  "sev": "P1",
+  "cur": "Baifeng / Yi Wang / the Wangjing Pavilion",
+  "sug": "Bai Feng / Prince Yi / Wangjing Pavilion",
+  "why": "人名爵位漂移；雅号亭名不应加 the，且本章虽写“观景亭”实与第72章“望景亭”为同一湖边亭，宜统一定名"
+ },
+ {
+  "ch": 73,
+  "anchor": "When they reached a spot not far from",
+  "sev": "P1",
+  "cur": "the Wangjing Pavilion / Baifeng / Nanshuang",
+  "sug": "Wangjing Pavilion / Bai Feng / Nan Shuang",
+  "why": "亭名冠词与人名拼写不一致"
+ },
+ {
+  "ch": 75,
+  "anchor": "As they were walking, a maid came hurri",
+  "sev": "P1",
+  "cur": "the Lin residence / Military Training Officer",
+  "sug": "Lin Manor / Training Officer",
+  "why": "“林府”宜统一作 Lin Manor，“练兵官”宜统一作 Training Officer；另 came hurriedly 含动词+-ly"
+ },
+ {
+  "ch": 81,
+  "anchor": "An Mingxuan cupped his hands: \"I leave i",
+  "sev": "P2",
+  "cur": "\"I leave it to you!\"",
+  "sug": "\"Much obliged!\"",
+  "why": "误解语境：“有劳！”在此系致谢对方愿画四幅画，I leave it to you 语气变成指派差事"
+ },
+ {
+  "ch": 85,
+  "anchor": "\"There's a rumor in the jianghu that You",
+  "sev": "P2",
+  "cur": "in the jianghu",
+  "sug": "going around town",
+  "why": "“江湖传言”此处指市井流言，直出拼音 jianghu 偏武侠语域"
+ },
+ {
+  "ch": 87,
+  "anchor": "With such a loyal fan as the Prince of",
+  "sev": "P1",
+  "cur": "the Prince of Yi",
+  "sug": "Prince Yi",
+  "why": "“仪王”爵位称谓漂移"
+ },
+ {
+  "ch": 87,
+  "anchor": "She was deeply engrossed in writing whe",
+  "sev": "P1",
+  "cur": "the Zhu residence",
+  "sug": "Zhu Manor",
+  "why": "“朱府”违背 02_CONTEXT.md 锁定译名 Zhu Manor；另 deeply engrossed 宜简作 absorbed"
+ },
+ {
+  "ch": 87,
+  "anchor": "Qianlixun put down her brush, stepped fo",
+  "sev": "P1",
+  "cur": "Qianlixun",
+  "sug": "Qianli Xun",
+  "why": "“千里寻”违背 02_CONTEXT.md 锁定拼写（本章后文各处 Qianlixun 均应统改 Qianli Xun）"
+ }
+]

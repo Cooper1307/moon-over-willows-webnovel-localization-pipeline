@@ -154,15 +154,15 @@ def has_cjk(text):
     """
     if CJK_RE.search(text) and not ASCII_RE.search(text):
         return True
-    # 中文省略号/破折号行（……、——）无 CJK 也无 ASCII 字母，属中文段落
+    # 中文省略号/破折号行（……、——）属中文；但**单字符 `…`** 是英文省略号
     if not ASCII_RE.search(text) and re.fullmatch(r"[\s…—－·、，。！？：；“”‘’（）《》]+", text):
-        return True
+        return text.strip() != "…" and text.strip() != "..."
     return cjk_ratio(text) >= CJK_RATIO_MIN
 
 
 def is_en_block(text):
     """英文段判定：非中文块，且含 ASCII 字母。"""
-    return not has_cjk(text) and bool(ASCII_RE.search(text) or re.fullmatch(r"[\s.,!?;:'\"\-—–()]+", text))
+    return not has_cjk(text) and bool(ASCII_RE.search(text) or re.fullmatch(r"[\s.,!?;:'\"\-—–()…]+", text))
 
 
 def classify(lines):
@@ -234,7 +234,7 @@ def parse_by_blocks(lines, anomalies, notes):
     for blk in blocks:
         zh_lines = [l for _i, l in blk if has_cjk(l)]
         en_lines = [l for _i, l in blk if not has_cjk(l) and
-                    (ASCII_RE.search(l) or re.fullmatch(r"[\s.,!?;:'\"\-—–()]+", l))]
+                    (ASCII_RE.search(l) or re.fullmatch(r"[\s.,!?;:'\"\-—–()…]+", l))]
         units.append({
             "zh": "\n".join(zh_lines) if zh_lines else None,
             "en": "\n".join(en_lines) if en_lines else None,
@@ -244,6 +244,10 @@ def parse_by_blocks(lines, anomalies, notes):
     pairs = []
     pending_zh = None          # (中文文本, 起始行号)
     for u in units:
+        # 纯省略号块（原文的「……」占位）不参与配对：它常被 `---` 单独隔成一块，
+        # 其英文对应行（…）在别的块里，按普通中文块处理会误报「连续两个中文块」。
+        if u["zh"] and not u["en"] and u["zh"].strip() in ("……", "…", "……"):
+            continue
         if u["zh"] and u["en"]:
             if pending_zh:
                 anomalies.append((pending_zh[1], "中文块后无对应英文块（翻译缺失？）"))

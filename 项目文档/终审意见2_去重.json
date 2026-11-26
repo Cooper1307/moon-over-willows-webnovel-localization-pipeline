@@ -1,0 +1,762 @@
+[
+ {
+  "ch": 102,
+  "anchor": "No peace even at lunch! Quarreling maids",
+  "sev": "P2",
+  "cur": "nor scold them harsh.",
+  "sug": "nor scold them hard.",
+  "why": "harsh 不可作无 -ly 平面副词修饰动词"
+ },
+ {
+  "ch": 106,
+  "anchor": "Chen Wenxin caught her arms. \"Your broth",
+  "sev": "P2",
+  "cur": "and I tore him a new one.",
+  "sug": "and I tore into him.",
+  "why": "陈文心是宋代闺秀，原句“臭骂几句”译成美式粗鄙现代俚语过重"
+ },
+ {
+  "ch": 112,
+  "anchor": "\"Thank you, Your Highness!\" Thrilled yet",
+  "sev": "P1",
+  "cur": "was really the Emperor's son",
+  "sug": "was really His Majesty's son",
+  "why": "与 02_CONTEXT.md 锁定译名“官家 = His Majesty”不一致"
+ },
+ {
+  "ch": 114,
+  "anchor": "\"Tell Grandmother the truth: what keep y",
+  "sev": "P2",
+  "cur": "what keep you busy out there?",
+  "sug": "what keeps you busy out there?",
+  "why": "主谓一致语法错误"
+ },
+ {
+  "ch": 116,
+  "anchor": "\"Need you ask? Huge interruption!\" Qianl",
+  "sev": "P2",
+  "cur": "What brings Princess and Prince Yi out here?",
+  "sug": "What brings you and Prince Yi out here, Princess?",
+  "why": "英语直接称呼对方不应以无冠词第三人称头衔 Princess 直代“你”"
+ },
+ {
+  "ch": 117,
+  "anchor": "Hearing Wenyuan reject elopement sent a",
+  "sev": "P0",
+  "cur": "and spirits-whisking Qianli Xun away",
+  "sug": "and whisking Qianli Xun away",
+  "why": "疑似校改残留错字（spirits-whisking），影响语义"
+ },
+ {
+  "ch": 119,
+  "anchor": "\"Princess must still be asleep, Your High",
+  "sev": "P2",
+  "cur": "\"Princess must still be asleep",
+  "sug": "\"Her Highness must still be asleep",
+  "why": "英语第三人称叙事/转述中不宜裸用无冠词 Princess 指代"
+ },
+ {
+  "ch": 119,
+  "anchor": "Kuqiao dropped into a bow at once: \"Prin",
+  "sev": "P2",
+  "cur": "\"Prince Yi! Princess and my mistress are still asleep",
+  "sug": "\"Prince Yi! Her Highness and my mistress are still asleep",
+  "why": "同上，第三人称裸用 Princess 不地道"
+ },
+ {
+  "ch": 120,
+  "anchor": "Before long Bai Feng shrugged it off—Pri",
+  "sev": "P2",
+  "cur": "impossible things were just Tuesday for him.",
+  "sug": "impossible things were business as usual for him.",
+  "why": "白风为宋代古人，“just Tuesday”属现代美式网络梗且带西式星期概念"
+ },
+ {
+  "ch": 121,
+  "anchor": "Worse, facing iron stubborness like this",
+  "sev": "P1",
+  "cur": "iron stubborness",
+  "sug": "iron stubbornness",
+  "why": "拼写错误，少一个 n"
+ },
+ {
+  "ch": 129,
+  "anchor": "Setting a steaming bowl before her, the",
+  "sev": "P0",
+  "cur": "\"Your noodles, young la—uh, sir!\" (Wait—source literally says “姑娘，您的面。” — the husband saw right through her disguise! Keep “姑娘，您的面。” -> \"Your noodles, Miss.\"!)",
+  "sug": "\"Your noodles, Miss.\"",
+  "why": "译者校对思考过程（括号内中文与说明）直接漏进正文"
+ },
+ {
+  "ch": 131,
+  "anchor": "\"Duh! If they had, would I be standing h",
+  "sev": "P2",
+  "cur": "\"Duh! If they had",
+  "sug": "\"Obviously! If they had",
+  "why": "陈浩宇为宋代古人，“Duh!”现代美式青少年口语痕迹过重"
+ },
+ {
+  "ch": 132,
+  "anchor": "\"How do you plan to thank me?\"",
+  "sev": "P0",
+  "cur": "\"How do you plan to thank me?\"",
+  "sug": "（删除前一句错位重复行；前文三句合并导致后续对齐顺延错位，致使本句在对应“是关于减免赋税一事……”与“你打算怎么谢我？”时连续重复出现两遍）",
+  "why": "译文重复行及中英段序错位"
+ },
+ {
+  "ch": 134,
+  "anchor": "Qiao Shouren smiled sly: \"First, toss We",
+  "sev": "P2",
+  "cur": "smiled sly... she'd die before accepting concubine",
+  "sug": "gave a sly smile... she'd die before becoming a concubine",
+  "why": "sly 不作平面副词；accepting concubine 缺冠词且不地道"
+ },
+ {
+  "ch": 136,
+  "anchor": "Much as Kuqiao had missed Bai Feng, seei",
+  "sev": "P2",
+  "cur": "Stepping up to follow Miss aboard, Prince Yi stepped in her way.",
+  "sug": "As she stepped up to follow Miss aboard, Prince Yi stepped in her way.",
+  "why": "悬垂分词导致施动者错位，读起来像仪王要跟小姐上车"
+ },
+ {
+  "ch": 136,
+  "anchor": "Bai Feng thought a second: \"Youqi Jushi",
+  "sev": "P2",
+  "cur": "is Princess's best friend—His Highness probably heard it from Princess.\"",
+  "sug": "is Her Highness's best friend—His Highness probably heard it from her.\"",
+  "why": "第三人称裸用 Princess 不自然"
+ },
+ {
+  "ch": 136,
+  "anchor": "\"My mistress is Princess's best friend—y",
+  "sev": "P2",
+  "cur": "is Princess's best friend—yet when Miss gets heartbroken today, Princess didn't come",
+  "sug": "is Her Highness's best friend—yet when Miss gets heartbroken today, Her Highness didn't come",
+  "why": "第三人称裸用 Princess 不自然"
+ },
+ {
+  "ch": 136,
+  "anchor": "\"Prince Yi is the Emperor's son, high ab",
+  "sev": "P1",
+  "cur": "is the Emperor's son",
+  "sug": "is His Majesty's son",
+  "why": "与 02_CONTEXT.md 锁定译名“官家 = His Majesty”不一致"
+ },
+ {
+  "ch": 137,
+  "anchor": "Xiaguo dropped to her knees: \"Is loving",
+  "sev": "P0",
+  "cur": "Xiaguo dropped to her knees: \"Is loving Young Master Qiao a crime, Matron?!\"",
+  "sug": "（删除本行，与紧随其后的 Xiaguo dropped to her knees. \"Matron, is it wrong for me to like Young Master Qiao?\" 完全重复，且本行错配在韦嬷嬷台词“[ZH] 韦嬷嬷语气严厉……”之下）",
+  "why": "前文合并段落后导致的错位重复补行"
+ },
+ {
+  "ch": 138,
+  "anchor": "When Xilan worried who would wait on Pri",
+  "sev": "P2",
+  "cur": "who would wait on Princess later",
+  "sug": "who would wait on Her Highness later",
+  "why": "第三人称裸用 Princess 不自然"
+ },
+ {
+  "ch": 146,
+  "anchor": "A lightbulb flashed over Chen Haoyu's he",
+  "sev": "P2",
+  "cur": "A lightbulb flashed over Chen Haoyu's head!",
+  "sug": "An idea flashed into Chen Haoyu's head!",
+  "why": "宋代语境下对古人陈浩宇使用“电灯泡（lightbulb）”意象属现代西化失真"
+ },
+ {
+  "ch": 149,
+  "anchor": "Pausing her brush, Qianli Xun said, \"Tel",
+  "sev": "P2",
+  "cur": "Prince Yi and Princess invited me too",
+  "sug": "Prince Yi and Her Highness invited me too",
+  "why": "第三人称裸用 Princess 不自然"
+ },
+ {
+  "ch": 149,
+  "anchor": "Meaning Princess Jiahe and Youqi Jushi—P",
+  "sev": "P2",
+  "cur": "Princess lived right here",
+  "sug": "Her Highness lived right here",
+  "why": "第三人称裸用 Princess 不自然"
+ },
+ {
+  "ch": 151,
+  "anchor": "Having no patience to sit through the se",
+  "sev": "P2",
+  "cur": "and asks Princess to look after the guests.",
+  "sug": "and asks Your Highness to look after the guests.",
+  "why": "喜兰向郡主转达时应用尊称 Your Highness 或 Princess Jiahe"
+ },
+ {
+  "ch": 152,
+  "anchor": "While Dongfang spoke, Qianli Xun stole a",
+  "sev": "P0",
+  "cur": "Should have told her ages ago!",
+  "sug": "（补译：早知如此，早该告诉她，也许早已美人在怀 / Should have told her ages ago—maybe she would be in my arms by now!）",
+  "why": "漏译原文“也许早已美人在怀”"
+ },
+ {
+  "ch": 154,
+  "anchor": "Seeing him muted, Qianli Xun spoke gentl",
+  "sev": "P2",
+  "cur": "spoke gentle.",
+  "sug": "spoke in a gentle tone.",
+  "why": "gentle 不可作平面副词修饰动词"
+ },
+ {
+  "ch": 154,
+  "anchor": "Thinking revealing his identity would un",
+  "sev": "P2",
+  "cur": "talk it through gentle with her",
+  "sug": "have a gentle talk with her",
+  "why": "同上，gentle 不可直接修饰动词"
+ },
+ {
+  "ch": 156,
+  "anchor": "Catching his Freudian slip—Chunxiang Bro",
+  "sev": "P2",
+  "cur": "Catching his Freudian slip",
+  "sug": "Catching his slip of the tongue",
+  "why": "宋代第三人称叙事使用“Freudian slip（弗洛伊德式口误）”属时代错位西化"
+ },
+ {
+  "ch": 158,
+  "anchor": "Matron Wei smiled warm. \"Old bones like",
+  "sev": "P0",
+  "cur": "Think through the worst case: only two paths exist",
+  "sug": "（补译：千里寻“若……若退不了婚……”与韦嬷嬷“姑娘不用回答我，只需你想清楚便可”；并将 smiled warm 改为 gave a warm smile）",
+  "why": "漏译千里寻迟疑答话与韦嬷嬷首句安抚；smiled warm 语法欠妥"
+ },
+ {
+  "ch": 161,
+  "anchor": "Qianli Xun already knew Lin Jue had rema",
+  "sev": "P2",
+  "cur": "sighed inwardly.",
+  "sug": "sighed to herself.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 163,
+  "anchor": "Marvelling that the Chen estate boasted",
+  "sev": "P0",
+  "cur": "His eldest sister, Qiao Wenhui, sat among them too",
+  "sug": "His eldest younger sister, Qiao Wenhui, sat among them too",
+  "why": "误译亲属长幼关系，原文为“乔文仙的大妹妹”，并非长姐"
+ },
+ {
+  "ch": 163,
+  "anchor": "Hearing her young mistress praised warme",
+  "sev": "P2",
+  "cur": "knock yet another ball cleanly into the opposing hole",
+  "sug": "knock yet another ball straight into the opposing hole",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 163,
+  "anchor": "When they were children, a year after he",
+  "sev": "P2",
+  "cur": "his health had briefly improved",
+  "sug": "his health had improved for a brief spell",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 165,
+  "anchor": "With Shen Jianchen guiding her hands, Me",
+  "sev": "P2",
+  "cur": "Silently, she wished... care for Mengrong wholeheartedly",
+  "sug": "In silence, she wished... care for Mengrong with all his heart",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 165,
+  "anchor": "Rejected once again—and told \"never to m",
+  "sev": "P1",
+  "cur": "or son of the Song Emperor",
+  "sug": "or son of His Majesty",
+  "why": "与 02_CONTEXT.md 锁定译名“官家 = His Majesty”不一致"
+ },
+ {
+  "ch": 168,
+  "anchor": "\"That was different.\" Declining to expla",
+  "sev": "P1",
+  "cur": "\"Mule over it yourself.",
+  "sug": "\"Mull over it yourself.",
+  "why": "拼写错误，Mule 应为 Mull"
+ },
+ {
+  "ch": 170,
+  "anchor": "After sufficient buttering up, Chen Haoy",
+  "sev": "P0",
+  "cur": "my unbridled bride-to-be",
+  "sug": "my unwed bride-to-be",
+  "why": "误译/拼写错乱，原文“未过门儿的媳妇”应为 unwed 而非 unbridled（放纵不羁）"
+ },
+ {
+  "ch": 170,
+  "anchor": "\"Brilliant idea, Mother,\" Chen Jianglin",
+  "sev": "P2",
+  "cur": "Chen Jianglin praised smoothly.",
+  "sug": "Chen Jianglin offered smooth praise.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 171,
+  "anchor": "\"Every detail of the wedding is already",
+  "sev": "P2",
+  "cur": "Chen Jianglin said smoothly.",
+  "sug": "Chen Jianglin replied in a smooth tone.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 171,
+  "anchor": "Face preserved for both houses, Zhu Xiya",
+  "sev": "P2",
+  "cur": "thinking so thoroughly.",
+  "sug": "thinking so far ahead.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 173,
+  "anchor": "\"Yes, Miss!\" Hongdou answered crisply.",
+  "sev": "P2",
+  "cur": "Hongdou answered crisply.",
+  "sug": "Hongdou gave a crisp reply.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 174,
+  "anchor": "When Qiao Wenxian's wedding day arrived,",
+  "sev": "P2",
+  "cur": "Shen Jianchen naturally attended",
+  "sug": "Shen Jianchen attended as a matter of course",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 174,
+  "anchor": "Only after Prince Yi had gone did Zhu Xi",
+  "sev": "P2",
+  "cur": "climb stiffly to his feet",
+  "sug": "climb to his feet on stiff knees",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 174,
+  "anchor": "Leaving Zhu Manor, Shen Jianchen did not",
+  "sev": "P2",
+  "cur": "staring blankly into the dark.",
+  "sug": "staring into the dark with a blank gaze.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 175,
+  "anchor": "Shen Jianchen walked directly to Mengron",
+  "sev": "P2",
+  "cur": "walked directly to Mengrong's courtyard.",
+  "sug": "walked straight to Mengrong's courtyard.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 175,
+  "anchor": "Shen Jianchen did not answer directly.",
+  "sev": "P2",
+  "cur": "did not answer directly.",
+  "sug": "gave no direct answer.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 175,
+  "anchor": "\"Then I will keep pressing him,\" Xilan p",
+  "sev": "P1",
+  "cur": "His Highness is the Emperor's son",
+  "sug": "His Highness is His Majesty's son",
+  "why": "与 02_CONTEXT.md 锁定译名“官家 = His Majesty”不一致"
+ },
+ {
+  "ch": 177,
+  "anchor": "Two thugs scrambled to undo the knots. F",
+  "sev": "P2",
+  "cur": "thanked Lin Jue profusely",
+  "sug": "showered Lin Jue with thanks",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 178,
+  "anchor": "Cupping his hands, Chen Haodong bowed sm",
+  "sev": "P2",
+  "cur": "bowed smoothly... finally carved out time",
+  "sug": "gave a smooth bow... carved out time at last",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 179,
+  "anchor": "\"No! You read him dead right! Betrothed",
+  "sev": "P1",
+  "cur": "Wuuu!",
+  "sug": "Waaah!",
+  "why": "夹带生硬哭声拼音 Wuuu!，应与前批统一为 Waaah!"
+ },
+ {
+  "ch": 179,
+  "anchor": "Though no real solution had been found,",
+  "sev": "P2",
+  "cur": "Mengrong's mood had calmed noticeably since arriving.",
+  "sug": "Mengrong's mood had grown much calmer since arriving.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 180,
+  "anchor": "\"Miss is at her desk writing...\" Catchin",
+  "sev": "P2",
+  "cur": "Kuqiao swerved smoothly:",
+  "sug": "Kuqiao covered without missing a beat:",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 180,
+  "anchor": "\"Fine, fine—just as long as you walk dow",
+  "sev": "P2",
+  "cur": "as long as you walk down the aisle.",
+  "sug": "as long as you step into that bridal sedan.",
+  "why": "陈文心为宋代人物，walk down the aisle 属西式教堂婚礼意象"
+ },
+ {
+  "ch": 180,
+  "anchor": "\"No can do. Since Her Highness left, Mis",
+  "sev": "P2",
+  "cur": "sat staring blankly right through lunch",
+  "sug": "sat staring at nothing right through lunch",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 181,
+  "anchor": "Looping a cord around the piglet's neck,",
+  "sev": "P2",
+  "cur": "flopped meekly onto the dirt.",
+  "sug": "went limp onto the dirt.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 181,
+  "anchor": "Back from Wangyue Pavilion, Qiao Mengron",
+  "sev": "P2",
+  "cur": "walked hesitantly toward his courtyard",
+  "sug": "walked with hesitant steps toward his courtyard",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 181,
+  "anchor": "Breaking down, Qiao Mengrong lunged forw",
+  "sev": "P1",
+  "cur": "Wuuu!",
+  "sug": "Waaah!",
+  "why": "夹带生硬拼音 Wuuu!，与前文 Waaah! 冲突"
+ },
+ {
+  "ch": 181,
+  "anchor": "His cold retreating back opened the floo",
+  "sev": "P2",
+  "cur": "Sobbing uncontrollably,",
+  "sug": "Sobbing without restraint,",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 183,
+  "anchor": "Last year, the morning after Shuzhen sta",
+  "sev": "P2",
+  "cur": "Brother had promised to marry her",
+  "sug": "Brother had promised to marry me",
+  "why": "本段前半刚提“淑真（Shuzhen）”，此处自由间接引语再用 her 易误指淑真"
+ },
+ {
+  "ch": 183,
+  "anchor": "Without waiting for a reply, she strode",
+  "sev": "P2",
+  "cur": "strode swiftly out of the courtyard",
+  "sug": "hurried out of the courtyard",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 183,
+  "anchor": "Only after watching the tailing carriage",
+  "sev": "P2",
+  "cur": "weeping quietly, Qiao Mengrong merely nodded",
+  "sug": "weeping in silence, Qiao Mengrong gave a brief nod",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 184,
+  "anchor": "Hongdou explained clearly: \"You see it a",
+  "sev": "P2",
+  "cur": "Hongdou explained clearly:",
+  "sug": "Hongdou gave a clear rundown:",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 184,
+  "anchor": "Silently shadowing the blades into the p",
+  "sev": "P2",
+  "cur": "Silently shadowing the blades",
+  "sug": "Shadowing the blades in silence",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 185,
+  "anchor": "Master Jiang sneered. \"Do not trust me?",
+  "sev": "P2",
+  "cur": "the attendant deftly swapped boxes",
+  "sug": "the attendant swapped boxes with a sleight of hand",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 186,
+  "anchor": "Straightening up, Chen Haoyu spoke earne",
+  "sev": "P2",
+  "cur": "spoke earnestly.",
+  "sug": "spoke in earnest.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 188,
+  "anchor": "Snout shoved against the trunk, the pigl",
+  "sev": "P2",
+  "cur": "scrabbled uselessly",
+  "sug": "scrabbled in vain",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 188,
+  "anchor": "\"Of course I know,\" Bai Feng answered pl",
+  "sev": "P2",
+  "cur": "Bai Feng answered plainly.",
+  "sug": "Bai Feng gave a plain answer.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 189,
+  "anchor": "Reading the desperate disbelief on his f",
+  "sev": "P2",
+  "cur": "Matron Wei confirmed softly,",
+  "sug": "Matron Wei confirmed in a soft voice,",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 190,
+  "anchor": "Chest squeezed breathless and limbs turn",
+  "sev": "P2",
+  "cur": "strode rapidly out of Zhu Manor",
+  "sug": "hurried out of Zhu Manor",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 190,
+  "anchor": "Once Prince Yi vanished beyond the gate,",
+  "sev": "P2",
+  "cur": "stiffly clambered to their feet",
+  "sug": "clambered up on stiff knees",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 190,
+  "anchor": "Dabbing away tears on Matron Wei's arm,",
+  "sev": "P1",
+  "cur": "Wuuu!",
+  "sug": "Waaah!",
+  "why": "夹带生硬拼音 Wuuu!"
+ },
+ {
+  "ch": 190,
+  "anchor": "Dropping the swoon, she opened swimming",
+  "sev": "P1",
+  "cur": "Wuuu!",
+  "sug": "Waaah!",
+  "why": "夹带生硬拼音 Wuuu!"
+ },
+ {
+  "ch": 190,
+  "anchor": "Feeling his silence, panic shook Qiao Me",
+  "sev": "P1",
+  "cur": "Wuuu!",
+  "sug": "Waaah!",
+  "why": "夹带生硬拼音 Wuuu!"
+ },
+ {
+  "ch": 191,
+  "anchor": "Tracing her brows gently with indigo eye",
+  "sev": "P2",
+  "cur": "Tracing her brows gently",
+  "sug": "Tracing her brows with a gentle stroke",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 191,
+  "anchor": "Unbothered by the snub, Chen Haoyu chuck",
+  "sev": "P2",
+  "cur": "chuckled wryly",
+  "sug": "gave a wry chuckle",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 193,
+  "anchor": "Watching from a nearby table, Lin Jue sc",
+  "sev": "P2",
+  "cur": "scoffed silently:",
+  "sug": "scoffed to himself:",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 194,
+  "anchor": "Privately thrilled—the messier Haoyu's m",
+  "sev": "P2",
+  "cur": "Privately thrilled... chimed in smoothly",
+  "sug": "Thrilled in private... chimed in with a smooth air",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 195,
+  "anchor": "\"Zhu Shuzhen! You pushed me too far! Wai",
+  "sev": "P1",
+  "cur": "and divorce your hide!\"",
+  "sug": "and cast you out!\"",
+  "why": "原文“休了你”属男方单方休妻，应与“和离（mutual divorce）”区分"
+ },
+ {
+  "ch": 195,
+  "anchor": "Closing her eyes, Qiao Mengrong let sile",
+  "sev": "P2",
+  "cur": "gently blotted them away.",
+  "sug": "blotted them away with a gentle touch.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 195,
+  "anchor": "Saying nothing aloud, he stayed put, dab",
+  "sev": "P2",
+  "cur": "slipped quietly out",
+  "sug": "slipped out in silence",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 196,
+  "anchor": "\"Your wound is fresh—why are you out wal",
+  "sev": "P2",
+  "cur": "asked gently.",
+  "sug": "asked in a gentle tone.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 196,
+  "anchor": "Seeing Prince Yi stroll casually inside",
+  "sev": "P2",
+  "cur": "stroll casually inside",
+  "sug": "stroll at ease inside",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 197,
+  "anchor": "\"Skip the formal reporting—friends sit a",
+  "sev": "P2",
+  "cur": "standing respectfully",
+  "sug": "standing in respectful silence",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 197,
+  "anchor": "Sitting stiffly upright, Miao Zhiyu rebu",
+  "sev": "P2",
+  "cur": "Sitting stiffly upright,",
+  "sug": "Sitting ramrod upright,",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 197,
+  "anchor": "Watching the carriage roll away, Shao Zh",
+  "sev": "P2",
+  "cur": "murmured uneasily,",
+  "sug": "murmured with unease,",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 198,
+  "anchor": "\"Right or no right means nothing to eith",
+  "sev": "P2",
+  "cur": "replied quietly.",
+  "sug": "replied in a quiet voice.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 198,
+  "anchor": "Loosening his fists from the collar, Qia",
+  "sev": "P1",
+  "cur": "\"Wuuu! Even YOU... Wuuu!\"",
+  "sug": "\"Waaah! Even YOU... Waaah!\"",
+  "why": "夹带生硬拼音 Wuuu!"
+ },
+ {
+  "ch": 198,
+  "anchor": "Refusing to buy the tall tale, Qiao Wenx",
+  "sev": "P2",
+  "cur": "scoffed painfully.",
+  "sug": "let out a pained scoff.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 198,
+  "anchor": "Just as Xilan began rummaging shelves, S",
+  "sev": "P2",
+  "cur": "curtsy politely,",
+  "sug": "drop a polite curtsy,",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 199,
+  "anchor": "On her first morning as a Chen bride, Qi",
+  "sev": "P2",
+  "cur": "dressed cleanly,",
+  "sug": "dressed neat,",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 199,
+  "anchor": "\"Shuzhen greets both aunts and Eldest Si",
+  "sev": "P2",
+  "cur": "curtsied cleanly.",
+  "sug": "dropped a crisp curtsy.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 199,
+  "anchor": "The cheap shot landed dead on the raw br",
+  "sev": "P2",
+  "cur": "turned sharply... whistled triumphantly down the path",
+  "sug": "turned sharp... let out a triumphant whistle down the path",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 199,
+  "anchor": "Beaming over her grandson while intentio",
+  "sev": "P2",
+  "cur": "intentionally freezing out... ignored her completely.",
+  "sug": "freezing out... paid her no mind at all.",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 199,
+  "anchor": "Seeing a golden opening to sick Grandmot",
+  "sev": "P1",
+  "cur": "to sick Grandmother... sighed dramatically.",
+  "sug": "to sic Grandmother... let out a dramatic sigh.",
+  "why": "动词拼写应为 sic（不是 sick）；禁用 VERB + -ly 弱填充副词"
+ },
+ {
+  "ch": 200,
+  "anchor": "Disgusted by the blind coddling that had",
+  "sev": "P2",
+  "cur": "strolled calmly over,",
+  "sug": "strolled over with unhurried poise,",
+  "why": "禁用 VERB + -ly 弱填充副词"
+ }
+]

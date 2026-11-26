@@ -1,0 +1,322 @@
+{
+  "batch": "FINAL_REVIEW_201_250",
+  "mode": "review",
+  "generated": "2026-11-23T17:11:20",
+  "chapters": [
+    {
+      "n": 201,
+      "expected_paras": 60,
+      "title_zh": "第201章 揍过蒋爷寻金人",
+      "mode": "review"
+    },
+    {
+      "n": 202,
+      "expected_paras": 77,
+      "title_zh": "第202章 财产转让挺顺利",
+      "mode": "review"
+    },
+    {
+      "n": 203,
+      "expected_paras": 49,
+      "title_zh": "第203章 两人要求办诗会",
+      "mode": "review"
+    },
+    {
+      "n": 204,
+      "expected_paras": 40,
+      "title_zh": "第204章 逛街喝酒遇前夫",
+      "mode": "review"
+    },
+    {
+      "n": 205,
+      "expected_paras": 58,
+      "title_zh": "第205章 气别梅若回草堂",
+      "mode": "review"
+    },
+    {
+      "n": 206,
+      "expected_paras": 52,
+      "title_zh": "第206章 住进陈府第二晚",
+      "mode": "review"
+    },
+    {
+      "n": 207,
+      "expected_paras": 45,
+      "title_zh": "第207章 假借诗会醉云楼",
+      "mode": "review"
+    },
+    {
+      "n": 208,
+      "expected_paras": 65,
+      "title_zh": "第208章 巧设情人相会局",
+      "mode": "review"
+    },
+    {
+      "n": 209,
+      "expected_paras": 61,
+      "title_zh": "第209章 醉云楼后遇刁难",
+      "mode": "review"
+    },
+    {
+      "n": 210,
+      "expected_paras": 44,
+      "title_zh": "第210章 刁难被成功解决",
+      "mode": "review"
+    },
+    {
+      "n": 211,
+      "expected_paras": 80,
+      "title_zh": "第211章 派人青楼寻新郎",
+      "mode": "review"
+    },
+    {
+      "n": 212,
+      "expected_paras": 78,
+      "title_zh": "第212章 拜访郡主探虚实",
+      "mode": "review"
+    },
+    {
+      "n": 213,
+      "expected_paras": 78,
+      "title_zh": "第213章 你回汴梁她回门",
+      "mode": "review"
+    },
+    {
+      "n": 214,
+      "expected_paras": 68,
+      "title_zh": "第214章 陈家兄弟各忙各",
+      "mode": "review"
+    },
+    {
+      "n": 215,
+      "expected_paras": 102,
+      "title_zh": "第215章 回门归来还银两",
+      "mode": "review"
+    },
+    {
+      "n": 216,
+      "expected_paras": 81,
+      "title_zh": "第216章 哄夏老太太高兴",
+      "mode": "review"
+    },
+    {
+      "n": 217,
+      "expected_paras": 75,
+      "title_zh": "第217章 老人心思需要猜",
+      "mode": "review"
+    },
+    {
+      "n": 218,
+      "expected_paras": 72,
+      "title_zh": "第218章 可怜可叹叶安雅",
+      "mode": "review"
+    },
+    {
+      "n": 219,
+      "expected_paras": 61,
+      "title_zh": "第219章 原来大嫂有外遇",
+      "mode": "review"
+    },
+    {
+      "n": 220,
+      "expected_paras": 75,
+      "title_zh": "第220章 三人谋划管教权",
+      "mode": "review"
+    },
+    {
+      "n": 221,
+      "expected_paras": 90,
+      "title_zh": "第221章 东哥使出杀手锏",
+      "mode": "review"
+    },
+    {
+      "n": 222,
+      "expected_paras": 69,
+      "title_zh": "第222章 夏果聊天很无趣",
+      "mode": "review"
+    },
+    {
+      "n": 223,
+      "expected_paras": 74,
+      "title_zh": "第223章 罪魁祸首是姑爷",
+      "mode": "review"
+    },
+    {
+      "n": 224,
+      "expected_paras": 83,
+      "title_zh": "第224章 绑回夫君关起来",
+      "mode": "review"
+    },
+    {
+      "n": 225,
+      "expected_paras": 75,
+      "title_zh": "第225章 韦嬷嬷巧言宽心",
+      "mode": "review"
+    },
+    {
+      "n": 226,
+      "expected_paras": 89,
+      "title_zh": "第226章 红豆送饭博雅斋",
+      "mode": "review"
+    },
+    {
+      "n": 227,
+      "expected_paras": 59,
+      "title_zh": "第227章 借口管教报仇恨",
+      "mode": "review"
+    },
+    {
+      "n": 228,
+      "expected_paras": 70,
+      "title_zh": "第228章 一家忧愁一家笑",
+      "mode": "review"
+    },
+    {
+      "n": 229,
+      "expected_paras": 69,
+      "title_zh": "第229章 丑话总要说前头",
+      "mode": "review"
+    },
+    {
+      "n": 230,
+      "expected_paras": 78,
+      "title_zh": "第230章 青瓜勾引丑丫头",
+      "mode": "review"
+    },
+    {
+      "n": 231,
+      "expected_paras": 71,
+      "title_zh": "第231章 折磨计划开始了",
+      "mode": "review"
+    },
+    {
+      "n": 232,
+      "expected_paras": 75,
+      "title_zh": "第232章 求助无果跑圈圈",
+      "mode": "review"
+    },
+    {
+      "n": 233,
+      "expected_paras": 79,
+      "title_zh": "第233章 想反抗根本没用",
+      "mode": "review"
+    },
+    {
+      "n": 234,
+      "expected_paras": 73,
+      "title_zh": "第234章 一滴眼泪明真情",
+      "mode": "review"
+    },
+    {
+      "n": 235,
+      "expected_paras": 72,
+      "title_zh": "第235章 软招软招使软招",
+      "mode": "review"
+    },
+    {
+      "n": 236,
+      "expected_paras": 74,
+      "title_zh": "第236章 送上玫瑰表心意",
+      "mode": "review"
+    },
+    {
+      "n": 237,
+      "expected_paras": 83,
+      "title_zh": "第237章 聚集下人开小会",
+      "mode": "review"
+    },
+    {
+      "n": 238,
+      "expected_paras": 61,
+      "title_zh": "第238章 夸来夸去夸姑爷",
+      "mode": "review"
+    },
+    {
+      "n": 239,
+      "expected_paras": 49,
+      "title_zh": "第239章 放下后轻松自在",
+      "mode": "review"
+    },
+    {
+      "n": 240,
+      "expected_paras": 73,
+      "title_zh": "第240章 陈家公子获自由",
+      "mode": "review"
+    },
+    {
+      "n": 241,
+      "expected_paras": 73,
+      "title_zh": "第241章 原来他真的变了",
+      "mode": "review"
+    },
+    {
+      "n": 242,
+      "expected_paras": 79,
+      "title_zh": "第242章 儿孙自有儿孙福",
+      "mode": "review"
+    },
+    {
+      "n": 243,
+      "expected_paras": 72,
+      "title_zh": "第243章 讨好娘子需方法",
+      "mode": "review"
+    },
+    {
+      "n": 244,
+      "expected_paras": 70,
+      "title_zh": "第244章 东哥筹谋已泡汤",
+      "mode": "review"
+    },
+    {
+      "n": 245,
+      "expected_paras": 57,
+      "title_zh": "第245章 姑嫂聊天谈贵人",
+      "mode": "review"
+    },
+    {
+      "n": 246,
+      "expected_paras": 52,
+      "title_zh": "第246章 仪王郡主归临安",
+      "mode": "review"
+    },
+    {
+      "n": 247,
+      "expected_paras": 65,
+      "title_zh": "第247章 初来乍到绸缎庄",
+      "mode": "review"
+    },
+    {
+      "n": 248,
+      "expected_paras": 94,
+      "title_zh": "第248章 先当伙计练个手",
+      "mode": "review"
+    },
+    {
+      "n": 249,
+      "expected_paras": 88,
+      "title_zh": "第249章 放下一个人很难",
+      "mode": "review"
+    },
+    {
+      "n": 250,
+      "expected_paras": 71,
+      "title_zh": "第250章 宴会之后的筹谋",
+      "mode": "review"
+    }
+  ],
+  "counts": {
+    "chapters": 50,
+    "paragraphs": 3508,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1313,
+    "input_glossary": 10129,
+    "input_context": 518,
+    "input_source": 255236,
+    "output_estimate": 63144
+  },
+  "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。"
+}

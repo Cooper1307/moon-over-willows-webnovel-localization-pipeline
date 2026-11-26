@@ -1,0 +1,322 @@
+{
+  "batch": "FINAL_REVIEW_001_050",
+  "mode": "review",
+  "generated": "2026-11-23T17:11:18",
+  "chapters": [
+    {
+      "n": 1,
+      "expected_paras": 32,
+      "title_zh": "第1章 网络作家遇网暴",
+      "mode": "review"
+    },
+    {
+      "n": 2,
+      "expected_paras": 48,
+      "title_zh": "第2章 对决地震后穿越",
+      "mode": "review"
+    },
+    {
+      "n": 3,
+      "expected_paras": 59,
+      "title_zh": "第3章 穿越迷惑逢家暴",
+      "mode": "review"
+    },
+    {
+      "n": 4,
+      "expected_paras": 59,
+      "title_zh": "第4章 老实当好朱淑真",
+      "mode": "review"
+    },
+    {
+      "n": 5,
+      "expected_paras": 58,
+      "title_zh": "第5章 一见钟情难休妻",
+      "mode": "review"
+    },
+    {
+      "n": 6,
+      "expected_paras": 58,
+      "title_zh": "第6章 穿越成为赵仪王",
+      "mode": "review"
+    },
+    {
+      "n": 7,
+      "expected_paras": 69,
+      "title_zh": "第7章 不被官家付重任",
+      "mode": "review"
+    },
+    {
+      "n": 8,
+      "expected_paras": 72,
+      "title_zh": "第8章 约法三章放夫君",
+      "mode": "review"
+    },
+    {
+      "n": 9,
+      "expected_paras": 61,
+      "title_zh": "第9章 点茶聊天探朱府",
+      "mode": "review"
+    },
+    {
+      "n": 10,
+      "expected_paras": 63,
+      "title_zh": "第10章 回到朱府见生母",
+      "mode": "review"
+    },
+    {
+      "n": 11,
+      "expected_paras": 77,
+      "title_zh": "第11章 朱府小院菊花诗",
+      "mode": "review"
+    },
+    {
+      "n": 12,
+      "expected_paras": 66,
+      "title_zh": "第12章 拜见哥嫂请出面",
+      "mode": "review"
+    },
+    {
+      "n": 13,
+      "expected_paras": 48,
+      "title_zh": "第13章 面见父亲怒砸桌",
+      "mode": "review"
+    },
+    {
+      "n": 14,
+      "expected_paras": 89,
+      "title_zh": "第14章 原来我是有钱女",
+      "mode": "review"
+    },
+    {
+      "n": 15,
+      "expected_paras": 41,
+      "title_zh": "第15章 兄妹二人请族人",
+      "mode": "review"
+    },
+    {
+      "n": 16,
+      "expected_paras": 61,
+      "title_zh": "第16章 佛堂有请老祖宗",
+      "mode": "review"
+    },
+    {
+      "n": 17,
+      "expected_paras": 77,
+      "title_zh": "第17章 吉祥药房来买药",
+      "mode": "review"
+    },
+    {
+      "n": 18,
+      "expected_paras": 78,
+      "title_zh": "第18章 受邀参加品诗会",
+      "mode": "review"
+    },
+    {
+      "n": 19,
+      "expected_paras": 45,
+      "title_zh": "第19章 茶楼品诗展才华",
+      "mode": "review"
+    },
+    {
+      "n": 20,
+      "expected_paras": 66,
+      "title_zh": "第20章 茶楼偶遇陈纨绔",
+      "mode": "review"
+    },
+    {
+      "n": 21,
+      "expected_paras": 66,
+      "title_zh": "第21章 诗会之后被质问",
+      "mode": "review"
+    },
+    {
+      "n": 22,
+      "expected_paras": 69,
+      "title_zh": "第22章 长辈聚众谈和离",
+      "mode": "review"
+    },
+    {
+      "n": 23,
+      "expected_paras": 51,
+      "title_zh": "第23章 品词和离又七出",
+      "mode": "review"
+    },
+    {
+      "n": 24,
+      "expected_paras": 60,
+      "title_zh": "第24章 和离失败放豪言",
+      "mode": "review"
+    },
+    {
+      "n": 25,
+      "expected_paras": 79,
+      "title_zh": "第25章 多愁善感思人生",
+      "mode": "review"
+    },
+    {
+      "n": 26,
+      "expected_paras": 84,
+      "title_zh": "第26章 有缘才做三件事",
+      "mode": "review"
+    },
+    {
+      "n": 27,
+      "expected_paras": 73,
+      "title_zh": "第27章 尼姑庵里谈改命",
+      "mode": "review"
+    },
+    {
+      "n": 28,
+      "expected_paras": 66,
+      "title_zh": "第28章 又一棵千年神柳",
+      "mode": "review"
+    },
+    {
+      "n": 29,
+      "expected_paras": 120,
+      "title_zh": "第29章 竹林东家归竹林",
+      "mode": "review"
+    },
+    {
+      "n": 30,
+      "expected_paras": 88,
+      "title_zh": "第30章 听取鼓词遇纨绔",
+      "mode": "review"
+    },
+    {
+      "n": 31,
+      "expected_paras": 71,
+      "title_zh": "第31章 不爱妹妹爱田产",
+      "mode": "review"
+    },
+    {
+      "n": 32,
+      "expected_paras": 100,
+      "title_zh": "第32章 逛街占卜遇小贼",
+      "mode": "review"
+    },
+    {
+      "n": 33,
+      "expected_paras": 78,
+      "title_zh": "第33章 选徒回府乔文仙",
+      "mode": "review"
+    },
+    {
+      "n": 34,
+      "expected_paras": 86,
+      "title_zh": "第34章 打听官家遇奸臣",
+      "mode": "review"
+    },
+    {
+      "n": 35,
+      "expected_paras": 79,
+      "title_zh": "第35章 映射官家赏艮岳",
+      "mode": "review"
+    },
+    {
+      "n": 36,
+      "expected_paras": 84,
+      "title_zh": "第36章 赏诗品画又蹴鞠",
+      "mode": "review"
+    },
+    {
+      "n": 37,
+      "expected_paras": 94,
+      "title_zh": "第37章 宴会结束回王府",
+      "mode": "review"
+    },
+    {
+      "n": 38,
+      "expected_paras": 74,
+      "title_zh": "第38章 终于得见韦嬷嬷",
+      "mode": "review"
+    },
+    {
+      "n": 39,
+      "expected_paras": 69,
+      "title_zh": "第39章 高手对决立新约",
+      "mode": "review"
+    },
+    {
+      "n": 40,
+      "expected_paras": 52,
+      "title_zh": "第40章 来到临安访乔府",
+      "mode": "review"
+    },
+    {
+      "n": 41,
+      "expected_paras": 71,
+      "title_zh": "第41章 幽林别居遇神柳",
+      "mode": "review"
+    },
+    {
+      "n": 42,
+      "expected_paras": 66,
+      "title_zh": "第42章 逛街寻人聚香楼",
+      "mode": "review"
+    },
+    {
+      "n": 43,
+      "expected_paras": 84,
+      "title_zh": "第43章 帮助伙计看热闹",
+      "mode": "review"
+    },
+    {
+      "n": 44,
+      "expected_paras": 57,
+      "title_zh": "第44章 勾栏瓦肆听说书",
+      "mode": "review"
+    },
+    {
+      "n": 45,
+      "expected_paras": 73,
+      "title_zh": "第45章 才子佳人醉云楼",
+      "mode": "review"
+    },
+    {
+      "n": 46,
+      "expected_paras": 77,
+      "title_zh": "第46章 沉默倾听品佳作",
+      "mode": "review"
+    },
+    {
+      "n": 47,
+      "expected_paras": 46,
+      "title_zh": "第47章 品鉴诗词谈隐私",
+      "mode": "review"
+    },
+    {
+      "n": 48,
+      "expected_paras": 105,
+      "title_zh": "第48章 激动错认千离循",
+      "mode": "review"
+    },
+    {
+      "n": 49,
+      "expected_paras": 95,
+      "title_zh": "第49章 相逢对面不相识",
+      "mode": "review"
+    },
+    {
+      "n": 50,
+      "expected_paras": 88,
+      "title_zh": "第50章 平心静气谈和离",
+      "mode": "review"
+    }
+  ],
+  "counts": {
+    "chapters": 50,
+    "paragraphs": 3532,
+    "glossary_total": 769,
+    "glossary_locked": 465,
+    "glossary_suggest": 303
+  },
+  "est_tok": {
+    "input_rules": 1313,
+    "input_glossary": 10129,
+    "input_context": 434,
+    "input_source": 241633,
+    "output_estimate": 63576
+  },
+  "note": "Gemini 4 Neon 网页端共用 1048576 tok 窗口（输入+思考+输出），用户已调大输出上限；总用量远低于上限，但单批超过 50 章时中间遗忘/段数错位风险上升，建议 40-50 章/批。"
+}
